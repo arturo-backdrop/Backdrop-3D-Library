@@ -1,0 +1,108 @@
+[
+  {
+    "id": "backdrop_broadcast",
+    "name": "Broadcast",
+    "category": "QuickZip",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/backdrops/Quickzip/Broadcast.glb",
+    "w": 3, "d": 0.2, "h": 2.4,
+    "color": "#3a6ea5",
+    "paintable": true,
+    "sockets": []
+  },
+  {
+    "id": "backdrop_showtime",
+    "name": "Showtime",
+    "category": "QuickZip",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/backdrops/Quickzip/Showtime.glb",
+    "w": 3, "d": 0.2, "h": 2.4,
+    "color": "#3a6ea5",
+    "paintable": true,
+    "sockets": [
+      { "name": "socket_lamp", "accessoryFile": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Lamp.glb" }
+    ]
+  },
+  {
+    "id": "backdrop_8ftStraight",
+    "name": "8ft QZ Straight",
+    "category": "QuickZip",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/backdrops/Quickzip/8ftStraight.glb",
+    "w": 0.6, "d": 0.3, "h": 0.05,
+    "color": "#d8c9a3",
+    "paintable": true,
+    "sockets": [
+      { "name": "socket_lamp", "accessoryFile": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Lamp.glb" }
+    ]
+  },
+  {
+    "id": "backdrop_seg_3ft",
+    "name": "SEG 3ft",
+    "category": "SEG Lightbox",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/backdrops/SEG/seg_3ft.glb",
+    "w": 0.9, "d": 0.2, "h": 2.4,
+    "color": "#d17b2a",
+    "paintable": true,
+    "sockets": [
+      { "name": "socket_shelf", "accessoryFile": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Shelf.glb" }
+    ]
+  },
+  {
+    "id": "prop_shelf",
+    "name": "Shelf",
+    "category": "Props",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Shelf.glb",
+    "w": 0.6, "d": 0.3, "h": 0.05,
+    "color": "#d8c9a3",
+    "paintable": false,
+    "sockets": []
+  },
+  {
+    "id": "prop_lamp",
+    "name": "Lamp",
+    "category": "Props",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Lamp.glb",
+    "w": 0.1, "d": 0.1, "h": 0.3,
+    "color": "#ffffff",
+    "paintable": false,
+    "sockets": []
+  },
+  {
+    "id": "prop_door",
+    "name": "Door",
+    "category": "Props",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Door.glb",
+    "w": 0.9, "d": 0.1, "h": 2.1,
+    "color": "#d8c9a3",
+    "paintable": false,
+    "sockets": []
+  },
+  {
+    "id": "prop_chair",
+    "name": "Chair",
+    "category": "Props",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Chair.glb",
+    "w": 0.9, "d": 0.1, "h": 2.1,
+    "color": "#d8c9a3",
+    "paintable": false,
+    "sockets": []
+  },
+  {
+    "id": "prop_table",
+    "name": "Table",
+    "category": "Props",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Table.glb",
+    "w": 0.9, "d": 0.1, "h": 2.1,
+    "color": "#d8c9a3",
+    "paintable": false,
+    "sockets": []
+  },
+  {
+    "id": "prop_qz_showcase_books",
+    "name": "Showcase Books",
+    "category": "Props",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/QZ_Showcase_Books.glb",
+    "w": 0.9, "d": 0.1, "h": 2.1,
+    "color": "#d8c9a3",
+    "paintable": false,
+    "sockets": []
+  }
+]
