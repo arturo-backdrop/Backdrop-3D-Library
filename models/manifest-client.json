@@ -15,32 +15,32 @@
         "name": "socket_lamp.008",
         "behavior": "fixed",
         "label": "Lamp",
-        "accessoryFile": "https://github.com/arturo-backdrop/Backdrop-3D-Library/blob/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
       },
       {
         "name": "socket_lamp.005",
         "behavior": "fixed",
         "label": "Lamp",
-        "accessoryFile": "https://github.com/arturo-backdrop/Backdrop-3D-Library/blob/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
       },
       {
         "name": "socket_lamp.006",
         "behavior": "fixed",
         "label": "Lamp",
-        "accessoryFile": "https://github.com/arturo-backdrop/Backdrop-3D-Library/blob/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
       },
       {
         "name": "socket_lamp.007",
         "behavior": "fixed",
         "label": "Lamp",
-        "accessoryFile": "https://github.com/arturo-backdrop/Backdrop-3D-Library/blob/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
       }
     ]
   },
   {
     "id": "counter_small_glb",
     "name": "Counter Small",
-    "file": "https://github.com/arturo-backdrop/Backdrop-3D-Library/blob/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Counter%20Small.glb",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Counter%20Small.glb",
     "category": "Counters",
     "w": 0.7239,
     "d": 0.4389,
@@ -53,7 +53,7 @@
   {
     "id": "38_custom_printed_wall_panel_glb",
     "name": "38 Wall Panel",
-    "file": "https://github.com/arturo-backdrop/Backdrop-3D-Library/blob/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/38%20Custom%20Printed%20Wall%20Panel.glb",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/38%20Custom%20Printed%20Wall%20Panel.glb",
     "category": "Panels",
     "w": 0.9649,
     "d": 0.0409,
@@ -66,20 +66,20 @@
         "name": "socket_lamp.002",
         "behavior": "fixed",
         "label": "Lamp",
-        "accessoryFile": "https://github.com/arturo-backdrop/Backdrop-3D-Library/blob/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
       },
       {
         "name": "socket_shelf.001",
         "behavior": "distribute",
         "label": "Shelves",
-        "accessoryFile": "https://github.com/arturo-backdrop/Backdrop-3D-Library/blob/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/acc_Shelf.glb"
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/acc_Shelf.glb"
       }
     ]
   },
   {
     "id": "counter_medium_glb",
     "name": "Counter Medium",
-    "file": "https://github.com/arturo-backdrop/Backdrop-3D-Library/blob/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Counter%20Medium.glb",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Counter%20Medium.glb",
     "category": "Counters",
     "w": 1.204,
     "d": 0.4394,
@@ -92,7 +92,7 @@
   {
     "id": "standard_38_half_height_glb",
     "name": "38 Wall Panel - half height",
-    "file": "https://github.com/arturo-backdrop/Backdrop-3D-Library/blob/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Standard%2038%20half-height.glb",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Standard%2038%20half-height.glb",
     "category": "Panels",
     "w": 0.9652,
     "d": 0.0406,
@@ -105,7 +105,7 @@
   {
     "id": "standard_19_glb",
     "name": "19 Wall Panel",
-    "file": "https://github.com/arturo-backdrop/Backdrop-3D-Library/blob/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Standard%2019.glb",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Standard%2019.glb",
     "category": "Panels",
     "w": 0.4831,
     "d": 0.0409,
@@ -118,14 +118,14 @@
         "name": "socket_lamp.003",
         "behavior": "fixed",
         "label": "Lamp",
-        "accessoryFile": "https://github.com/arturo-backdrop/Backdrop-3D-Library/blob/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
       }
     ]
   },
   {
     "id": "woodline_archway_glb",
     "name": "Woodline Archway",
-    "file": "https://github.com/arturo-backdrop/Backdrop-3D-Library/blob/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Woodline%20Archway.glb",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Woodline%20Archway.glb",
     "category": "Special modules",
     "w": 0.9652,
     "d": 2.159,
@@ -138,7 +138,7 @@
   {
     "id": "standard_9_5_glb",
     "name": "Standard 9.5",
-    "file": "https://github.com/arturo-backdrop/Backdrop-3D-Library/blob/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Standard%209.5.glb",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Standard%209.5.glb",
     "category": "Panels",
     "w": 1,
     "d": 0.5001,
@@ -151,8 +151,9 @@
         "name": "socket_lamp.004",
         "behavior": "fixed",
         "label": "Lamp",
-        "accessoryFile": "https://github.com/arturo-backdrop/Backdrop-3D-Library/blob/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
       }
     ]
   }
 ]
+```[cite: 1]
