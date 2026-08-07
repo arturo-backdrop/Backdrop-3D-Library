@@ -486,7 +486,8 @@ function editModel(id) {
       <div class="help">Props = draggable to floor. Accessory = socket-only, hidden from catalog.</div>
     </div>
     <div class="field"><label>File URL (public URL of the GLB)</label>
-      <input id="de-file" value="${model.file||''}" placeholder="https://...">
+      <input id="de-file" value="${model.file||''}" placeholder="https://..."
+        onblur="this.value=toRawUrl(this.value)">
       <div class="help">${model._localPath?'Local: '+model._localPath:''}</div>
     </div>
     <div class="row">
@@ -598,7 +599,7 @@ function saveModelDrawer(id) {
   model.category = (catSel === '__new__')
     ? (document.getElementById('de-cat-custom').value.trim() || 'Other')
     : catSel;
-  model.file     = document.getElementById('de-file').value.trim();
+  model.file     = toRawUrl(document.getElementById('de-file').value);
   // Convert displayed value back to meters
   const _df = DIM_FACTORS[window._dimU||'m'] || 1;
   model.w = Math.round(((parseFloat(document.getElementById('de-w').value)||0) / _df) * 10000) / 10000 || 1;
@@ -680,7 +681,8 @@ function editAccessory(id) {
     <div class="field"><label>ID</label><input id="da-id" value="${acc.id}"></div>
     <div class="field"><label>Name</label><input id="da-name" value="${acc.name||''}"></div>
     <div class="field"><label>File URL (public URL of the GLB)</label>
-      <input id="da-file" value="${acc.file||''}" placeholder="https://...">
+      <input id="da-file" value="${acc.file||''}" placeholder="https://..."
+        onblur="this.value=toRawUrl(this.value)">
       <div class="help">${acc._localPath?'Local: '+acc._localPath:''}</div>
     </div>
     <div class="field"><label>Label (shown in UI)</label><input id="da-label" value="${acc.label||''}"></div>
@@ -696,7 +698,7 @@ function editAccessory(id) {
   App.drawerSaveFn = () => {
     acc.id       = document.getElementById('da-id').value.trim()||id;
     acc.name     = document.getElementById('da-name').value.trim();
-    acc.file     = document.getElementById('da-file').value.trim();
+    acc.file     = toRawUrl(document.getElementById('da-file').value);
     acc.label    = document.getElementById('da-label').value.trim();
     acc.behavior = document.getElementById('da-behavior').value;
     acc.max      = parseInt(document.getElementById('da-max').value)||5;
@@ -892,6 +894,27 @@ function buildOutput(m) {
 }
 
 // ── Drawer ────────────────────────────────────────────────────
+// Convert any GitHub URL to raw.githubusercontent.com format
+function toRawUrl(url) {
+  if (!url) return url;
+  url = url.trim();
+  // Already raw
+  if (url.startsWith('https://raw.githubusercontent.com')) return url;
+  // github.com/USER/REPO/blob/BRANCH/PATH  →  raw.githubusercontent.com/USER/REPO/BRANCH/PATH
+  const blobMatch = url.match(/^https?:\/\/github\.com\/([^/]+)\/([^/]+)\/blob\/([^/]+)\/(.+)$/);
+  if (blobMatch) {
+    const [, user, repo, branch, path] = blobMatch;
+    return `https://raw.githubusercontent.com/${user}/${repo}/${branch}/${path}`;
+  }
+  // github.com/USER/REPO/raw/BRANCH/PATH  →  raw.githubusercontent.com/...
+  const rawMatch = url.match(/^https?:\/\/github\.com\/([^/]+)\/([^/]+)\/raw\/([^/]+)\/(.+)$/);
+  if (rawMatch) {
+    const [, user, repo, branch, path] = rawMatch;
+    return `https://raw.githubusercontent.com/${user}/${repo}/${branch}/${path}`;
+  }
+  return url;
+}
+
 function openDrawer()  { document.getElementById('drawer').classList.add('open'); }
 function closeDrawer() { document.getElementById('drawer').classList.remove('open'); }
 function drawerSave()  { if (App.drawerSaveFn) App.drawerSaveFn(); }
