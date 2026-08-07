@@ -477,26 +477,34 @@ function editModel(id) {
     <div class="field"><label>Name (shown in app)</label>
       <input id="de-name" value="${model.name||''}"></div>
     <div class="field"><label>Category</label>
-      <select id="de-cat" onchange="document.getElementById('de-cat-custom').style.display=this.value==='custom'?'block':'none'">
-        <option value="QuickZip"   ${(model.category||'')==='QuickZip'  ?'selected':''}>QuickZip</option>
-        <option value="SEG"        ${(model.category||'')==='SEG'       ?'selected':''}>SEG</option>
-        <option value="Props"      ${(model.category||'')==='Props'     ?'selected':''}>Props (independent — tables, chairs, plants)</option>
-        <option value="Accessory"  ${(model.category||'')==='Accessory' ?'selected':''}>Accessory (socket-only — hidden from catalog)</option>
-        <option value="custom"     ${!['QuickZip','SEG','Props','Accessory',''].includes(model.category||'')?'selected':''}>Custom...</option>
+      <select id="de-cat" onchange="onCatChange(this.value)">
+        ${getCategoryOptions(model.category||'')}
       </select>
-      <input id="de-cat-custom" placeholder="Custom category name"
-        value="${!['QuickZip','SEG','Props','Accessory',''].includes(model.category||'')?model.category||'':''}"
-        style="margin-top:6px;display:${!['QuickZip','SEG','Props','Accessory',''].includes(model.category||'')?'block':'none'}">
-      <div class="help">Props = draggable to floor, shown in catalog. Accessory = socket-only, hidden from catalog.</div>
+      <input id="de-cat-custom" placeholder="New category name"
+        value=""
+        style="margin-top:6px;display:none;">
+      <div class="help">Props = draggable to floor. Accessory = socket-only, hidden from catalog.</div>
     </div>
     <div class="field"><label>File URL (public URL of the GLB)</label>
       <input id="de-file" value="${model.file||''}" placeholder="https://...">
       <div class="help">${model._localPath?'Local: '+model._localPath:''}</div>
     </div>
     <div class="row">
-      <div class="field"><label>Width (m)</label><input id="de-w" type="number" step="0.1" min="0" value="${model.w||1}"></div>
-      <div class="field"><label>Depth (m)</label><input id="de-d" type="number" step="0.1" min="0" value="${model.d||0.5}"></div>
-      <div class="field"><label>Height (m)</label><input id="de-h" type="number" step="0.1" min="0" value="${model.h||2}"></div>
+      <div class="field" style="margin-bottom:6px;">
+        <label>Unit</label>
+        <div style="display:flex;gap:6px;margin-top:4px;">
+          ${['m','ft','in','cm'].map(u=>`
+            <button onclick="switchDimUnit('${u}')" id="du-${u}"
+              style="flex:1;padding:4px;border-radius:6px;border:none;font-size:11px;cursor:pointer;
+              background:#f0f0f0;color:#666;">${u}</button>
+          `).join('')}
+        </div>
+      </div>
+      <div class="row">
+        <div class="field"><label id="lbl-w">Width</label><input id="de-w" type="number" step="0.01" min="0" value="${toDispDim(model.w||1)}"></div>
+        <div class="field"><label id="lbl-d">Depth</label><input id="de-d" type="number" step="0.01" min="0" value="${toDispDim(model.d||0.5)}"></div>
+        <div class="field"><label id="lbl-h">Height</label><input id="de-h" type="number" step="0.01" min="0" value="${toDispDim(model.h||2)}"></div>
+      </div>
     </div>
     <div class="field"><label>Price USD (optional)</label>
       <input id="de-price" type="number" min="0" value="${model.price||''}" placeholder="Leave empty to hide"></div>
@@ -523,6 +531,7 @@ function editModel(id) {
   `;
   App.drawerSaveFn = () => saveModelDrawer(id);
   openDrawer();
+  setTimeout(initDimUnits, 0); // set button states and labels after render
 }
 
 function socketCard(modelId, s, i, accs) {
@@ -586,13 +595,15 @@ function saveModelDrawer(id) {
   model.id       = document.getElementById('de-id').value.trim()||id;
   model.name     = document.getElementById('de-name').value.trim();
   const catSel = document.getElementById('de-cat').value;
-  model.category = catSel === 'custom'
+  model.category = (catSel === '__new__')
     ? (document.getElementById('de-cat-custom').value.trim() || 'Other')
     : catSel;
   model.file     = document.getElementById('de-file').value.trim();
-  model.w        = parseFloat(document.getElementById('de-w').value)||1;
-  model.d        = parseFloat(document.getElementById('de-d').value)||0.5;
-  model.h        = parseFloat(document.getElementById('de-h').value)||2;
+  // Convert displayed value back to meters
+  const _df = DIM_FACTORS[window._dimU||'m'] || 1;
+  model.w = Math.round(((parseFloat(document.getElementById('de-w').value)||0) / _df) * 10000) / 10000 || 1;
+  model.d = Math.round(((parseFloat(document.getElementById('de-d').value)||0) / _df) * 10000) / 10000 || 0.5;
+  model.h = Math.round(((parseFloat(document.getElementById('de-h').value)||0) / _df) * 10000) / 10000 || 2;
   model.price    = parseFloat(document.getElementById('de-price').value)||null;
   model.color    = document.getElementById('de-ctxt').value||'#cccccc';
   model.paintable= document.getElementById('de-paint').checked;
@@ -896,6 +907,93 @@ function showEditorMsg(msg, type) {
 function showMsg(msg, type) { showEditorMsg(msg, type); }
 
 // ── Init ──────────────────────────────────────────────────────
+// ── Category helpers ──────────────────────────────────────────
+const BASE_CATS = ['QuickZip','SEG','Props','Accessory'];
+
+function getCustomCategories() {
+  const m = App.manifests[App.current];
+  if (!m) return [];
+  const cats = new Set();
+  (m.models||[]).forEach(x => { if (x.category && !BASE_CATS.includes(x.category)) cats.add(x.category); });
+  return [...cats].sort();
+}
+
+function getCategoryOptions(current) {
+  const custom = getCustomCategories();
+  const opts = [
+    ...BASE_CATS.map(c => `<option value="${c}" ${current===c?'selected':''}>${c}${c==='Props'?' (independent)':c==='Accessory'?' (hidden)':''}</option>`),
+    ...custom.map(c => `<option value="${c}" ${current===c?'selected':''}>${c}</option>`),
+    `<option value="__new__">+ New category...</option>`,
+  ];
+  return opts.join('');
+}
+
+function onCatChange(val) {
+  const customInput = document.getElementById('de-cat-custom');
+  if (val === '__new__') {
+    customInput.style.display = 'block';
+    customInput.focus();
+    customInput.oninput = () => {
+      const sel = document.getElementById('de-cat');
+      const newVal = customInput.value.trim();
+      if (!newVal) return;
+      let found = false;
+      for (let o of sel.options) { if (o.value === newVal) { found=true; break; } }
+      if (!found) { const opt = document.createElement('option'); opt.value=newVal; opt.text=newVal; sel.insertBefore(opt, sel.options[sel.options.length-1]); }
+      sel.value = newVal;
+    };
+  } else {
+    customInput.style.display = 'none';
+  }
+}
+
+// ── Dimension units ──────────────────────────────────────────
+const DIM_FACTORS = { m:1, ft:3.28084, 'in':39.3701, cm:100 };
+window._dimU = 'm'; // current display unit, persists across drawer opens
+
+function toDispDim(meters) {
+  const f = DIM_FACTORS[window._dimU] || 1;
+  const v = meters * f;
+  const dec = window._dimU === 'm' ? 3 : window._dimU === 'cm' ? 1 : 2;
+  return v.toFixed(dec);
+}
+
+function switchDimUnit(u) {
+  // Read current displayed values and convert to meters, then to new unit
+  const oldF = DIM_FACTORS[window._dimU] || 1;
+  const newF = DIM_FACTORS[u] || 1;
+  const dec  = u === 'm' ? 3 : u === 'cm' ? 1 : 2;
+  ['w','d','h'].forEach(k => {
+    const el = document.getElementById('de-' + k);
+    if (!el) return;
+    const meters = parseFloat(el.value || 0) / oldF;
+    el.value = (meters * newF).toFixed(dec);
+    el.step  = u === 'm' ? '0.001' : u === 'cm' ? '0.1' : '0.01';
+  });
+  const labels = { w:'Width', d:'Depth', h:'Height' };
+  Object.keys(labels).forEach(k => {
+    const el = document.getElementById('lbl-' + k);
+    if (el) el.textContent = labels[k] + ' (' + u + ')';
+  });
+  // Update button styles
+  ['m','ft','in','cm'].forEach(x => {
+    const btn = document.getElementById('du-' + x);
+    if (btn) { btn.style.background = x===u?'#1a1a1a':'#f0f0f0'; btn.style.color = x===u?'white':'#666'; }
+  });
+  window._dimU = u;
+  // Update labels for current unit
+  const lblEl = { w:'lbl-w', d:'lbl-d', h:'lbl-h' };
+  Object.entries(lblEl).forEach(([k,id]) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = labels[k] + ' (' + u + ')';
+  });
+}
+
+// Call after drawer HTML is rendered to set correct button states and labels
+function initDimUnits() {
+  switchDimUnit(window._dimU || 'm');
+}
+
 window.onload = () => {
   renderTabs();
   const first = Object.keys(App.manifests)[0];
