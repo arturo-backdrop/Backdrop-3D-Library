@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manifest Builder</title>
+<style>
+:root {
+  --bg:#0d0f18; --panel:#0d1117; --card:#13162a; --border:#1e2035;
+  --accent:#b48b31; --text:#e2e8f0; --muted:#64748b;
+  --danger:#f87171; --success:#4ade80; --r:8px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:system-ui,sans-serif;font-size:14px;height:100vh;display:flex;flex-direction:column;}
+/* ── Top bar ── */
+#topbar{display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--panel);border-bottom:1px solid var(--border);flex-shrink:0;}
+#topbar h1{font-size:15px;font-weight:700;color:var(--accent);margin-right:8px;}
+.manifest-tabs{display:flex;gap:4px;flex:1;overflow-x:auto;}
+.m-tab{padding:5px 12px;border-radius:6px;font-size:12px;cursor:pointer;white-space:nowrap;
+  background:var(--card);border:1px solid var(--border);color:var(--muted);}
+.m-tab.active{border-color:var(--accent);color:var(--accent);}
+.m-tab:hover{color:var(--text);}
+/* ── Layout ── */
+#workspace{display:flex;flex:1;overflow:hidden;}
+#sidebar{width:240px;background:var(--panel);border-right:1px solid var(--border);
+  display:flex;flex-direction:column;overflow:hidden;flex-shrink:0;}
+#main{flex:1;overflow-y:auto;padding:20px;}
+/* ── Sidebar ── */
+.sb-sec{padding:8px 12px 4px;font-size:10px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.08em;color:var(--muted);}
+.sb-item{display:flex;align-items:center;gap:8px;padding:7px 12px;cursor:pointer;
+  color:var(--muted);font-size:12px;border-radius:6px;margin:1px 6px;}
+.sb-item:hover{background:var(--card);color:var(--text);}
+.sb-item.active{background:var(--card);color:var(--accent);}
+.folder-tree{flex:1;overflow-y:auto;padding:0 6px 8px;}
+.folder-node{margin-bottom:2px;}
+.folder-label{display:flex;align-items:center;gap:6px;padding:5px 8px;border-radius:6px;
+  cursor:pointer;font-size:12px;user-select:none;}
+.folder-label:hover{background:var(--card);}
+.folder-label input[type=checkbox]{accent-color:var(--accent);width:auto;flex-shrink:0;}
+.folder-name{flex:1;truncate:ellipsis;overflow:hidden;white-space:nowrap;}
+.folder-count{font-size:10px;color:var(--muted);}
+.folder-children{padding-left:14px;}
+.file-node{display:flex;align-items:center;gap:6px;padding:4px 8px;border-radius:6px;
+  font-size:11px;cursor:pointer;}
+.file-node:hover{background:var(--card);}
+.file-node.selected{background:rgba(180,139,49,.15);color:var(--accent);}
+.file-node input[type=checkbox]{accent-color:var(--accent);width:auto;flex-shrink:0;}
+.file-ext{font-size:9px;padding:1px 4px;border-radius:3px;font-weight:700;flex-shrink:0;}
+.ext-glb{background:rgba(180,139,49,.2);color:var(--accent);}
+.ext-json{background:rgba(74,222,128,.2);color:var(--success);}
+/* ── Buttons ── */
+.btn{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:var(--r);
+  border:none;cursor:pointer;font-size:13px;font-weight:500;}
+.btn:hover{opacity:.85;}
+.btn-primary{background:var(--accent);color:#000;}
+.btn-secondary{background:var(--card);color:var(--text);border:1px solid var(--border);}
+.btn-danger{background:rgba(248,113,113,.15);color:var(--danger);border:1px solid var(--danger);}
+.btn-sm{padding:4px 10px;font-size:12px;}
+.btn-icon{background:none;border:none;cursor:pointer;color:var(--muted);padding:3px 5px;border-radius:4px;}
+.btn-icon:hover{color:var(--text);background:var(--card);}
+/* ── Forms ── */
+.field{margin-bottom:12px;}
+.field label{display:block;font-size:11px;color:var(--muted);margin-bottom:4px;}
+input,select,textarea{width:100%;padding:7px 10px;background:var(--bg);border:1px solid var(--border);
+  border-radius:var(--r);color:var(--text);font-size:13px;outline:none;}
+input:focus,select:focus,textarea:focus{border-color:var(--accent);}
+input[type=checkbox]{width:auto;}
+textarea{resize:vertical;min-height:56px;}
+.row{display:flex;gap:10px;}
+.row>.field{flex:1;}
+.color-row{display:flex;gap:8px;align-items:flex-end;}
+.color-row input[type=color]{width:42px;height:33px;padding:2px;cursor:pointer;border-radius:6px;border:1px solid var(--border);}
+.color-row input[type=text]{flex:1;}
+/* ── Cards ── */
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:16px;margin-bottom:12px;}
+.card-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
+.card-title{font-size:14px;font-weight:600;}
+/* ── Model list ── */
+.model-list{display:flex;flex-direction:column;gap:6px;}
+.model-item{display:flex;align-items:center;gap:10px;padding:10px 12px;
+  background:var(--bg);border:1px solid var(--border);border-radius:var(--r);}
+.model-item.included{border-color:rgba(180,139,49,.4);}
+.model-item input[type=checkbox]{accent-color:var(--accent);width:auto;flex-shrink:0;}
+.model-thumb{width:32px;height:32px;border-radius:6px;background:var(--border);
+  display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.model-info{flex:1;min-width:0;}
+.model-name{font-size:13px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.model-meta{font-size:10px;color:var(--muted);margin-top:1px;}
+.model-actions{display:flex;gap:4px;flex-shrink:0;}
+.tag{display:inline-block;padding:1px 6px;border-radius:999px;font-size:10px;font-weight:600;}
+.tag-cat{background:rgba(180,139,49,.15);color:var(--accent);}
+.tag-price{background:rgba(74,222,128,.15);color:var(--success);}
+.tag-sock{background:rgba(100,116,139,.2);color:var(--muted);}
+/* ── Drawer ── */
+#drawer{position:fixed;top:0;right:0;bottom:0;width:400px;background:var(--panel);
+  border-left:1px solid var(--border);overflow-y:auto;padding:20px;z-index:200;
+  transform:translateX(100%);transition:transform .22s cubic-bezier(.4,0,.2,1);}
+#drawer.open{transform:none;}
+.drawer-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;}
+.drawer-title{font-size:15px;font-weight:700;}
+.socket-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--r);padding:10px;margin-bottom:8px;}
+.socket-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;}
+/* ── Presets ── */
+.preset-item{display:flex;align-items:center;gap:10px;padding:10px 12px;
+  background:var(--bg);border:1px solid var(--border);border-radius:var(--r);margin-bottom:6px;}
+.preset-info{flex:1;}
+.preset-name{font-size:13px;font-weight:500;}
+.preset-meta{font-size:10px;color:var(--muted);margin-top:2px;}
+/* ── Drop zone ── */
+.dropzone{border:2px dashed var(--border);border-radius:var(--r);padding:32px;text-align:center;
+  color:var(--muted);cursor:pointer;transition:border-color .15s;}
+.dropzone:hover{border-color:var(--accent);color:var(--accent);}
+/* ── Misc ── */
+.empty{text-align:center;color:var(--muted);padding:40px 20px;font-size:13px;}
+.msg{padding:7px 12px;border-radius:var(--r);font-size:12px;margin-bottom:12px;}
+.msg-ok{background:rgba(74,222,128,.1);color:var(--success);}
+.msg-err{background:rgba(248,113,113,.1);color:var(--danger);}
+.divider{border:none;border-top:1px solid var(--border);margin:14px 0;}
+.section-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
+.section-title{font-size:16px;font-weight:700;}
+.page-tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:16px;}
+.page-tab{padding:8px 16px;cursor:pointer;font-size:13px;color:var(--muted);
+  border-bottom:2px solid transparent;margin-bottom:-1px;}
+.page-tab.active{color:var(--accent);border-bottom-color:var(--accent);}
+.help{font-size:11px;color:var(--muted);margin-top:4px;}
+</style>
+</head>
+<body>
+
+<!-- Top bar -->
+<div id="topbar">
+  <h1>📋 Manifest Builder</h1>
+  <div class="manifest-tabs" id="manifest-tabs"></div>
+  <button class="btn btn-secondary btn-sm" onclick="newManifest()">+ New</button>
+  <button class="btn btn-primary btn-sm" onclick="exportManifest()">⬇ Export JSON</button>
+</div>
+
+<!-- Workspace -->
+<div id="workspace">
+
+  <!-- Sidebar: file tree -->
+  <div id="sidebar">
+    <div style="padding:10px 8px 6px;">
+      <button class="btn btn-secondary btn-sm" style="width:100%;justify-content:center;" onclick="openFolder()">
+        📂 Open Folder
+      </button>
+      <p class="help" style="margin-top:6px;text-align:center;">Select your library folder</p>
+    </div>
+    <div class="sb-sec">Files</div>
+    <div class="folder-tree" id="folder-tree">
+      <div class="empty" style="padding:16px;font-size:11px;">No folder loaded</div>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div id="main">
+    <div id="view-welcome" class="empty" style="margin-top:60px;">
+      <div style="font-size:40px;margin-bottom:12px;">📋</div>
+      <div style="font-size:16px;font-weight:600;margin-bottom:6px;">Manifest Builder</div>
+      <div>Open your library folder on the left, then create or select a manifest.</div>
+    </div>
+    <div id="view-editor" style="display:none;"></div>
+  </div>
+
+</div>
+
+<!-- Drawer: model/accessory/preset editor -->
+<div id="drawer">
+  <div class="drawer-hdr">
+    <div class="drawer-title" id="drawer-title">Edit</div>
+    <button class="btn btn-secondary btn-sm" onclick="closeDrawer()">✕</button>
+  </div>
+  <div id="drawer-body"></div>
+  <div style="display:flex;gap:8px;margin-top:16px;">
+    <button class="btn btn-primary" id="drawer-save" style="flex:1;justify-content:center;" onclick="drawerSave()">Save</button>
+  </div>
+</div>
+
+<script>
+// ── State ─────────────────────────────────────────────────────
+const App = {
+  manifests: {},       // name -> { models:[], accessories:[], presets:[] }
+  current: null,       // active manifest name
+  files: {},           // path -> { file, handle, type:'glb'|'json'|'png'|'other', size, url }
+  rootHandle: null,
+  drawerSaveFn: null,
+};
+
+// Load from localStorage
+try { App.manifests = JSON.parse(localStorage.getItem('mb2_manifests') || '{}'); } catch{}
+
+// ── Persist ───────────────────────────────────────────────────
+function persist() {
+  localStorage.setItem('mb2_manifests', JSON.stringify(App.manifests));
+}
+
+// ── Folder loading ────────────────────────────────────────────
+async function openFolder() {
+  try {
+    const handle = await window.showDirectoryPicker({ mode: 'read' });
+    App.rootHandle = handle;
+    App.files = {};
+    await walkDir(handle, '');
+    renderTree();
+    showMsg('Folder loaded: ' + handle.name, 'ok');
+  } catch(e) {
+    if (e.name !== 'AbortError') showMsg('Could not open folder: ' + e.message, 'err');
+  }
+}
+
+async function walkDir(dirHandle, path) {
+  for await (const [name, handle] of dirHandle.entries()) {
+    const fullPath = path ? path + '/' + name : name;
+    if (handle.kind === 'directory') {
+      await walkDir(handle, fullPath);
+    } else {
+      const ext = name.split('.').pop().toLowerCase();
+      const type = ext === 'glb' ? 'glb' : ext === 'json' ? 'json' : ext === 'png' || ext === 'jpg' || ext === 'webp' ? 'img' : 'other';
+      App.files[fullPath] = { handle, name, path: fullPath, type, ext };
+    }
+  }
+}
+
+// ── File tree ─────────────────────────────────────────────────
+function renderTree() {
+  const el = document.getElementById('folder-tree');
+  // Build tree structure
+  const tree = {};
+  Object.values(App.files).forEach(f => {
+    const parts = f.path.split('/');
+    const dir   = parts.slice(0, -1).join('/') || '(root)';
+    if (!tree[dir]) tree[dir] = [];
+    tree[dir].push(f);
+  });
+
+  const glbCount  = Object.values(App.files).filter(f=>f.type==='glb').length;
+  const jsonCount = Object.values(App.files).filter(f=>f.type==='json').length;
+
+  el.innerHTML = `
+    <div style="padding:4px 8px 8px;font-size:10px;color:var(--muted);">
+      ${glbCount} GLBs · ${jsonCount} JSONs
+    </div>
+  ` + Object.entries(tree).map(([dir, files]) => `
+    <div class="folder-node">
+      <div class="folder-label" onclick="toggleFolder('${dir}')">
+        <span id="ftoggle-${sanitize(dir)}">▾</span>
+        <span class="folder-name" title="${dir}">📁 ${dir.split('/').pop()}</span>
+        <span class="folder-count">${files.length}</span>
+      </div>
+      <div class="folder-children" id="fchildren-${sanitize(dir)}">
+        ${files.filter(f=>f.type!=='other').map(f => `
+          <div class="file-node" onclick="fileClicked('${f.path}')" title="${f.path}">
+            <span class="file-ext ext-${f.type==='glb'?'glb':f.type==='json'?'json':'img'}">${f.ext.toUpperCase()}</span>
+            <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${f.name}</span>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function sanitize(s) { return s.replace(/[^a-z0-9]/gi,'_'); }
+
+function toggleFolder(dir) {
+  const el = document.getElementById('fchildren-' + sanitize(dir));
+  const t  = document.getElementById('ftoggle-' + sanitize(dir));
+  if (el) { const v = el.style.display === 'none'; el.style.display = v ? '' : 'none'; if(t) t.textContent = v ? '▾' : '▸'; }
+}
+
+function fileClicked(path) {
+  const f = App.files[path];
+  if (!f || !App.current) return;
+  if (f.type === 'glb') addModelFromFile(f);
+  else if (f.type === 'json') tryAddPreset(f);
+}
+
+// ── Manifest tabs ─────────────────────────────────────────────
+function renderTabs() {
+  const el = document.getElementById('manifest-tabs');
+  el.innerHTML = Object.keys(App.manifests).map(n => `
+    <div class="m-tab ${App.current===n?'active':''}" onclick="selectManifest('${n}')" title="${n}">
+      ${n}
+      <span onclick="event.stopPropagation();deleteManifest('${n}')"
+        style="margin-left:6px;color:var(--muted);font-size:12px;">×</span>
+    </div>
+  `).join('');
+}
+
+function newManifest() {
+  const name = prompt('Manifest name (e.g. sales, client):');
+  if (!name) return;
+  const key = name.trim().toLowerCase().replace(/\s+/g,'-');
+  if (App.manifests[key]) { alert('Already exists'); return; }
+  App.manifests[key] = { models: [], accessories: [], presets: [] };
+  persist();
+  selectManifest(key);
+}
+
+function selectManifest(name) {
+  App.current = name;
+  renderTabs();
+  renderEditor();
+}
+
+function deleteManifest(name) {
+  if (!confirm(`Delete manifest "${name}"?`)) return;
+  delete App.manifests[name];
+  if (App.current === name) App.current = Object.keys(App.manifests)[0] || null;
+  persist();
+  renderTabs();
+  if (App.current) renderEditor(); else showWelcome();
+}
+
+// ── Editor ────────────────────────────────────────────────────
+function renderEditor() {
+  if (!App.current) return;
+  document.getElementById('view-welcome').style.display = 'none';
+  const el = document.getElementById('view-editor');
+  el.style.display = 'block';
+  const m = App.manifests[App.current];
+  el.innerHTML = `
+    <div class="section-hdr">
+      <div>
+        <div class="section-title">${App.current}</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:2px;">
+          ${(m.models||[]).filter(x=>x.included).length} models · ${(m.accessories||[]).filter(x=>x.included).length} accessories · ${(m.presets||[]).filter(x=>x.included).length} presets
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;">
+        <button class="btn btn-secondary btn-sm" onclick="importManifestFile()">↑ Import JSON</button>
+        <button class="btn btn-primary btn-sm" onclick="exportManifest()">⬇ Export JSON</button>
+      </div>
+    </div>
+    <div id="editor-msg"></div>
+    <div class="page-tabs">
+      <div class="page-tab active" onclick="pageTab('models',this)">Models <span style="font-size:10px;color:var(--muted);">${(m.models||[]).length}</span></div>
+      <div class="page-tab" onclick="pageTab('accessories',this)">Accessories <span style="font-size:10px;color:var(--muted);">${(m.accessories||[]).length}</span></div>
+      <div class="page-tab" onclick="pageTab('presets',this)">Presets <span style="font-size:10px;color:var(--muted);">${(m.presets||[]).length}</span></div>
+    </div>
+    <div id="page-models"></div>
+    <div id="page-accessories" style="display:none;"></div>
+    <div id="page-presets" style="display:none;"></div>
+  `;
+  renderModels(); renderAccessories(); renderPresets();
+}
+
+function pageTab(name, el) {
+  document.querySelectorAll('.page-tab').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+  ['models','accessories','presets'].forEach(t => {
+    document.getElementById('page-'+t).style.display = t===name?'block':'none';
+  });
+}
+
+function showWelcome() {
+  document.getElementById('view-welcome').style.display = 'block';
+  document.getElementById('view-editor').style.display = 'none';
+}
+
+// ── Models ────────────────────────────────────────────────────
+function renderModels() {
+  const m = App.manifests[App.current];
+  const el = document.getElementById('page-models');
+  const models = m.models || [];
+  el.innerHTML = `
+    <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;">
+      <button class="btn btn-secondary btn-sm" onclick="addModelManual()">+ Add manually</button>
+      <button class="btn btn-secondary btn-sm" onclick="scanGLBs()">🔍 Scan folder for GLBs</button>
+    </div>
+    <div class="help" style="margin-bottom:12px;">Click a GLB in the file tree to add it, or click Edit to configure each model.</div>
+    ${models.length === 0 ? '<div class="empty">No models yet.</div>' : ''}
+    <div class="model-list">
+      ${models.map(model => `
+        <div class="model-item ${model.included?'included':''}">
+          <input type="checkbox" ${model.included?'checked':''} onchange="toggleItem('models','${model.id}',this.checked)">
+          <div class="model-thumb">🧊</div>
+          <div class="model-info">
+            <div class="model-name">${model.name||model.id}</div>
+            <div class="model-meta">
+              <span class="tag tag-cat">${model.category||'—'}</span>
+              ${model.price?`<span class="tag tag-price">$${model.price}</span>`:''}
+              ${(model.sockets||[]).length?`<span class="tag tag-sock">${model.sockets.length} socket${model.sockets.length>1?'s':''}</span>`:''}
+              <span style="margin-left:4px;">${model.w||'?'}×${model.d||'?'}×${model.h||'?'}m</span>
+            </div>
+          </div>
+          <div class="model-actions">
+            <button class="btn btn-secondary btn-sm" onclick="editModel('${model.id}')">Edit</button>
+            <button class="btn-icon" onclick="removeItem('models','${model.id}')">🗑</button>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function toggleItem(list, id, included) {
+  const m = App.manifests[App.current];
+  const item = (m[list]||[]).find(x=>x.id===id);
+  if (item) { item.included = included; persist(); renderEditor(); }
+}
+
+function removeItem(list, id) {
+  if (!confirm('Remove?')) return;
+  const m = App.manifests[App.current];
+  m[list] = (m[list]||[]).filter(x=>x.id!==id);
+  persist(); renderEditor();
+}
+
+async function addModelFromFile(f) {
+  const m = App.manifests[App.current];
+  m.models = m.models || [];
+  const existing = m.models.find(x=>x.file&&x.file.endsWith(f.name));
+  if (existing) { editModel(existing.id); return; }
+  const id = f.name.replace('.glb','').replace(/[^a-z0-9]/gi,'_').toLowerCase();
+  const parts = f.path.split('/');
+  const folder = parts.length > 1 ? parts[parts.length-2] : 'root';
+  m.models.push({
+    id, name: f.name.replace('.glb','').replace(/[_-]/g,' '),
+    _localPath: f.path,
+    file: '[SET URL]',
+    category: folder,
+    w: 1, d: 0.5, h: 2,
+    color: '#cccccc',
+    price: null,
+    paintable: true,
+    included: true,
+    sockets: [],
+  });
+  persist(); renderEditor();
+  editModel(id);
+}
+
+function addModelManual() {
+  const m = App.manifests[App.current];
+  m.models = m.models || [];
+  const id = 'model_' + Date.now();
+  m.models.push({ id, name: 'New Model', file: '', category: '', w:1, d:0.5, h:2,
+    color:'#cccccc', price:null, paintable:true, included:true, sockets:[] });
+  persist(); renderEditor(); editModel(id);
+}
+
+async function scanGLBs() {
+  const glbs = Object.values(App.files).filter(f=>f.type==='glb');
+  if (glbs.length === 0) { showEditorMsg('No GLBs found in folder.', 'err'); return; }
+  const m = App.manifests[App.current];
+  m.models = m.models || [];
+  const existing = new Set(m.models.map(x=>x._localPath));
+  let added = 0;
+  glbs.forEach(f => {
+    if (existing.has(f.path)) return;
+    const parts = f.path.split('/');
+    const folder = parts.length > 1 ? parts[parts.length-2] : 'root';
+    const id = f.path.replace(/[^a-z0-9]/gi,'_').toLowerCase();
+    m.models.push({
+      id, name: f.name.replace('.glb','').replace(/[_-]/g,' '),
+      _localPath: f.path, file: '[SET URL]',
+      category: folder, w:1, d:0.5, h:2,
+      color:'#cccccc', price:null, paintable:true, included:true, sockets:[],
+    });
+    added++;
+  });
+  persist(); renderEditor();
+  showEditorMsg(`Added ${added} models.`, 'ok');
+}
+
+// ── Model editor drawer ───────────────────────────────────────
+function editModel(id) {
+  const m = App.manifests[App.current];
+  const model = (m.models||[]).find(x=>x.id===id);
+  if (!model) return;
+  const accs = m.accessories || [];
+  document.getElementById('drawer-title').textContent = '✏ Edit Model';
+  document.getElementById('drawer-body').innerHTML = `
+    <div class="field"><label>ID (internal, no spaces)</label>
+      <input id="de-id" value="${model.id}"></div>
+    <div class="field"><label>Name (shown in app)</label>
+      <input id="de-name" value="${model.name||''}"></div>
+    <div class="field"><label>Category</label>
+      <select id="de-cat" onchange="document.getElementById('de-cat-custom').style.display=this.value==='custom'?'block':'none'">
+        <option value="QuickZip"   ${(model.category||'')==='QuickZip'  ?'selected':''}>QuickZip</option>
+        <option value="SEG"        ${(model.category||'')==='SEG'       ?'selected':''}>SEG</option>
+        <option value="Props"      ${(model.category||'')==='Props'     ?'selected':''}>Props (independent — tables, chairs, plants)</option>
+        <option value="Accessory"  ${(model.category||'')==='Accessory' ?'selected':''}>Accessory (socket-only — hidden from catalog)</option>
+        <option value="custom"     ${!['QuickZip','SEG','Props','Accessory',''].includes(model.category||'')?'selected':''}>Custom...</option>
+      </select>
+      <input id="de-cat-custom" placeholder="Custom category name"
+        value="${!['QuickZip','SEG','Props','Accessory',''].includes(model.category||'')?model.category||'':''}"
+        style="margin-top:6px;display:${!['QuickZip','SEG','Props','Accessory',''].includes(model.category||'')?'block':'none'}">
+      <div class="help">Props = draggable to floor, shown in catalog. Accessory = socket-only, hidden from catalog.</div>
+    </div>
+    <div class="field"><label>File URL (public URL of the GLB)</label>
+      <input id="de-file" value="${model.file||''}" placeholder="https://...">
+      <div class="help">${model._localPath?'Local: '+model._localPath:''}</div>
+    </div>
+    <div class="row">
+      <div class="field"><label>Width (m)</label><input id="de-w" type="number" step="0.1" min="0" value="${model.w||1}"></div>
+      <div class="field"><label>Depth (m)</label><input id="de-d" type="number" step="0.1" min="0" value="${model.d||0.5}"></div>
+      <div class="field"><label>Height (m)</label><input id="de-h" type="number" step="0.1" min="0" value="${model.h||2}"></div>
+    </div>
+    <div class="field"><label>Price USD (optional)</label>
+      <input id="de-price" type="number" min="0" value="${model.price||''}" placeholder="Leave empty to hide"></div>
+    <div class="field"><label>Base color</label>
+      <div class="color-row">
+        <input type="color" id="de-cpick" value="${model.color||'#cccccc'}"
+          oninput="document.getElementById('de-ctxt').value=this.value">
+        <input type="text"  id="de-ctxt"  value="${model.color||'#cccccc'}"
+          oninput="document.getElementById('de-cpick').value=this.value">
+      </div>
+    </div>
+    <div class="field">
+      <label><input type="checkbox" id="de-paint" ${model.paintable!==false?'checked':''}>
+        Paintable (has <code>paint_color</code> material in Blender)</label>
+    </div>
+    <hr class="divider">
+    <div class="card-hdr">
+      <div class="card-title">Sockets & Accessories</div>
+      <button class="btn btn-secondary btn-sm" onclick="addSocket_('${id}')">+ Add</button>
+    </div>
+    <div id="de-sockets">
+      ${(model.sockets||[]).map((s,i)=>socketCard(id,s,i,accs)).join('')}
+    </div>
+  `;
+  App.drawerSaveFn = () => saveModelDrawer(id);
+  openDrawer();
+}
+
+function socketCard(modelId, s, i, accs) {
+  return `
+    <div class="socket-card">
+      <div class="socket-hdr">
+        <span style="font-size:12px;font-weight:600;">Socket ${i+1}</span>
+        <button class="btn-icon" onclick="removeSocket_('${modelId}',${i})">🗑</button>
+      </div>
+      <div class="row">
+        <div class="field"><label>Socket name (from Blender)</label>
+          <input value="${s.name||''}" oninput="updateSocket_('${modelId}',${i},'name',this.value)" placeholder="socket_lamp"></div>
+        <div class="field"><label>Behavior</label>
+          <select onchange="updateSocket_('${modelId}',${i},'behavior',this.value)">
+            <option ${s.behavior==='fixed'?'selected':''}>fixed</option>
+            <option ${s.behavior==='distribute'?'selected':''}>distribute</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="field"><label>Label (shown in UI)</label>
+          <input value="${s.label||''}" oninput="updateSocket_('${modelId}',${i},'label',this.value)"></div>
+        <div class="field"><label>Accessory</label>
+          <select onchange="updateSocket_('${modelId}',${i},'accessoryId',this.value)">
+            <option value="">— none —</option>
+            ${accs.map(a=>`<option value="${a.id}" ${s.accessoryId===a.id?'selected':''}>${a.name||a.id}</option>`).join('')}
+          </select>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function updateSocket_(modelId, i, field, value) {
+  const m = App.manifests[App.current];
+  const model = (m.models||[]).find(x=>x.id===modelId);
+  if (model && model.sockets[i]) { model.sockets[i][field]=value; persist(); }
+}
+
+function addSocket_(modelId) {
+  const m = App.manifests[App.current];
+  const model = (m.models||[]).find(x=>x.id===modelId);
+  if (!model) return;
+  model.sockets = model.sockets||[];
+  model.sockets.push({name:'socket_lamp',behavior:'fixed',label:'Lamp',accessoryId:''});
+  persist(); editModel(modelId);
+}
+
+function removeSocket_(modelId, i) {
+  const m = App.manifests[App.current];
+  const model = (m.models||[]).find(x=>x.id===modelId);
+  if (!model) return;
+  model.sockets.splice(i,1);
+  persist(); editModel(modelId);
+}
+
+function saveModelDrawer(id) {
+  const m = App.manifests[App.current];
+  const model = (m.models||[]).find(x=>x.id===id);
+  if (!model) return;
+  model.id       = document.getElementById('de-id').value.trim()||id;
+  model.name     = document.getElementById('de-name').value.trim();
+  const catSel = document.getElementById('de-cat').value;
+  model.category = catSel === 'custom'
+    ? (document.getElementById('de-cat-custom').value.trim() || 'Other')
+    : catSel;
+  model.file     = document.getElementById('de-file').value.trim();
+  model.w        = parseFloat(document.getElementById('de-w').value)||1;
+  model.d        = parseFloat(document.getElementById('de-d').value)||0.5;
+  model.h        = parseFloat(document.getElementById('de-h').value)||2;
+  model.price    = parseFloat(document.getElementById('de-price').value)||null;
+  model.color    = document.getElementById('de-ctxt').value||'#cccccc';
+  model.paintable= document.getElementById('de-paint').checked;
+  persist(); closeDrawer(); renderEditor();
+}
+
+// ── Accessories ───────────────────────────────────────────────
+function renderAccessories() {
+  const m = App.manifests[App.current];
+  const el = document.getElementById('page-accessories');
+  const accs = m.accessories||[];
+  el.innerHTML = `
+    <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;">
+      <button class="btn btn-secondary btn-sm" onclick="addAccManual()">+ Add manually</button>
+      <button class="btn btn-secondary btn-sm" onclick="scanAccessories()">🔍 Scan folder</button>
+    </div>
+    <div class="help" style="margin-bottom:12px;">Accessories are GLBs placed on socket_* empties in Blender.</div>
+    ${accs.length===0?'<div class="empty">No accessories yet.</div>':''}
+    <div class="model-list">
+      ${accs.map(acc=>`
+        <div class="model-item ${acc.included?'included':''}">
+          <input type="checkbox" ${acc.included?'checked':''} onchange="toggleItem('accessories','${acc.id}',this.checked)">
+          <div class="model-thumb">🔩</div>
+          <div class="model-info">
+            <div class="model-name">${acc.name||acc.id}</div>
+            <div class="model-meta">
+              <span class="tag tag-sock">${acc.behavior||'fixed'}</span>
+              ${acc.label?`<span style="margin-left:4px;">${acc.label}</span>`:''}
+            </div>
+          </div>
+          <div class="model-actions">
+            <button class="btn btn-secondary btn-sm" onclick="editAccessory('${acc.id}')">Edit</button>
+            <button class="btn-icon" onclick="removeItem('accessories','${acc.id}')">🗑</button>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function addAccManual() {
+  const m = App.manifests[App.current];
+  m.accessories = m.accessories||[];
+  const id = 'acc_'+Date.now();
+  m.accessories.push({id, name:'New Accessory', file:'', behavior:'fixed', label:'', included:true});
+  persist(); renderEditor(); editAccessory(id);
+}
+
+async function scanAccessories() {
+  const glbs = Object.values(App.files).filter(f=>f.type==='glb');
+  const keyword = prompt('Keyword to identify accessory files (e.g. "acc", "shelf", "lamp"):','acc');
+  if (!keyword) return;
+  const m = App.manifests[App.current];
+  m.accessories = m.accessories||[];
+  const existing = new Set(m.accessories.map(x=>x._localPath));
+  let added = 0;
+  glbs.filter(f=>f.name.toLowerCase().includes(keyword.toLowerCase())).forEach(f=>{
+    if (existing.has(f.path)) return;
+    const id = 'acc_'+f.name.replace('.glb','').replace(/[^a-z0-9]/gi,'_').toLowerCase();
+    m.accessories.push({id, name:f.name.replace('.glb','').replace(/[_-]/g,' '),
+      _localPath:f.path, file:'[SET URL]', behavior:'fixed', label:f.name.replace('.glb',''), included:true});
+    added++;
+  });
+  persist(); renderEditor();
+  showEditorMsg(`Added ${added} accessories.`, 'ok');
+}
+
+function editAccessory(id) {
+  const m = App.manifests[App.current];
+  const acc = (m.accessories||[]).find(x=>x.id===id);
+  if (!acc) return;
+  document.getElementById('drawer-title').textContent = '✏ Edit Accessory';
+  document.getElementById('drawer-body').innerHTML = `
+    <div class="field"><label>ID</label><input id="da-id" value="${acc.id}"></div>
+    <div class="field"><label>Name</label><input id="da-name" value="${acc.name||''}"></div>
+    <div class="field"><label>File URL (public URL of the GLB)</label>
+      <input id="da-file" value="${acc.file||''}" placeholder="https://...">
+      <div class="help">${acc._localPath?'Local: '+acc._localPath:''}</div>
+    </div>
+    <div class="field"><label>Label (shown in UI)</label><input id="da-label" value="${acc.label||''}"></div>
+    <div class="field"><label>Behavior</label>
+      <select id="da-behavior">
+        <option ${acc.behavior==='fixed'?'selected':''}>fixed</option>
+        <option ${acc.behavior==='distribute'?'selected':''}>distribute</option>
+      </select>
+    </div>
+    <div class="field"><label>Max count (distribute only)</label>
+      <input id="da-max" type="number" min="1" value="${acc.max||5}"></div>
+  `;
+  App.drawerSaveFn = () => {
+    acc.id       = document.getElementById('da-id').value.trim()||id;
+    acc.name     = document.getElementById('da-name').value.trim();
+    acc.file     = document.getElementById('da-file').value.trim();
+    acc.label    = document.getElementById('da-label').value.trim();
+    acc.behavior = document.getElementById('da-behavior').value;
+    acc.max      = parseInt(document.getElementById('da-max').value)||5;
+    persist(); closeDrawer(); renderEditor();
+  };
+  openDrawer();
+}
+
+// ── Presets ───────────────────────────────────────────────────
+function renderPresets() {
+  const m = App.manifests[App.current];
+  const el = document.getElementById('page-presets');
+  const presets = m.presets||[];
+  el.innerHTML = `
+    <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;">
+      <button class="btn btn-secondary btn-sm" onclick="importPresetFile()">📂 Import Booth Planner JSON</button>
+      <button class="btn btn-secondary btn-sm" onclick="scanPresets()">🔍 Scan folder for JSONs</button>
+    </div>
+    <div class="help" style="margin-bottom:12px;">Save a design in Booth Planner, then import that JSON here.</div>
+    ${presets.length===0?'<div class="empty">No presets yet.</div>':''}
+    ${presets.map(p=>`
+      <div class="preset-item">
+        <input type="checkbox" ${p.included?'checked':''} onchange="toggleItem('presets','${p.id}',this.checked)">
+        <div class="preset-info">
+          <div class="preset-name">${p.name||p.id}</div>
+          <div class="preset-meta">${(p.items||[]).length} items · ${p.description||'No description'}</div>
+        </div>
+        <div style="display:flex;gap:4px;">
+          <button class="btn btn-secondary btn-sm" onclick="editPreset('${p.id}')">Edit</button>
+          <button class="btn-icon" onclick="removeItem('presets','${p.id}')">🗑</button>
+        </div>
+      </div>
+    `).join('')}
+  `;
+}
+
+function importPresetFile() {
+  const input = document.createElement('input');
+  input.type = 'file'; input.accept = '.json'; input.multiple = true;
+  input.onchange = async e => {
+    const m = App.manifests[App.current];
+    m.presets = m.presets||[];
+    let added = 0;
+    for (const file of e.target.files) {
+      try {
+        const data = JSON.parse(await file.text());
+        const items = extractItems(data);
+        const name  = file.name.replace('.json','');
+        const id    = 'preset_'+name.replace(/[^a-z0-9]/gi,'_').toLowerCase()+'_'+Date.now();
+        m.presets.push({
+          id, name: name.replace(/[_-]/g,' '),
+          description: '', sizes: [], included: true,
+          items,
+        });
+        added++;
+      } catch(err) { console.warn('Failed to parse', file.name, err); }
+    }
+    persist(); renderEditor();
+    showEditorMsg(`Imported ${added} preset(s).`, 'ok');
+  };
+  input.click();
+}
+
+async function scanPresets() {
+  const jsons = Object.values(App.files).filter(f=>f.type==='json'&&!f.name.includes('manifest')&&!f.name.includes('package'));
+  if (jsons.length===0) { showEditorMsg('No JSON files found.', 'err'); return; }
+  const m = App.manifests[App.current];
+  m.presets = m.presets||[];
+  const existing = new Set(m.presets.map(x=>x._localPath));
+  let added = 0;
+  for (const f of jsons) {
+    if (existing.has(f.path)) continue;
+    try {
+      const txt  = await f.handle.getFile().then(f=>f.text());
+      const data = JSON.parse(txt);
+      const items = extractItems(data);
+      if (!items.length) continue;
+      const id = 'preset_'+f.name.replace('.json','').replace(/[^a-z0-9]/gi,'_').toLowerCase();
+      m.presets.push({
+        id, name: f.name.replace('.json','').replace(/[_-]/g,' '),
+        description: '', sizes: [], included: true, _localPath: f.path, items,
+      });
+      added++;
+    } catch {}
+  }
+  persist(); renderEditor();
+  showEditorMsg(`Added ${added} presets.`, 'ok');
+}
+
+function extractItems(data) {
+  // Support Booth Planner format (items) and Moduluxe format (sceneItems)
+  const raw = data.items || data.sceneItems || [];
+  return raw
+    .filter(i => i.modelId || i.catalogId)
+    .filter(i => !i.isArrayClone)
+    .map(i => ({
+      modelId: i.modelId || i.catalogId,
+      x: +(i.x||0).toFixed(3),
+      z: +(i.z||0).toFixed(3),
+      rotY: +(i.rotY||0).toFixed(4),
+      color: i.color || null,
+    }));
+}
+
+function editPreset(id) {
+  const m = App.manifests[App.current];
+  const p = (m.presets||[]).find(x=>x.id===id);
+  if (!p) return;
+  document.getElementById('drawer-title').textContent = '✏ Edit Preset';
+  document.getElementById('drawer-body').innerHTML = `
+    <div class="field"><label>ID</label><input id="dp-id" value="${p.id}"></div>
+    <div class="field"><label>Name</label><input id="dp-name" value="${p.name||''}"></div>
+    <div class="field"><label>Description</label><textarea id="dp-desc">${p.description||''}</textarea></div>
+    <div class="field"><label>Compatible sizes (comma separated)</label>
+      <input id="dp-sizes" value="${(p.sizes||[]).join(', ')}" placeholder="10x10 ft, 10x20 ft"></div>
+    <div class="field"><label>Thumbnail URL (optional)</label>
+      <input id="dp-thumb" value="${p.thumbnail||''}" placeholder="https://..."></div>
+    <div style="margin-top:8px;padding:10px;background:var(--bg);border-radius:var(--r);font-size:11px;color:var(--muted);">
+      ${(p.items||[]).length} scene items · ${p._localPath?'Local: '+p._localPath:''}
+    </div>
+  `;
+  App.drawerSaveFn = () => {
+    p.id          = document.getElementById('dp-id').value.trim()||id;
+    p.name        = document.getElementById('dp-name').value.trim();
+    p.description = document.getElementById('dp-desc').value.trim();
+    p.sizes       = document.getElementById('dp-sizes').value.split(',').map(s=>s.trim()).filter(Boolean);
+    p.thumbnail   = document.getElementById('dp-thumb').value.trim();
+    persist(); closeDrawer(); renderEditor();
+  };
+  openDrawer();
+}
+
+// ── Import existing manifest ───────────────────────────────────
+function importManifestFile() {
+  const input = document.createElement('input');
+  input.type = 'file'; input.accept = '.json';
+  input.onchange = async e => {
+    const file = e.target.files[0];
+    if (!file) return;
+    try {
+      const data = JSON.parse(await file.text());
+      const arr  = Array.isArray(data) ? data : data.models || [];
+      const m    = App.manifests[App.current];
+      // Merge models
+      arr.filter(x=>x.type!=='preset').forEach(item => {
+        m.models = m.models||[];
+        if (!m.models.find(x=>x.id===item.id)) {
+          m.models.push({ ...item, included: true,
+            sockets: (item.sockets||[]).map(s=>({...s, accessoryId:''})) });
+        }
+      });
+      // Merge presets
+      arr.filter(x=>x.type==='preset').forEach(item => {
+        m.presets = m.presets||[];
+        if (!m.presets.find(x=>x.id===item.id)) m.presets.push({...item, included:true});
+      });
+      persist(); renderEditor();
+      showEditorMsg('Manifest imported.', 'ok');
+    } catch(e) { showEditorMsg('Failed to parse: '+e.message, 'err'); }
+  };
+  input.click();
+}
+
+// ── Export ────────────────────────────────────────────────────
+function exportManifest() {
+  if (!App.current) { alert('No manifest selected'); return; }
+  const m    = App.manifests[App.current];
+  const output = buildOutput(m);
+  const json   = JSON.stringify(output, null, 2);
+  const blob   = new Blob([json], {type:'application/json'});
+  const url    = URL.createObjectURL(blob);
+  const a      = document.createElement('a');
+  a.href = url; a.download = `${App.current}.json`; a.click();
+  URL.revokeObjectURL(url);
+}
+
+function buildOutput(m) {
+  const accsMap = Object.fromEntries((m.accessories||[]).map(a=>[a.id,a]));
+  const models = (m.models||[]).filter(x=>x.included).map(x => {
+    const {included, _localPath, ...rest} = x;
+    const sockets = (x.sockets||[]).map(s => {
+      const {accessoryId, ...sRest} = s;
+      const acc = accsMap[accessoryId];
+      return acc ? {...sRest, accessoryFile: acc.file} : sRest;
+    });
+    return {...rest, sockets};
+  });
+  const presets = (m.presets||[]).filter(x=>x.included).map(x => {
+    const {included, _localPath, ...rest} = x;
+    return {...rest, type:'preset'};
+  });
+  return [...models, ...presets];
+}
+
+// ── Drawer ────────────────────────────────────────────────────
+function openDrawer()  { document.getElementById('drawer').classList.add('open'); }
+function closeDrawer() { document.getElementById('drawer').classList.remove('open'); }
+function drawerSave()  { if (App.drawerSaveFn) App.drawerSaveFn(); }
+
+// ── Messages ──────────────────────────────────────────────────
+function showEditorMsg(msg, type) {
+  const el = document.getElementById('editor-msg');
+  if (!el) return;
+  el.innerHTML = `<div class="msg msg-${type==='ok'?'ok':'err'}">${msg}</div>`;
+  setTimeout(()=>{ if(el) el.innerHTML=''; }, 3000);
+}
+
+function showMsg(msg, type) { showEditorMsg(msg, type); }
+
+// ── Init ──────────────────────────────────────────────────────
+window.onload = () => {
+  renderTabs();
+  const first = Object.keys(App.manifests)[0];
+  if (first) selectManifest(first);
+};
+</script>
+</body>
+</html>
