@@ -12,25 +12,25 @@
     "paintable": true,
     "sockets": [
       {
-        "name": "socket_lamp.008",
+        "name": "socket_lamp",
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
       },
       {
-        "name": "socket_lamp.005",
+        "name": "socket_lamp",
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
       },
       {
-        "name": "socket_lamp.006",
+        "name": "socket_lamp",
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
       },
       {
-        "name": "socket_lamp.007",
+        "name": "socket_lamp",
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
@@ -42,8 +42,8 @@
     "name": "Counter Small",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Counter%20Small.glb",
     "category": "Counters",
-    "w": 0.724,
-    "d": 0.439,
+    "w": 0.7239,
+    "d": 0.4389,
     "h": 1.003,
     "color": "#f0900a",
     "price": 900,
@@ -63,13 +63,13 @@
     "paintable": true,
     "sockets": [
       {
-        "name": "socket_lamp.002",
+        "name": "socket_lamp",
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
       },
       {
-        "name": "socket_shelf.001",
+        "name": "socket_shelf",
         "behavior": "distribute",
         "label": "Shelves",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/acc_Shelf.glb"
@@ -108,15 +108,15 @@
     "name": "19 Wall Panel",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Standard%2019.glb",
     "category": "Panels",
-    "w": 0.483,
-    "d": 0.041,
-    "h": 2.362,
+    "w": 0.4831,
+    "d": 0.0409,
+    "h": 2.3619,
     "color": "#47a7f0",
     "price": 1500,
     "paintable": true,
     "sockets": [
       {
-        "name": "socket_lamp.003",
+        "name": "socket_lamp",
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
@@ -142,14 +142,14 @@
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Standard%209.5.glb",
     "category": "Panels",
     "w": 1,
-    "d": 0.5,
+    "d": 0.5001,
     "h": 2,
     "color": "#47a7f0",
     "price": 1000,
     "paintable": true,
     "sockets": [
       {
-        "name": "socket_lamp.004",
+        "name": "socket_lamp",
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
