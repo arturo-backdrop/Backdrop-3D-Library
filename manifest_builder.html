@@ -521,6 +521,10 @@ function editModel(id) {
       <label><input type="checkbox" id="de-paint" ${model.paintable!==false?'checked':''}>
         Paintable (has <code>paint_color</code> material in Blender)</label>
     </div>
+    <div class="field"><label>Thumbnail URL (optional — shown in sidebar)</label>
+      <input id="de-thumb" value="${model.thumbnail||''}" placeholder="https://..."
+        onblur="this.value=toRawUrl(this.value)">
+    </div>
     <hr class="divider">
     <div class="card-hdr">
       <div class="card-title">Sockets & Accessories</div>
@@ -608,6 +612,8 @@ function saveModelDrawer(id) {
   model.price    = parseFloat(document.getElementById('de-price').value)||null;
   model.color    = document.getElementById('de-ctxt').value||'#cccccc';
   model.paintable= document.getElementById('de-paint').checked;
+  const thumbVal = toRawUrl(document.getElementById('de-thumb').value);
+  if (thumbVal) model.thumbnail = thumbVal; else delete model.thumbnail;
   persist(); closeDrawer(); renderEditor();
 }
 
