@@ -35,7 +35,8 @@
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/21b1714804a5b79e098119f3966f8d233cd255c7/thumbnails/Moduluxe/Closet%2038.png"
   },
   {
     "id": "counter_small_glb",
@@ -48,7 +49,8 @@
     "color": "#f0900a",
     "price": 900,
     "paintable": true,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/21b1714804a5b79e098119f3966f8d233cd255c7/thumbnails/Moduluxe/Counter%20Small.png"
   },
   {
     "id": "38_custom_printed_wall_panel_glb",
@@ -75,7 +77,7 @@
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/acc_Shelf.glb"
       }
     ],
-    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/89a348cc6f8a8e0eed31cf41d3da695383d54a2a/thumbnails/Moduluxe/38%20Wall%20Panel.png"
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/21b1714804a5b79e098119f3966f8d233cd255c7/thumbnails/Moduluxe/38%20Wall%20Panel.png"
   },
   {
     "id": "counter_medium_glb",
@@ -83,25 +85,27 @@
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Counter%20Medium.glb",
     "category": "Counters",
     "w": 1.204,
-    "d": 0.439,
+    "d": 0.4389,
     "h": 1.003,
     "color": "#f0900a",
     "price": 1500,
     "paintable": true,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/21b1714804a5b79e098119f3966f8d233cd255c7/thumbnails/Moduluxe/Counter%20Medium.png"
   },
   {
     "id": "standard_38_half_height_glb",
     "name": "38 Wall Panel - half height",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Standard%2038%20half-height.glb",
     "category": "Panels",
-    "w": 0.965,
-    "d": 0.041,
-    "h": 1.181,
+    "w": 0.9649,
+    "d": 0.0409,
+    "h": 1.1811,
     "color": "#47a7f0",
     "price": 1000,
     "paintable": true,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/21b1714804a5b79e098119f3966f8d233cd255c7/thumbnails/Moduluxe/Standard%2038%20half-height.png"
   },
   {
     "id": "standard_19_glb",
@@ -121,20 +125,22 @@
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/21b1714804a5b79e098119f3966f8d233cd255c7/thumbnails/Moduluxe/Standard%2019.png"
   },
   {
     "id": "woodline_archway_glb",
     "name": "Woodline Archway",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/backdrops/Moduluxe/Woodline%20Archway.glb",
     "category": "Special modules",
-    "w": 0.965,
+    "w": 0.9649,
     "d": 2.159,
-    "h": 2.362,
+    "h": 2.3619,
     "color": "#cccccc",
     "price": 2300,
     "paintable": false,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/21b1714804a5b79e098119f3966f8d233cd255c7/thumbnails/Moduluxe/Woodline%20Archway.png"
   },
   {
     "id": "standard_9_5_glb",
@@ -154,6 +160,7 @@
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb"
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/21b1714804a5b79e098119f3966f8d233cd255c7/thumbnails/Moduluxe/Standard%209.5.png"
   }
 ]
