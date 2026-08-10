@@ -16,28 +16,32 @@
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb",
-        "max": 4
+        "max": 4,
+        "price": 100
       },
       {
         "name": "socket_lamp",
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb",
-        "max": 4
+        "max": 4,
+        "price": 100
       },
       {
         "name": "socket_lamp",
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb",
-        "max": 4
+        "max": 4,
+        "price": 100
       },
       {
         "name": "socket_lamp",
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb",
-        "max": 4
+        "max": 4,
+        "price": 100
       }
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/21b1714804a5b79e098119f3966f8d233cd255c7/thumbnails/Moduluxe/Closet%2038.png"
@@ -73,14 +77,16 @@
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb",
-        "max": 4
+        "max": 4,
+        "price": 100
       },
       {
         "name": "socket_shelf",
         "behavior": "distribute",
         "label": "Shelves",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/acc_Shelf.glb",
-        "max": 4
+        "max": 4,
+        "price": 100
       }
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/21b1714804a5b79e098119f3966f8d233cd255c7/thumbnails/Moduluxe/38%20Wall%20Panel.png"
@@ -130,7 +136,8 @@
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb",
-        "max": 4
+        "max": 4,
+        "price": 100
       }
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/21b1714804a5b79e098119f3966f8d233cd255c7/thumbnails/Moduluxe/Standard%2019.png"
@@ -166,7 +173,8 @@
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb",
-        "max": 4
+        "max": 4,
+        "price": 100
       }
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/21b1714804a5b79e098119f3966f8d233cd255c7/thumbnails/Moduluxe/Standard%209.5.png"
