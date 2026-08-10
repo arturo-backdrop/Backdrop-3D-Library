@@ -700,6 +700,8 @@ function editAccessory(id) {
     </div>
     <div class="field"><label>Max count (distribute only)</label>
       <input id="da-max" type="number" min="1" value="${acc.max||5}"></div>
+    <div class="field"><label>Price (per unit)</label>
+      <input id="da-price" type="number" min="0" value="${acc.price||''}" placeholder="Leave empty to hide"></div>
   `;
   App.drawerSaveFn = () => {
     acc.id       = document.getElementById('da-id').value.trim()||id;
@@ -708,6 +710,7 @@ function editAccessory(id) {
     acc.label    = document.getElementById('da-label').value.trim();
     acc.behavior = document.getElementById('da-behavior').value;
     acc.max      = parseInt(document.getElementById('da-max').value)||5;
+    acc.price    = parseFloat(document.getElementById('da-price').value)||null;
     persist(); closeDrawer(); renderEditor();
   };
   openDrawer();
@@ -888,7 +891,7 @@ function buildOutput(m) {
     const sockets = (x.sockets||[]).map(s => {
       const {accessoryId, ...sRest} = s;
       const acc = accsMap[accessoryId];
-      return acc ? {...sRest, accessoryFile: acc.file, ...(acc.max ? {max: acc.max} : {})} : sRest;
+      return acc ? {...sRest, accessoryFile: acc.file, ...(acc.max ? {max: acc.max} : {}), ...(acc.price ? {price: acc.price} : {})} : sRest;
     });
     return {...rest, sockets};
   });
