@@ -4,15 +4,15 @@
     "name": "Closet 38",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/cd9731d6362b792d17f4ab7c382b052a6fbfad71/models/backdrops/Moduluxe/Closet%2038.glb",
     "category": "Panels",
-    "w": 0.9649,
-    "d": 1.0409,
-    "h": 2.3619,
+    "w": 0.965,
+    "d": 1.041,
+    "h": 2.362,
     "color": "#5250f7",
     "price": 8000,
     "paintable": true,
     "sockets": [
       {
-        "name": "socket_lamp",
+        "name": "socket_lamp.005",
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb",
@@ -20,7 +20,7 @@
         "price": 100
       },
       {
-        "name": "socket_lamp",
+        "name": "socket_lamp.006",
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb",
@@ -28,7 +28,7 @@
         "price": 100
       },
       {
-        "name": "socket_lamp",
+        "name": "socket_lamp.007",
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb",
@@ -36,7 +36,7 @@
         "price": 100
       },
       {
-        "name": "socket_lamp",
+        "name": "socket_lamp.008",
         "behavior": "fixed",
         "label": "Lamp",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/26fc9326588d9741b0365a61833de39d7667e6e6/models/accesories/Lamp%20Moduluxe.glb",
