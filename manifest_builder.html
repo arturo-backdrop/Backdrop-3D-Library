@@ -903,23 +903,25 @@ function buildOutput(m) {
 }
 
 // ── Drawer ────────────────────────────────────────────────────
-// Convert any GitHub URL to raw.githubusercontent.com format
+// Convert any GitHub URL to raw.githubusercontent.com format, always using /main/
 function toRawUrl(url) {
   if (!url) return url;
   url = url.trim();
-  // Already raw
-  if (url.startsWith('https://raw.githubusercontent.com')) return url;
-  // github.com/USER/REPO/blob/BRANCH/PATH  →  raw.githubusercontent.com/USER/REPO/BRANCH/PATH
+  // Already raw — replace any commit hash with main
+  if (url.startsWith('https://raw.githubusercontent.com')) {
+    return url.replace(/\/([a-f0-9]{40})\//, '/main/');
+  }
+  // github.com/USER/REPO/blob/BRANCH_OR_HASH/PATH  →  raw.githubusercontent.com/USER/REPO/main/PATH
   const blobMatch = url.match(/^https?:\/\/github\.com\/([^/]+)\/([^/]+)\/blob\/([^/]+)\/(.+)$/);
   if (blobMatch) {
-    const [, user, repo, branch, path] = blobMatch;
-    return `https://raw.githubusercontent.com/${user}/${repo}/${branch}/${path}`;
+    const [, user, repo, , path] = blobMatch;
+    return `https://raw.githubusercontent.com/${user}/${repo}/main/${path}`;
   }
-  // github.com/USER/REPO/raw/BRANCH/PATH  →  raw.githubusercontent.com/...
+  // github.com/USER/REPO/raw/BRANCH_OR_HASH/PATH  →  raw.githubusercontent.com/USER/REPO/main/PATH
   const rawMatch = url.match(/^https?:\/\/github\.com\/([^/]+)\/([^/]+)\/raw\/([^/]+)\/(.+)$/);
   if (rawMatch) {
-    const [, user, repo, branch, path] = rawMatch;
-    return `https://raw.githubusercontent.com/${user}/${repo}/${branch}/${path}`;
+    const [, user, repo, , path] = rawMatch;
+    return `https://raw.githubusercontent.com/${user}/${repo}/main/${path}`;
   }
   return url;
 }
@@ -1034,3 +1036,4 @@ window.onload = () => {
 </script>
 </body>
 </html>
+
