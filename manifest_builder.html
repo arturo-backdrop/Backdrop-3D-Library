@@ -888,7 +888,7 @@ function buildOutput(m) {
     const sockets = (x.sockets||[]).map(s => {
       const {accessoryId, ...sRest} = s;
       const acc = accsMap[accessoryId];
-      return acc ? {...sRest, accessoryFile: acc.file} : sRest;
+      return acc ? {...sRest, accessoryFile: acc.file, ...(acc.max ? {max: acc.max} : {})} : sRest;
     });
     return {...rest, sockets};
   });
