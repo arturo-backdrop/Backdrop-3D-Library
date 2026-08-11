@@ -1,0 +1,118 @@
+{
+  "version": 2,
+  "name": "The Onyx",
+  "savedAt": "2026-08-11T18:05:59.611Z",
+  "manifestUrl": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/dev/models/manifest.json",
+  "unit": "ft",
+  "floorW": 3.048,
+  "floorD": 3.048,
+  "floorColor": "#878787",
+  "floorPlan": null,
+  "items": [
+    {
+      "uid": "38_custom_printed_wall_panel_glb_1786468513304_br30",
+      "kind": "model",
+      "x": 0.033834584606305035,
+      "z": -1.2918212357548937,
+      "rotY": 0,
+      "color": "#6a47f0",
+      "sockets": {
+        "socket_lamp": true,
+        "socket_shelf": {
+          "enabled": false,
+          "count": 4,
+          "spacing": 0.3,
+          "baseHeight": 0.3
+        },
+        "socket_lamp.002": true
+      },
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": 0.033834584606305035,
+      "pivotZ": -1.2918212357548937,
+      "groupIds": [],
+      "modelId": "38_custom_printed_wall_panel_glb",
+      "catalogId": "38_custom_printed_wall_panel_glb"
+    },
+    {
+      "uid": "38_custom_printed_wall_panel_glb_1786468565791_click",
+      "kind": "model",
+      "x": 1.0027977904206666,
+      "z": -1.2918212357548937,
+      "rotY": 0,
+      "color": "#6a47f0",
+      "sockets": {
+        "socket_lamp": true,
+        "socket_shelf": {
+          "enabled": false,
+          "count": 4,
+          "spacing": 0.3,
+          "baseHeight": 0.3
+        },
+        "socket_lamp.002": true,
+        "socket_shelf.001": {
+          "enabled": true,
+          "count": 3,
+          "spacing": 0.3,
+          "baseHeight": 0.015240000000000002
+        }
+      },
+      "groupIds": [],
+      "pivotX": 0.033834584606305035,
+      "pivotZ": -1.2918212357548937,
+      "modelId": "38_custom_printed_wall_panel_glb",
+      "catalogId": "38_custom_printed_wall_panel_glb"
+    },
+    {
+      "uid": "counter_medium_glb_1786468604529_f6m0",
+      "kind": "model",
+      "x": 0.7172643655835057,
+      "z": 1.0231382313311073,
+      "rotY": 0,
+      "color": "#0a6ef0",
+      "sockets": {},
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "counter_medium_glb",
+      "groupIds": [],
+      "catalogId": "counter_medium_glb"
+    },
+    {
+      "uid": "closet_38_glb_1786470697118_mh66",
+      "kind": "model",
+      "x": -1.483585699532008,
+      "z": -0.8286826312834517,
+      "rotY": 1.5707963267948966,
+      "color": "#5250f7",
+      "sockets": {
+        "socket_lamp.005": false,
+        "socket_lamp.006": true,
+        "socket_lamp.007": false,
+        "socket_lamp.008": false,
+        "socket_shelf.002": {
+          "enabled": true,
+          "count": 1,
+          "spacing": 0.3,
+          "baseHeight": 0.3
+        }
+      },
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "closet_38_glb",
+      "groupIds": [],
+      "catalogId": "closet_38_glb"
+    }
+  ],
+  "walls": [],
+  "cameras": [],
+  "catalogColors": {},
+  "wallConfig": {
+    "height": 2.4,
+    "glassRatio": 0,
+    "thickness": 0.1,
+    "color": "#cccccc"
+  }
+}

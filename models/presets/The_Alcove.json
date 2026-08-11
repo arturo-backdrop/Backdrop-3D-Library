@@ -1,0 +1,173 @@
+{
+  "version": 2,
+  "name": "The Alcove",
+  "savedAt": "2026-08-11T18:16:23.166Z",
+  "manifestUrl": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/dev/models/manifest.json",
+  "unit": "ft",
+  "floorW": 6.096,
+  "floorD": 3.048,
+  "floorColor": "#878787",
+  "floorPlan": null,
+  "items": [
+    {
+      "uid": "closet_38_glb_1786472000398_mrmq",
+      "kind": "model",
+      "x": 2.5355479143751687,
+      "z": -1.445538364747464,
+      "rotY": 0,
+      "color": "#5250f7",
+      "sockets": {},
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "closet_38_glb",
+      "catalogId": "closet_38_glb"
+    },
+    {
+      "uid": "38_custom_printed_wall_panel_glb_1786472024907_f769",
+      "kind": "model",
+      "x": -2.306135192908209,
+      "z": -1.4442302253979395,
+      "rotY": 0,
+      "color": "#47a7f0",
+      "sockets": {
+        "socket_lamp.002": false
+      },
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "groupIds": [
+        "line_1786472027626"
+      ],
+      "pivotX": -2.306135192908209,
+      "pivotZ": -1.4442302253979395,
+      "modelId": "38_custom_printed_wall_panel_glb",
+      "catalogId": "38_custom_printed_wall_panel_glb"
+    },
+    {
+      "uid": "38_custom_printed_wall_panel_glb_1786472027626_click",
+      "kind": "model",
+      "x": -1.3371719870938472,
+      "z": -1.4442302253979395,
+      "rotY": 0,
+      "color": "#6a47f0",
+      "sockets": {
+        "socket_lamp.002": false
+      },
+      "groupIds": [
+        "line_1786472027626"
+      ],
+      "pivotX": -2.306135192908209,
+      "pivotZ": -1.4442302253979395,
+      "modelId": "38_custom_printed_wall_panel_glb",
+      "catalogId": "38_custom_printed_wall_panel_glb"
+    },
+    {
+      "uid": "38_custom_printed_wall_panel_glb_1786472028702_click",
+      "kind": "model",
+      "x": -0.36820878127948553,
+      "z": -1.4442302253979395,
+      "rotY": 0,
+      "color": "#47a7f0",
+      "sockets": {
+        "socket_lamp.002": false
+      },
+      "groupIds": [
+        "line_1786472027626"
+      ],
+      "pivotX": -2.306135192908209,
+      "pivotZ": -1.4442302253979395,
+      "modelId": "38_custom_printed_wall_panel_glb",
+      "catalogId": "38_custom_printed_wall_panel_glb"
+    },
+    {
+      "uid": "38_custom_printed_wall_panel_glb_1786472047809_click",
+      "kind": "model",
+      "x": 0.600754424534876,
+      "z": -1.4442302253979393,
+      "rotY": 0,
+      "color": "#6a47f0",
+      "sockets": {
+        "socket_lamp.002": false
+      },
+      "groupIds": [
+        "line_1786472027626"
+      ],
+      "pivotX": -2.306135192908209,
+      "pivotZ": -1.4442302253979395,
+      "modelId": "38_custom_printed_wall_panel_glb",
+      "catalogId": "38_custom_printed_wall_panel_glb"
+    },
+    {
+      "uid": "38_custom_printed_wall_panel_glb_1786472050504_click",
+      "kind": "model",
+      "x": 1.5697176303492375,
+      "z": -1.4442302253979393,
+      "rotY": 0,
+      "color": "#47a7f0",
+      "sockets": {
+        "socket_lamp.002": false
+      },
+      "groupIds": [
+        "line_1786472027626"
+      ],
+      "pivotX": -2.306135192908209,
+      "pivotZ": -1.4442302253979395,
+      "modelId": "38_custom_printed_wall_panel_glb",
+      "catalogId": "38_custom_printed_wall_panel_glb"
+    },
+    {
+      "uid": "woodline_archway_glb_1786472069555_yzdg",
+      "kind": "model",
+      "x": 2.068981969849216,
+      "z": -0.942880433403594,
+      "rotY": 4.71238898038469,
+      "color": "#cccccc",
+      "sockets": {},
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "woodline_archway_glb",
+      "catalogId": "woodline_archway_glb"
+    },
+    {
+      "uid": "standard_19_glb_1786472114099_a16b",
+      "kind": "model",
+      "x": -2.7666292674521378,
+      "z": -1.1754391752013595,
+      "rotY": 1.5707963267948966,
+      "color": "#47a7f0",
+      "sockets": {
+        "socket_lamp.003": false
+      },
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "standard_19_glb",
+      "catalogId": "standard_19_glb"
+    },
+    {
+      "uid": "counter_small_glb_1786472166193_rx49",
+      "kind": "model",
+      "x": -0.943888187299349,
+      "z": 0.8186752511424756,
+      "rotY": 0,
+      "color": "#f0900a",
+      "sockets": {},
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "counter_small_glb",
+      "catalogId": "counter_small_glb"
+    }
+  ],
+  "walls": [],
+  "cameras": [],
+  "catalogColors": {},
+  "wallConfig": {
+    "height": 2.4,
+    "glassRatio": 0,
+    "thickness": 0.1,
+    "color": "#cccccc"
+  }
+}

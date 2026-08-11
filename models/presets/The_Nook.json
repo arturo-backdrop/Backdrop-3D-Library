@@ -1,0 +1,146 @@
+{
+  "version": 2,
+  "name": "The Nook",
+  "savedAt": "2026-08-11T18:12:52.802Z",
+  "manifestUrl": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/dev/models/manifest.json",
+  "unit": "ft",
+  "floorW": 3.048,
+  "floorD": 3.048,
+  "floorColor": "#878787",
+  "floorPlan": null,
+  "items": [
+    {
+      "uid": "closet_38_glb_1786471603455_6jhb",
+      "kind": "model",
+      "x": 0.9205755524805366,
+      "z": -1.4456772245083547,
+      "rotY": 0,
+      "color": "#f04771",
+      "sockets": {},
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": 0.5257047934727368,
+      "pivotZ": -0.6442667291885749,
+      "groupIds": [
+        "group_1786471928325"
+      ],
+      "modelId": "closet_38_glb",
+      "catalogId": "closet_38_glb"
+    },
+    {
+      "uid": "38_custom_printed_wall_panel_glb_1786471622507_c0zc",
+      "kind": "model",
+      "x": -0.04526838941459199,
+      "z": -1.445147873964873,
+      "rotY": 0,
+      "color": "#f04771",
+      "sockets": {
+        "socket_shelf.001": {
+          "enabled": true,
+          "count": 1,
+          "spacing": 0.3,
+          "baseHeight": 0.3
+        },
+        "socket_lamp.002": true
+      },
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": 0.5257047934727368,
+      "pivotZ": -0.6442667291885749,
+      "groupIds": [
+        "group_1786471928325"
+      ],
+      "modelId": "38_custom_printed_wall_panel_glb",
+      "catalogId": "38_custom_printed_wall_panel_glb"
+    },
+    {
+      "uid": "standard_38_half_height_glb_1786471650072_pqt1",
+      "kind": "model",
+      "x": -1.0115751721559734,
+      "z": -1.4457922831934984,
+      "rotY": 0,
+      "color": "#f04771",
+      "sockets": {},
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": 0.5257047934727368,
+      "pivotZ": -0.6442667291885749,
+      "groupIds": [
+        "group_1786471928325"
+      ],
+      "modelId": "standard_38_half_height_glb",
+      "catalogId": "standard_38_half_height_glb"
+    },
+    {
+      "uid": "38_custom_printed_wall_panel_glb_1786471661979_nyvr",
+      "kind": "model",
+      "x": 1.382395988226856,
+      "z": 0.07316026495474515,
+      "rotY": -1.5707963267948961,
+      "color": "#f04771",
+      "sockets": {
+        "socket_lamp.002": true
+      },
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": 0.5257047934727368,
+      "pivotZ": -0.6442667291885749,
+      "groupIds": [
+        "group_1786471928325"
+      ],
+      "modelId": "38_custom_printed_wall_panel_glb",
+      "catalogId": "38_custom_printed_wall_panel_glb"
+    },
+    {
+      "uid": "38_custom_printed_wall_panel_glb_1786471689737_click",
+      "kind": "model",
+      "x": 1.3823959882268564,
+      "z": 1.042123470769107,
+      "rotY": -1.5707963267948961,
+      "color": "#f04771",
+      "sockets": {
+        "socket_lamp.002": false,
+        "socket_shelf.001": {
+          "enabled": true,
+          "count": 1,
+          "spacing": 0.3,
+          "baseHeight": 0.3
+        }
+      },
+      "groupIds": [
+        "group_1786471928325"
+      ],
+      "pivotX": 0.5257047934727368,
+      "pivotZ": -0.6442667291885749,
+      "modelId": "38_custom_printed_wall_panel_glb",
+      "catalogId": "38_custom_printed_wall_panel_glb"
+    },
+    {
+      "uid": "woodline_archway_glb_1786471778039_hnxf",
+      "kind": "model",
+      "x": 1.3813386716574063,
+      "z": 1.0616410406177397,
+      "rotY": 4.71238898038469,
+      "color": "#cccccc",
+      "sockets": {},
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "woodline_archway_glb",
+      "catalogId": "woodline_archway_glb"
+    }
+  ],
+  "walls": [],
+  "cameras": [],
+  "catalogColors": {},
+  "wallConfig": {
+    "height": 2.4,
+    "glassRatio": 0,
+    "thickness": 0.1,
+    "color": "#cccccc"
+  }
+}
