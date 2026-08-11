@@ -328,7 +328,8 @@ function renderEditor() {
         </div>
       </div>
       <div style="display:flex;gap:8px;">
-        <button class="btn btn-secondary btn-sm" onclick="importManifestFile()">↑ Import JSON</button>
+        <button class="btn btn-secondary btn-sm" onclick="importManifestFile(false)">↑ Import JSON</button>
+        <button class="btn btn-secondary btn-sm" onclick="importManifestFile(true)">⇄ Merge JSON</button>
         <button class="btn btn-primary btn-sm" onclick="exportManifest()">⬇ Export JSON</button>
       </div>
     </div>
@@ -841,7 +842,7 @@ function editPreset(id) {
 }
 
 // ── Import existing manifest ───────────────────────────────────
-function importManifestFile() {
+function importManifestFile(merge=false) {
   const input = document.createElement('input');
   input.type = 'file'; input.accept = '.json';
   input.onchange = async e => {
@@ -849,24 +850,62 @@ function importManifestFile() {
     if (!file) return;
     try {
       const data = JSON.parse(await file.text());
-      const arr  = Array.isArray(data) ? data : data.models || [];
-      const m    = App.manifests[App.current];
-      // Merge models
-      arr.filter(x=>x.type!=='preset').forEach(item => {
-        m.models = m.models||[];
-        if (!m.models.find(x=>x.id===item.id)) {
-          m.models.push({ ...item, included: true,
-            sockets: (item.sockets||[]).map(s=>({...s, accessoryId:''})) });
-        }
+      const m = App.manifests[App.current];
+
+      // Detect format: Moduluxe manifest (array or {models:[]}) or Booth Planner project ({items:[]})
+      let models = [], presets = [];
+
+      if (Array.isArray(data)) {
+        // Moduluxe manifest array format
+        models  = data.filter(x => x.type !== 'preset');
+        presets = data.filter(x => x.type === 'preset');
+      } else if (data.models) {
+        // Moduluxe manifest object format
+        models  = (data.models || []).filter(x => x.type !== 'preset');
+        presets = (data.models || []).filter(x => x.type === 'preset').concat(data.presets || []);
+      } else if (data.items) {
+        // Booth Planner project format — extract unique models by modelId/catalogId
+        const seen = new Set();
+        (data.items || []).forEach(it => {
+          const id = it.modelId || it.catalogId;
+          if (!id || seen.has(id)) return;
+          seen.add(id);
+          models.push({ id, name: it.name || id, category: it.kind || 'Models',
+            w: it.w || 1, d: it.d || 0.2, h: it.h || 2.4, color: it.color || '#cccccc' });
+        });
+      }
+
+      if (!merge) {
+        // Replace — clear current models and presets
+        m.models  = [];
+        m.presets = m.presets || [];
+      }
+
+      let addedModels = 0, skippedModels = 0, addedPresets = 0;
+
+      // Add models (skip duplicates by id)
+      models.forEach(item => {
+        m.models = m.models || [];
+        if (m.models.find(x => x.id === item.id)) { skippedModels++; return; }
+        m.models.push({ ...item, included: true,
+          sockets: (item.sockets || []).map(s => ({ ...s, accessoryId: '' })) });
+        addedModels++;
       });
-      // Merge presets
-      arr.filter(x=>x.type==='preset').forEach(item => {
-        m.presets = m.presets||[];
-        if (!m.presets.find(x=>x.id===item.id)) m.presets.push({...item, included:true});
+
+      // Add presets (skip duplicates by id)
+      presets.forEach(item => {
+        m.presets = m.presets || [];
+        if (m.presets.find(x => x.id === item.id)) return;
+        m.presets.push({ ...item, included: true });
+        addedPresets++;
       });
+
       persist(); renderEditor();
-      showEditorMsg('Manifest imported.', 'ok');
-    } catch(e) { showEditorMsg('Failed to parse: '+e.message, 'err'); }
+      const msg = merge
+        ? `Merged: +${addedModels} models, +${addedPresets} presets (${skippedModels} skipped — duplicate IDs)`
+        : `Imported: ${addedModels} models, ${addedPresets} presets`;
+      showEditorMsg(msg, 'ok');
+    } catch(err) { showEditorMsg('Failed to parse: ' + err.message, 'err'); }
   };
   input.click();
 }
