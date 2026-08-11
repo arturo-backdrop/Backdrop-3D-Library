@@ -883,12 +883,38 @@ function importManifestFile(merge=false) {
 
       let addedModels = 0, skippedModels = 0, addedPresets = 0;
 
+      // Extract accessories from model sockets
+      const accFilesFound = new Set();
+      models.forEach(item => {
+        (item.sockets || []).forEach(s => {
+          if (s.accessoryFile) accFilesFound.add(s.accessoryFile);
+        });
+      });
+
+      // Add accessories (skip duplicates by file URL)
+      let addedAccs = 0;
+      m.accessories = m.accessories || [];
+      accFilesFound.forEach(fileUrl => {
+        if (m.accessories.find(a => a.file === fileUrl)) return;
+        // Derive name from filename
+        const fileName = decodeURIComponent(fileUrl.split('/').pop().replace('.glb',''));
+        const accId = 'acc_' + fileName.toLowerCase().replace(/[^a-z0-9]/g,'_');
+        m.accessories.push({ id: accId, name: fileName, file: fileUrl, included: true });
+        addedAccs++;
+      });
+
       // Add models (skip duplicates by id)
       models.forEach(item => {
         m.models = m.models || [];
         if (m.models.find(x => x.id === item.id)) { skippedModels++; return; }
-        m.models.push({ ...item, included: true,
-          sockets: (item.sockets || []).map(s => ({ ...s, accessoryId: '' })) });
+        // Link socket accessoryId to matching accessory
+        const linkedSockets = (item.sockets || []).map(s => {
+          const acc = s.accessoryFile
+            ? m.accessories.find(a => a.file === s.accessoryFile)
+            : null;
+          return { ...s, accessoryId: acc ? acc.id : '' };
+        });
+        m.models.push({ ...item, included: true, sockets: linkedSockets });
         addedModels++;
       });
 
@@ -902,8 +928,8 @@ function importManifestFile(merge=false) {
 
       persist(); renderEditor();
       const msg = merge
-        ? `Merged: +${addedModels} models, +${addedPresets} presets (${skippedModels} skipped — duplicate IDs)`
-        : `Imported: ${addedModels} models, ${addedPresets} presets`;
+        ? `Merged: +${addedModels} models, +${addedAccs} accessories, +${addedPresets} presets (${skippedModels} skipped)`
+        : `Imported: ${addedModels} models, ${addedAccs} accessories, ${addedPresets} presets`;
       showEditorMsg(msg, 'ok');
     } catch(err) { showEditorMsg('Failed to parse: ' + err.message, 'err'); }
   };
