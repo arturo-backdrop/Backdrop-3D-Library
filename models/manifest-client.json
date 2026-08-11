@@ -178,5 +178,38 @@
       }
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Standard%209.5.png"
+  },
+  {
+    "id": "preset_the_alcove",
+    "name": "The Alcove",
+    "description": "",
+    "sizes": [
+      "20x10"
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheAlcove_Thumbnail.png",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Alcove.json",
+    "type": "preset"
+  },
+  {
+    "id": "preset_the_nook",
+    "name": "The Nook",
+    "description": "",
+    "sizes": [
+      "10x10 ft"
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheNook_Thumbnail.png",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Nook.json",
+    "type": "preset"
+  },
+  {
+    "id": "preset_the_onyx",
+    "name": "The Onyx",
+    "description": "",
+    "sizes": [
+      "10x10 ft"
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheOnyx_Thumbnail.png",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Onyx.json",
+    "type": "preset"
   }
 ]
