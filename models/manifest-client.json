@@ -178,18 +178,5 @@
       }
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Standard%209.5.png"
-  },
-  {
-    "id": "model_1786398800782",
-    "name": "Test Orientation",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Quickzip/Broadcast.glb",
-    "category": "QuickZip",
-    "w": 1,
-    "d": 0.5,
-    "h": 2,
-    "color": "#cccccc",
-    "price": null,
-    "paintable": false,
-    "sockets": []
   }
 ]
