@@ -1,29 +1,30 @@
 {
   "version": 2,
   "name": "The Nook",
-  "savedAt": "2026-08-11T18:12:52.802Z",
+  "savedAt": "2026-08-11T19:19:35.017Z",
   "manifestUrl": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/dev/models/manifest.json",
   "unit": "ft",
   "floorW": 3.048,
   "floorD": 3.048,
-  "floorColor": "#878787",
+  "floorColor": "#ffffff",
   "floorPlan": null,
   "items": [
     {
       "uid": "closet_38_glb_1786471603455_6jhb",
       "kind": "model",
-      "x": 0.9205755524805366,
-      "z": -1.4456772245083547,
-      "rotY": 0,
+      "x": -1.45714952062471,
+      "z": -0.8919583584901536,
+      "rotY": -4.71238898038469,
       "color": "#f04771",
       "sockets": {},
       "yOffset": 0,
       "parentUid": null,
       "localOffset": null,
-      "pivotX": 0.5257047934727368,
-      "pivotZ": -0.6442667291885749,
+      "pivotX": -0.37142106367054395,
+      "pivotZ": -0.6396932458464661,
       "groupIds": [
-        "group_1786471928325"
+        "group_1786471928325",
+        "group_1786475831639"
       ],
       "modelId": "closet_38_glb",
       "catalogId": "closet_38_glb"
@@ -31,9 +32,9 @@
     {
       "uid": "38_custom_printed_wall_panel_glb_1786471622507_c0zc",
       "kind": "model",
-      "x": -0.04526838941459199,
-      "z": -1.445147873964873,
-      "rotY": 0,
+      "x": -1.4566201700812271,
+      "z": 0.07388558340497542,
+      "rotY": -4.71238898038469,
       "color": "#f04771",
       "sockets": {
         "socket_shelf.001": {
@@ -47,10 +48,11 @@
       "yOffset": 0,
       "parentUid": null,
       "localOffset": null,
-      "pivotX": 0.5257047934727368,
-      "pivotZ": -0.6442667291885749,
+      "pivotX": -0.37142106367054395,
+      "pivotZ": -0.6396932458464661,
       "groupIds": [
-        "group_1786471928325"
+        "group_1786471928325",
+        "group_1786475831639"
       ],
       "modelId": "38_custom_printed_wall_panel_glb",
       "catalogId": "38_custom_printed_wall_panel_glb"
@@ -58,18 +60,19 @@
     {
       "uid": "standard_38_half_height_glb_1786471650072_pqt1",
       "kind": "model",
-      "x": -1.0115751721559734,
-      "z": -1.4457922831934984,
-      "rotY": 0,
+      "x": -1.4572645793098526,
+      "z": 1.040192366146357,
+      "rotY": -4.71238898038469,
       "color": "#f04771",
       "sockets": {},
       "yOffset": 0,
       "parentUid": null,
       "localOffset": null,
-      "pivotX": 0.5257047934727368,
-      "pivotZ": -0.6442667291885749,
+      "pivotX": -0.37142106367054395,
+      "pivotZ": -0.6396932458464661,
       "groupIds": [
-        "group_1786471928325"
+        "group_1786471928325",
+        "group_1786475831639"
       ],
       "modelId": "standard_38_half_height_glb",
       "catalogId": "standard_38_half_height_glb"
@@ -77,9 +80,9 @@
     {
       "uid": "38_custom_printed_wall_panel_glb_1786471661979_nyvr",
       "kind": "model",
-      "x": 1.382395988226856,
-      "z": 0.07316026495474515,
-      "rotY": -1.5707963267948961,
+      "x": 0.061687968838390006,
+      "z": -1.353778794236474,
+      "rotY": -6.2831853071795845,
       "color": "#f04771",
       "sockets": {
         "socket_lamp.002": true
@@ -87,10 +90,11 @@
       "yOffset": 0,
       "parentUid": null,
       "localOffset": null,
-      "pivotX": 0.5257047934727368,
-      "pivotZ": -0.6442667291885749,
+      "pivotX": -0.37142106367054395,
+      "pivotZ": -0.6396932458464661,
       "groupIds": [
-        "group_1786471928325"
+        "group_1786471928325",
+        "group_1786475831639"
       ],
       "modelId": "38_custom_printed_wall_panel_glb",
       "catalogId": "38_custom_printed_wall_panel_glb"
@@ -98,9 +102,9 @@
     {
       "uid": "38_custom_printed_wall_panel_glb_1786471689737_click",
       "kind": "model",
-      "x": 1.3823959882268564,
-      "z": 1.042123470769107,
-      "rotY": -1.5707963267948961,
+      "x": 1.030651174652753,
+      "z": -1.3537787942364754,
+      "rotY": -6.2831853071795845,
       "color": "#f04771",
       "sockets": {
         "socket_lamp.002": false,
@@ -112,25 +116,31 @@
         }
       },
       "groupIds": [
-        "group_1786471928325"
+        "group_1786471928325",
+        "group_1786475831639"
       ],
-      "pivotX": 0.5257047934727368,
-      "pivotZ": -0.6442667291885749,
+      "pivotX": -0.37142106367054395,
+      "pivotZ": -0.6396932458464661,
       "modelId": "38_custom_printed_wall_panel_glb",
       "catalogId": "38_custom_printed_wall_panel_glb"
     },
     {
       "uid": "woodline_archway_glb_1786471778039_hnxf",
       "kind": "model",
-      "x": 1.3813386716574063,
-      "z": 1.0616410406177397,
-      "rotY": 4.71238898038469,
+      "x": 1.0501687445013856,
+      "z": -1.3527214776670247,
+      "rotY": -1.1102230246251565e-16,
       "color": "#cccccc",
       "sockets": {},
       "yOffset": 0,
       "parentUid": null,
       "localOffset": null,
       "modelId": "woodline_archway_glb",
+      "groupIds": [
+        "group_1786475831639"
+      ],
+      "pivotX": -0.37142106367054395,
+      "pivotZ": -0.6396932458464661,
       "catalogId": "woodline_archway_glb"
     }
   ],
