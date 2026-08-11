@@ -734,7 +734,7 @@ function renderPresets() {
         <input type="checkbox" ${p.included?'checked':''} onchange="toggleItem('presets','${p.id}',this.checked)">
         <div class="preset-info">
           <div class="preset-name">${p.name||p.id}</div>
-          <div class="preset-meta">${(p.items||[]).length} items · ${p.description||'No description'}</div>
+          <div class="preset-meta">${p.file ? '🔗 External file' : (p.items||[]).length+' items'} · ${p.description||'No description'}</div>
         </div>
         <div style="display:flex;gap:4px;">
           <button class="btn btn-secondary btn-sm" onclick="editPreset('${p.id}')">Edit</button>
@@ -825,9 +825,13 @@ function editPreset(id) {
     <div class="field"><label>Compatible sizes (comma separated)</label>
       <input id="dp-sizes" value="${(p.sizes||[]).join(', ')}" placeholder="10x10 ft, 10x20 ft"></div>
     <div class="field"><label>Thumbnail URL (optional)</label>
-      <input id="dp-thumb" value="${p.thumbnail||''}" placeholder="https://..."></div>
+      <input id="dp-thumb" value="${p.thumbnail||''}" placeholder="https://..." onblur="this.value=toRawUrl(this.value)"></div>
+    <div class="field"><label>Preset File URL (optional)</label>
+      <input id="dp-file" value="${p.file||''}" placeholder="https://raw.githubusercontent.com/.../preset.json" onblur="this.value=toRawUrl(this.value)">
+      <div style="font-size:10px;color:var(--muted);margin-top:3px;">Link to a Booth Planner JSON file. If set, items are loaded from this URL at runtime.</div>
+    </div>
     <div style="margin-top:8px;padding:10px;background:var(--bg);border-radius:var(--r);font-size:11px;color:var(--muted);">
-      ${(p.items||[]).length} scene items · ${p._localPath?'Local: '+p._localPath:''}
+      ${p.file ? '🔗 External file: '+p.file : (p.items||[]).length+' embedded items'} · ${p._localPath?'Local: '+p._localPath:''}
     </div>
   `;
   App.drawerSaveFn = () => {
@@ -835,7 +839,8 @@ function editPreset(id) {
     p.name        = document.getElementById('dp-name').value.trim();
     p.description = document.getElementById('dp-desc').value.trim();
     p.sizes       = document.getElementById('dp-sizes').value.split(',').map(s=>s.trim()).filter(Boolean);
-    p.thumbnail   = document.getElementById('dp-thumb').value.trim();
+    p.thumbnail   = toRawUrl(document.getElementById('dp-thumb').value.trim());
+    p.file        = toRawUrl(document.getElementById('dp-file').value.trim()) || undefined;
     persist(); closeDrawer(); renderEditor();
   };
   openDrawer();
@@ -962,6 +967,11 @@ function buildOutput(m) {
   });
   const presets = (m.presets||[]).filter(x=>x.included).map(x => {
     const {included, _localPath, ...rest} = x;
+    // If has external file URL, omit embedded items (loaded at runtime)
+    if (rest.file) {
+      const {items, ...noItems} = rest;
+      return {...noItems, type:'preset'};
+    }
     return {...rest, type:'preset'};
   });
   return [...models, ...presets];
