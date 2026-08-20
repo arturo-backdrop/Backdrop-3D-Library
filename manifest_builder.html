@@ -889,23 +889,28 @@ function importManifestFile(merge=false) {
 
       let addedModels = 0, skippedModels = 0, addedPresets = 0;
 
-      // Extract accessories from model sockets
-      const accFilesFound = new Set();
+      // Extract accessories from model sockets (collect file, price, max)
+      const accFilesFound = new Map(); // fileUrl -> {price, max}
       models.forEach(item => {
         (item.sockets || []).forEach(s => {
-          if (s.accessoryFile) accFilesFound.add(s.accessoryFile);
+          if (s.accessoryFile && !accFilesFound.has(s.accessoryFile)) {
+            accFilesFound.set(s.accessoryFile, { price: s.price, max: s.max });
+          }
         });
       });
 
       // Add accessories (skip duplicates by file URL)
       let addedAccs = 0;
       m.accessories = m.accessories || [];
-      accFilesFound.forEach(fileUrl => {
+      accFilesFound.forEach((meta, fileUrl) => {
         if (m.accessories.find(a => a.file === fileUrl)) return;
         // Derive name from filename
         const fileName = decodeURIComponent(fileUrl.split('/').pop().replace('.glb',''));
         const accId = 'acc_' + fileName.toLowerCase().replace(/[^a-z0-9]/g,'_');
-        m.accessories.push({ id: accId, name: fileName, file: fileUrl, included: true });
+        m.accessories.push({ id: accId, name: fileName, file: fileUrl, included: true,
+          ...(meta.price != null ? { price: meta.price } : {}),
+          ...(meta.max   != null ? { max:   meta.max   } : {}),
+        });
         addedAccs++;
       });
 
