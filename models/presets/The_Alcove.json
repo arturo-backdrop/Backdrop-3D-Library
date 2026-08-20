@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "The Alcove",
-  "savedAt": "2026-08-11T18:16:23.166Z",
+  "savedAt": "2026-08-20T18:31:51.720Z",
   "manifestUrl": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/dev/models/manifest.json",
   "unit": "ft",
   "floorW": 6.096,
@@ -15,12 +15,13 @@
       "x": 2.5355479143751687,
       "z": -1.445538364747464,
       "rotY": 0,
-      "color": "#5250f7",
+      "color": "#ffffff",
       "sockets": {},
       "yOffset": 0,
       "parentUid": null,
       "localOffset": null,
       "modelId": "closet_38_glb",
+      "groupIds": [],
       "catalogId": "closet_38_glb"
     },
     {
@@ -29,7 +30,7 @@
       "x": -2.306135192908209,
       "z": -1.4442302253979395,
       "rotY": 0,
-      "color": "#47a7f0",
+      "color": "#ffffff",
       "sockets": {
         "socket_lamp.002": false
       },
@@ -50,7 +51,7 @@
       "x": -1.3371719870938472,
       "z": -1.4442302253979395,
       "rotY": 0,
-      "color": "#6a47f0",
+      "color": "#ffffff",
       "sockets": {
         "socket_lamp.002": false
       },
@@ -68,7 +69,7 @@
       "x": -0.36820878127948553,
       "z": -1.4442302253979395,
       "rotY": 0,
-      "color": "#47a7f0",
+      "color": "#ffffff",
       "sockets": {
         "socket_lamp.002": false
       },
@@ -86,7 +87,7 @@
       "x": 0.600754424534876,
       "z": -1.4442302253979393,
       "rotY": 0,
-      "color": "#6a47f0",
+      "color": "#ffffff",
       "sockets": {
         "socket_lamp.002": false
       },
@@ -104,7 +105,7 @@
       "x": 1.5697176303492375,
       "z": -1.4442302253979393,
       "rotY": 0,
-      "color": "#47a7f0",
+      "color": "#ffffff",
       "sockets": {
         "socket_lamp.002": false
       },
@@ -128,6 +129,7 @@
       "parentUid": null,
       "localOffset": null,
       "modelId": "woodline_archway_glb",
+      "groupIds": [],
       "catalogId": "woodline_archway_glb"
     },
     {
@@ -136,7 +138,7 @@
       "x": -2.7666292674521378,
       "z": -1.1754391752013595,
       "rotY": 1.5707963267948966,
-      "color": "#47a7f0",
+      "color": "#ffffff",
       "sockets": {
         "socket_lamp.003": false
       },
@@ -144,6 +146,7 @@
       "parentUid": null,
       "localOffset": null,
       "modelId": "standard_19_glb",
+      "groupIds": [],
       "catalogId": "standard_19_glb"
     },
     {
@@ -152,12 +155,13 @@
       "x": -0.943888187299349,
       "z": 0.8186752511424756,
       "rotY": 0,
-      "color": "#f0900a",
+      "color": "#ffffff",
       "sockets": {},
       "yOffset": 0,
       "parentUid": null,
       "localOffset": null,
       "modelId": "counter_small_glb",
+      "groupIds": [],
       "catalogId": "counter_small_glb"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "The Onyx",
-  "savedAt": "2026-08-11T18:05:59.611Z",
+  "savedAt": "2026-08-20T18:33:00.399Z",
   "manifestUrl": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/dev/models/manifest.json",
   "unit": "ft",
   "floorW": 3.048,
@@ -15,7 +15,7 @@
       "x": 0.033834584606305035,
       "z": -1.2918212357548937,
       "rotY": 0,
-      "color": "#6a47f0",
+      "color": "#ffffff",
       "sockets": {
         "socket_lamp": true,
         "socket_shelf": {
@@ -41,7 +41,7 @@
       "x": 1.0027977904206666,
       "z": -1.2918212357548937,
       "rotY": 0,
-      "color": "#6a47f0",
+      "color": "#ffffff",
       "sockets": {
         "socket_lamp": true,
         "socket_shelf": {
@@ -70,7 +70,7 @@
       "x": 0.7172643655835057,
       "z": 1.0231382313311073,
       "rotY": 0,
-      "color": "#0a6ef0",
+      "color": "#ffffff",
       "sockets": {},
       "yOffset": 0,
       "parentUid": null,
@@ -85,7 +85,7 @@
       "x": -1.483585699532008,
       "z": -0.8286826312834517,
       "rotY": 1.5707963267948966,
-      "color": "#5250f7",
+      "color": "#ffffff",
       "sockets": {
         "socket_lamp.005": false,
         "socket_lamp.006": true,
