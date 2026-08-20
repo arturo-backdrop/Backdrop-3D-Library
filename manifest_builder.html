@@ -881,9 +881,10 @@ function importManifestFile(merge=false) {
       }
 
       if (!merge) {
-        // Replace — clear current models and presets
-        m.models  = [];
-        m.presets = m.presets || [];
+        // Replace — clear current models, accessories and presets
+        m.models      = [];
+        m.accessories = [];
+        m.presets     = [];
       }
 
       let addedModels = 0, skippedModels = 0, addedPresets = 0;
