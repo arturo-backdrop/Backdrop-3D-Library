@@ -552,8 +552,9 @@ function socketCard(modelId, s, i, accs) {
           <input value="${s.name||''}" oninput="updateSocket_('${modelId}',${i},'name',this.value)" placeholder="socket_lamp"></div>
         <div class="field"><label>Behavior</label>
           <select onchange="updateSocket_('${modelId}',${i},'behavior',this.value)">
-            <option ${s.behavior==='fixed'?'selected':''}>fixed</option>
-            <option ${s.behavior==='distribute'?'selected':''}>distribute</option>
+            <option value="fixed" ${s.behavior==='fixed'?'selected':''}>fixed</option>
+            <option value="distribute" ${s.behavior==='distribute'?'selected':''}>distribute</option>
+            <option value="positions" ${s.behavior==='positions'?'selected':''}>positions</option>
           </select>
         </div>
       </div>
