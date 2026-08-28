@@ -606,7 +606,13 @@ function removeSocket_(modelId, i) {
   const model = (m.models||[]).find(x=>x.id===modelId);
   if (!model) return;
   model.sockets.splice(i,1);
-  persist(); editModel(modelId);
+  persist();
+  // Re-render only the sockets list, not the whole drawer
+  const sockList = document.getElementById('de-sockets');
+  if (sockList) {
+    const accs = m.accessories || [];
+    sockList.innerHTML = (model.sockets||[]).map((s,i) => socketCard(modelId, s, i, accs)).join('');
+  }
 }
 
 function saveModelDrawer(id) {
