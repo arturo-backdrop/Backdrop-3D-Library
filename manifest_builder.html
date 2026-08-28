@@ -314,6 +314,13 @@ function deleteManifest(name) {
 }
 
 // ── Editor ────────────────────────────────────────────────────
+function reapplyHighlight() {
+  if (!App.editingModelId) return;
+  document.querySelectorAll('.model-item').forEach(el => el.classList.remove('editing'));
+  const el = document.getElementById('model-item-' + App.editingModelId);
+  if (el) el.classList.add('editing');
+}
+
 function renderEditor() {
   if (!App.current) return;
   document.getElementById('view-welcome').style.display = 'none';
@@ -1029,7 +1036,11 @@ function toRawUrl(url) {
 }
 
 function openDrawer()  { document.getElementById('drawer').classList.add('open'); }
-function closeDrawer() { document.getElementById('drawer').classList.remove('open'); }
+function closeDrawer() {
+  document.getElementById('drawer').classList.remove('open');
+  document.querySelectorAll('.model-item').forEach(el => el.classList.remove('editing'));
+  App.editingModelId = null;
+}
 function drawerSave()  { if (App.drawerSaveFn) App.drawerSaveFn(); }
 
 // ── Messages ──────────────────────────────────────────────────
