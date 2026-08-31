@@ -422,13 +422,39 @@
     "name": "Storage Full Panels",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Storage%20Full%20Panels.glb",
     "category": "Storage",
-    "w": 0.9652,
-    "d": 1.0668,
-    "h": 2.3622,
+    "w": 0.965,
+    "d": 1.067,
+    "h": 2.362,
     "color": "#ffffff",
     "price": 8000,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp"
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp"
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp"
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp"
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp"
+      }
+    ]
   },
   {
     "id": "storage_half",
