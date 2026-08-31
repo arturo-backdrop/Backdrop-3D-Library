@@ -280,9 +280,9 @@
     "name": "Full Panel",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Full%20Panel.glb",
     "category": "Panels",
-    "w": 0.9652,
+    "w": 0.9649,
     "d": 0.0889,
-    "h": 2.3622,
+    "h": 2.3619,
     "color": "#ffffff",
     "price": 2000,
     "paintable": true,
@@ -290,12 +290,18 @@
       {
         "name": "socket_lamp",
         "behavior": "fixed",
-        "label": "Lamp"
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
       },
       {
-        "name": "socket_lamp",
-        "behavior": "fixed",
-        "label": "Lamp"
+        "name": "socket_shelf",
+        "behavior": "distribute",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Shelf.glb",
+        "max": 4,
+        "price": 100
       }
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/38%20Wall%20Panel.png"
