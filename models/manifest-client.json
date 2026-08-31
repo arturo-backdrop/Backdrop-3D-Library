@@ -298,7 +298,7 @@
       {
         "name": "socket_shelf",
         "behavior": "distribute",
-        "label": "Lamp",
+        "label": "Shelves",
         "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Shelf.glb",
         "max": 4,
         "price": 100
