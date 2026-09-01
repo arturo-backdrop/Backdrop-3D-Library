@@ -420,9 +420,14 @@ function renderModels() {
           if (!grouped[cat]) grouped[cat] = [];
           grouped[cat].push(model);
         });
-        return Object.entries(grouped).map(([cat, items]) => `
+        const order = getCategoryOrder();
+        return order.filter(cat => grouped[cat]).map((cat, catIdx) => `
           <div style="margin-bottom:4px;">
-            <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:8px 4px 4px;border-top:1px solid var(--border);margin-top:4px;">${cat} <span style="font-weight:400;">(${items.length})</span></div>
+            <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:8px 4px 4px;border-top:1px solid var(--border);margin-top:4px;display:flex;align-items:center;gap:6px;">
+              <span style="flex:1;">${cat} <span style="font-weight:400;">(${grouped[cat].length})</span></span>
+              <button class="btn-icon" style="font-size:11px;padding:1px 5px;" onclick="moveCat('${cat}',-1)" title="Move up">↑</button>
+              <button class="btn-icon" style="font-size:11px;padding:1px 5px;" onclick="moveCat('${cat}',1)" title="Move down">↓</button>
+            </div>
             ${items.map(model => `
               <div id="model-item-${model.id}" class="model-item ${model.included?'included':''}"
                 draggable="true"
@@ -1041,7 +1046,14 @@ function exportManifest() {
 
 function buildOutput(m) {
   const accsMap = Object.fromEntries((m.accessories||[]).map(a=>[a.id,a]));
-  const models = (m.models||[]).filter(x=>x.included).map(x => {
+  // Sort models by categoryOrder before export
+  const catOrder = m.categoryOrder || [];
+  const sortedModels = [...(m.models||[])].sort((a, b) => {
+    const ai = catOrder.indexOf(a.category || '—');
+    const bi = catOrder.indexOf(b.category || '—');
+    return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
+  });
+  const models = sortedModels.filter(x=>x.included).map(x => {
     const {included, _localPath, ...rest} = x;
     const sockets = (x.sockets||[]).map(s => {
       const {accessoryId, ...sRest} = s;
@@ -1241,6 +1253,32 @@ async function saveToGitHub() {
     if (putRes.ok) { ghShowMsg('✅ Saved! Changes live in ~1 min.', 'ok'); }
     else { const e = await putRes.json(); ghShowMsg('Error: ' + (e.message||putRes.status), 'err'); }
   } catch(e) { ghShowMsg('Network error: ' + e.message, 'err'); }
+}
+
+// ── Category order ───────────────────────────────────────────
+function getCategoryOrder() {
+  const m = App.manifests[App.current];
+  if (!m) return [];
+  // Build list of unique categories in current order
+  const existing = m.categoryOrder || [];
+  const allCats = [...new Set((m.models||[]).map(x => x.category || '—'))];
+  // Merge: existing order first, then any new categories
+  const merged = [...existing.filter(c => allCats.includes(c)), ...allCats.filter(c => !existing.includes(c))];
+  m.categoryOrder = merged;
+  return merged;
+}
+
+function moveCat(cat, dir) {
+  const m = App.manifests[App.current];
+  const order = getCategoryOrder();
+  const idx = order.indexOf(cat);
+  const newIdx = idx + dir;
+  if (newIdx < 0 || newIdx >= order.length) return;
+  order.splice(idx, 1);
+  order.splice(newIdx, 0, cat);
+  m.categoryOrder = order;
+  persist();
+  renderEditor();
 }
 
 // ── Drag & drop reorder ───────────────────────────────────────
