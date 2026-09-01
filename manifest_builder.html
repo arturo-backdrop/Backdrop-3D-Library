@@ -413,31 +413,43 @@ function renderModels() {
     <div class="help" style="margin-bottom:12px;">Click a GLB in the file tree to add it, or click Edit to configure each model.</div>
     ${models.length === 0 ? '<div class="empty">No models yet.</div>' : ''}
     <div class="model-list">
-      ${models.map(model => `
-        <div id="model-item-${model.id}" class="model-item ${model.included?'included':''}"
-          draggable="true"
-          ondragstart="onDragStart(event,'${model.id}','models')"
-          ondragend="onDragEnd(event)"
-          ondragover="onDragOver(event,'${model.id}','models')"
-          ondrop="onDrop(event,'${model.id}','models')">
-          <span class="drag-handle" title="Drag to reorder">⠿</span>
-          <input type="checkbox" ${model.included?'checked':''} onchange="toggleItem('models','${model.id}',this.checked)">
-          <div class="model-thumb">🧊</div>
-          <div class="model-info">
-            <div class="model-name">${model.name||model.id}</div>
-            <div class="model-meta">
-              <span class="tag tag-cat">${model.category||'—'}</span>
-              ${model.price?`<span class="tag tag-price">$${model.price}</span>`:''}
-              ${(model.sockets||[]).length?`<span class="tag tag-sock">${model.sockets.length} socket${model.sockets.length>1?'s':''}</span>`:''}
-              <span style="margin-left:4px;">${model.w||'?'}×${model.d||'?'}×${model.h||'?'}m</span>
-            </div>
+      ${(() => {
+        const grouped = {};
+        models.forEach(model => {
+          const cat = model.category || '—';
+          if (!grouped[cat]) grouped[cat] = [];
+          grouped[cat].push(model);
+        });
+        return Object.entries(grouped).map(([cat, items]) => `
+          <div style="margin-bottom:4px;">
+            <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:8px 4px 4px;border-top:1px solid var(--border);margin-top:4px;">${cat} <span style="font-weight:400;">(${items.length})</span></div>
+            ${items.map(model => `
+              <div id="model-item-${model.id}" class="model-item ${model.included?'included':''}"
+                draggable="true"
+                ondragstart="onDragStart(event,'${model.id}','models')"
+                ondragend="onDragEnd(event)"
+                ondragover="onDragOver(event,'${model.id}','models')"
+                ondrop="onDrop(event,'${model.id}','models')">
+                <span class="drag-handle" title="Drag to reorder">⠿</span>
+                <input type="checkbox" ${model.included?'checked':''} onchange="toggleItem('models','${model.id}',this.checked)">
+                <div class="model-thumb">🧊</div>
+                <div class="model-info">
+                  <div class="model-name">${model.name||model.id}</div>
+                  <div class="model-meta">
+                    ${model.price?`<span class="tag tag-price">$${model.price}</span>`:''}
+                    ${(model.sockets||[]).length?`<span class="tag tag-sock">${model.sockets.length} socket${model.sockets.length>1?'s':''}</span>`:''}
+                    <span style="margin-left:4px;">${model.w||'?'}×${model.d||'?'}×${model.h||'?'}m</span>
+                  </div>
+                </div>
+                <div class="model-actions">
+                  <button class="btn btn-secondary btn-sm" onclick="editModel('${model.id}')">Edit</button>
+                  <button class="btn-icon" onclick="removeItem('models','${model.id}')">🗑</button>
+                </div>
+              </div>
+            `).join('')}
           </div>
-          <div class="model-actions">
-            <button class="btn btn-secondary btn-sm" onclick="editModel('${model.id}')">Edit</button>
-            <button class="btn-icon" onclick="removeItem('models','${model.id}')">🗑</button>
-          </div>
-        </div>
-      `).join('')}
+        `).join('');
+      })()}
     </div>
   `;
 }
