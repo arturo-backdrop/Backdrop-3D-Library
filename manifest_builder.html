@@ -117,6 +117,13 @@ textarea{resize:vertical;min-height:56px;}
 .msg-ok{background:rgba(74,222,128,.1);color:var(--success);}
 .msg-err{background:rgba(248,113,113,.1);color:var(--danger);}
 .divider{border:none;border-top:1px solid var(--border);margin:14px 0;}
+.drag-handle{cursor:grab;color:var(--muted);padding:0 6px;font-size:16px;flex-shrink:0;user-select:none;}
+.drag-handle:active{cursor:grabbing;}
+.model-item.drag-over{border-color:var(--accent);background:rgba(180,139,49,.08);}
+.model-item.dragging{opacity:.4;}
+#gh-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:300;align-items:center;justify-content:center;}
+#gh-modal.open{display:flex;}
+#gh-modal-box{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:24px;width:420px;max-width:95vw;}
 .section-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
 .section-title{font-size:16px;font-weight:700;}
 .page-tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:16px;}
@@ -133,7 +140,8 @@ textarea{resize:vertical;min-height:56px;}
   <h1>📋 Manifest Builder</h1>
   <div class="manifest-tabs" id="manifest-tabs"></div>
   <button class="btn btn-secondary btn-sm" onclick="newManifest()">+ New</button>
-  <button class="btn btn-primary btn-sm" onclick="exportManifest()">⬇ Export JSON</button>
+  <button class="btn btn-secondary btn-sm" onclick="exportManifest()">⬇ Export JSON</button>
+  <button class="btn btn-primary btn-sm" onclick="openGhModal()">☁ Save to GitHub</button>
 </div>
 
 <!-- Workspace -->
@@ -174,6 +182,31 @@ textarea{resize:vertical;min-height:56px;}
   <div id="drawer-body"></div>
   <div style="display:flex;gap:8px;margin-top:16px;">
     <button class="btn btn-primary" id="drawer-save" style="flex:1;justify-content:center;" onclick="drawerSave()">Save</button>
+  </div>
+</div>
+
+<!-- GitHub Save Modal -->
+<div id="gh-modal">
+  <div id="gh-modal-box">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
+      <div style="font-size:15px;font-weight:700;">☁ Save to GitHub</div>
+      <button class="btn btn-secondary btn-sm" onclick="closeGhModal()">✕</button>
+    </div>
+    <div id="gh-msg"></div>
+    <div class="field"><label>GitHub PAT</label>
+      <input id="gh-pat" type="password" placeholder="ghp_..." style="font-family:monospace;">
+      <div class="help">Stored locally in your browser. Needs repo write access.</div>
+    </div>
+    <div class="field"><label>Owner / Repo</label>
+      <input id="gh-repo" placeholder="arturo-backdrop/Backdrop-3D-Library">
+    </div>
+    <div class="field"><label>File path in repo</label>
+      <input id="gh-path" placeholder="models/manifest-client.json">
+    </div>
+    <div class="field"><label>Commit message</label>
+      <input id="gh-msg-txt" value="Update manifest via builder">
+    </div>
+    <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px;" onclick="saveToGitHub()">Push to GitHub</button>
   </div>
 </div>
 
@@ -381,7 +414,13 @@ function renderModels() {
     ${models.length === 0 ? '<div class="empty">No models yet.</div>' : ''}
     <div class="model-list">
       ${models.map(model => `
-        <div id="model-item-${model.id}" class="model-item ${model.included?'included':''}">
+        <div id="model-item-${model.id}" class="model-item ${model.included?'included':''}"
+          draggable="true"
+          ondragstart="onDragStart(event,'${model.id}','models')"
+          ondragend="onDragEnd(event)"
+          ondragover="onDragOver(event,'${model.id}','models')"
+          ondrop="onDrop(event,'${model.id}','models')">
+          <span class="drag-handle" title="Drag to reorder">⠿</span>
           <input type="checkbox" ${model.included?'checked':''} onchange="toggleItem('models','${model.id}',this.checked)">
           <div class="model-thumb">🧊</div>
           <div class="model-info">
@@ -1145,7 +1184,84 @@ window.onload = () => {
   renderTabs();
   const first = Object.keys(App.manifests)[0];
   if (first) selectManifest(first);
+  document.getElementById('gh-pat').value  = localStorage.getItem('gh_pat')  || '';
+  document.getElementById('gh-repo').value = localStorage.getItem('gh_repo') || 'arturo-backdrop/Backdrop-3D-Library';
+  document.getElementById('gh-path').value = localStorage.getItem('gh_path') || 'models/manifest-client.json';
 };
+
+// ── GitHub Save ───────────────────────────────────────────────
+function openGhModal() {
+  document.getElementById('gh-pat').value  = localStorage.getItem('gh_pat')  || '';
+  document.getElementById('gh-repo').value = localStorage.getItem('gh_repo') || 'arturo-backdrop/Backdrop-3D-Library';
+  document.getElementById('gh-path').value = localStorage.getItem('gh_path') || 'models/manifest-client.json';
+  document.getElementById('gh-modal').classList.add('open');
+}
+function closeGhModal() { document.getElementById('gh-modal').classList.remove('open'); }
+
+function ghShowMsg(msg, type) {
+  const el = document.getElementById('gh-msg');
+  el.innerHTML = `<div class="msg msg-${type==='ok'?'ok':'err'}">${msg}</div>`;
+  if (type === 'ok') setTimeout(() => { el.innerHTML = ''; }, 5000);
+}
+
+async function saveToGitHub() {
+  const pat  = document.getElementById('gh-pat').value.trim();
+  const repo = document.getElementById('gh-repo').value.trim();
+  const path = document.getElementById('gh-path').value.trim();
+  const msg  = document.getElementById('gh-msg-txt').value.trim() || 'Update manifest via builder';
+  if (!pat || !repo || !path) { ghShowMsg('Fill in all fields.', 'err'); return; }
+  localStorage.setItem('gh_pat', pat);
+  localStorage.setItem('gh_repo', repo);
+  localStorage.setItem('gh_path', path);
+  ghShowMsg('Pushing to GitHub...', 'ok');
+  const headers = { 'Authorization': 'token ' + pat, 'Content-Type': 'application/json' };
+  const apiUrl = `https://api.github.com/repos/${repo}/contents/${path}`;
+  try {
+    const getRes = await fetch(apiUrl, { headers });
+    let sha = null;
+    if (getRes.ok) { sha = (await getRes.json()).sha; }
+    else if (getRes.status !== 404) { const e = await getRes.json(); ghShowMsg('Fetch error: ' + (e.message||getRes.status), 'err'); return; }
+    const output = buildOutput(App.manifests[App.current]);
+    const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(output, null, 2))));
+    const body = { message: msg, content: encoded };
+    if (sha) body.sha = sha;
+    const putRes = await fetch(apiUrl, { method: 'PUT', headers, body: JSON.stringify(body) });
+    if (putRes.ok) { ghShowMsg('✅ Saved! Changes live in ~1 min.', 'ok'); }
+    else { const e = await putRes.json(); ghShowMsg('Error: ' + (e.message||putRes.status), 'err'); }
+  } catch(e) { ghShowMsg('Network error: ' + e.message, 'err'); }
+}
+
+// ── Drag & drop reorder ───────────────────────────────────────
+let _dragSrc = null, _dragKey = null;
+
+function onDragStart(e, id, listKey) {
+  _dragSrc = id; _dragKey = listKey;
+  e.dataTransfer.effectAllowed = 'move';
+  e.currentTarget.classList.add('dragging');
+}
+function onDragEnd(e) {
+  e.currentTarget.classList.remove('dragging');
+  document.querySelectorAll('.model-item').forEach(el => el.classList.remove('drag-over'));
+}
+function onDragOver(e, id, listKey) {
+  if (_dragKey !== listKey || _dragSrc === id) return;
+  e.preventDefault();
+  document.querySelectorAll('.model-item').forEach(el => el.classList.remove('drag-over'));
+  const el = document.getElementById('model-item-' + id);
+  if (el) el.classList.add('drag-over');
+}
+function onDrop(e, targetId, listKey) {
+  if (_dragKey !== listKey || _dragSrc === targetId) return;
+  e.preventDefault();
+  const m = App.manifests[App.current];
+  const list = m[listKey] || [];
+  const fromIdx = list.findIndex(x => x.id === _dragSrc);
+  const toIdx   = list.findIndex(x => x.id === targetId);
+  if (fromIdx < 0 || toIdx < 0) return;
+  const [item] = list.splice(fromIdx, 1);
+  list.splice(toIdx, 0, item);
+  persist(); renderEditor(); reapplyHighlight();
+}
 </script>
 </body>
 </html>
