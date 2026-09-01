@@ -610,16 +610,16 @@ function editModel(id) {
 
 function socketCard(modelId, s, i, accs) {
   return `
-    <div class="socket-card">
+    <div class="socket-card" data-sock-idx="${i}">
       <div class="socket-hdr">
         <span style="font-size:12px;font-weight:600;">Socket ${i+1}</span>
         <button class="btn-icon" onclick="removeSocket_('${modelId}',${i})">🗑</button>
       </div>
       <div class="row">
         <div class="field"><label>Socket name (from Blender)</label>
-          <input value="${s.name||''}" oninput="updateSocket_('${modelId}',${i},'name',this.value)" placeholder="socket_lamp"></div>
+          <input id="sock-name-${i}" value="${s.name||''}" oninput="updateSocket_('${modelId}',${i},'name',this.value)" placeholder="socket_lamp"></div>
         <div class="field"><label>Behavior</label>
-          <select onchange="updateSocket_('${modelId}',${i},'behavior',this.value)">
+          <select id="sock-behavior-${i}" onchange="updateSocket_('${modelId}',${i},'behavior',this.value)">
             <option value="fixed" ${s.behavior==='fixed'?'selected':''}>fixed</option>
             <option value="distribute" ${s.behavior==='distribute'?'selected':''}>distribute</option>
             <option value="positions" ${s.behavior==='positions'?'selected':''}>positions</option>
@@ -628,9 +628,9 @@ function socketCard(modelId, s, i, accs) {
       </div>
       <div class="row">
         <div class="field"><label>Label (shown in UI)</label>
-          <input value="${s.label||''}" oninput="updateSocket_('${modelId}',${i},'label',this.value)"></div>
+          <input id="sock-label-${i}" value="${s.label||''}" oninput="updateSocket_('${modelId}',${i},'label',this.value)"></div>
         <div class="field"><label>Accessory</label>
-          <select onchange="updateSocket_('${modelId}',${i},'accessoryId',this.value)">
+          <select id="sock-acc-${i}" onchange="updateSocket_('${modelId}',${i},'accessoryId',this.value)">
             <option value="">— none —</option>
             ${accs.map(a=>`<option value="${a.id}" ${s.accessoryId===a.id?'selected':''}>${a.name||a.id}</option>`).join('')}
           </select>
@@ -699,6 +699,19 @@ function saveModelDrawer(id) {
   model.paintable= document.getElementById('de-paint').checked;
   const thumbVal = toRawUrl(document.getElementById('de-thumb').value);
   if (thumbVal) model.thumbnail = thumbVal; else delete model.thumbnail;
+
+  // Read each socket's accessoryId from DOM by ID to ensure it's captured on Save
+  (model.sockets || []).forEach((s, i) => {
+    const accEl = document.getElementById('sock-acc-' + i);
+    if (accEl) s.accessoryId = accEl.value;
+    const nameEl = document.getElementById('sock-name-' + i);
+    if (nameEl) s.name = nameEl.value;
+    const behaviorEl = document.getElementById('sock-behavior-' + i);
+    if (behaviorEl) s.behavior = behaviorEl.value;
+    const labelEl = document.getElementById('sock-label-' + i);
+    if (labelEl) s.label = labelEl.value;
+  });
+
   persist(); closeDrawer(); renderEditor();
 }
 
