@@ -568,7 +568,7 @@
   {
     "id": "header_half_panel",
     "name": "Header Half Panel",
-    "file": "[SET URL]",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Half%20Panel.glb",
     "category": "Headers",
     "w": 0.483,
     "d": 0.089,
@@ -590,7 +590,7 @@
   {
     "id": "header_full_panels",
     "name": "Header Full Panels",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Half%20Panels.glb",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Full%20Panels.glb",
     "category": "Headers",
     "w": 0.965,
     "d": 1.067,
