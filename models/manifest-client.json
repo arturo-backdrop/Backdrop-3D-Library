@@ -41,7 +41,16 @@
     "color": "#ffffff",
     "price": 1000,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "quarter_panel",
@@ -54,7 +63,16 @@
     "color": "#ffffff",
     "price": 1000,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "full_panel_half_height",
@@ -107,7 +125,16 @@
     "color": "#ffffff",
     "price": 2300,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "shelves_module_m2",
@@ -120,7 +147,16 @@
     "color": "#ffffff",
     "price": 2300,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "shelves_small_center",
@@ -133,7 +169,16 @@
     "color": "#ffffff",
     "price": 2300,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "shelves_left",
@@ -146,7 +191,16 @@
     "color": "#ffffff",
     "price": 2300,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "shelves_right",
@@ -159,7 +213,16 @@
     "color": "#ffffff",
     "price": 2300,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "counter_small",
@@ -261,48 +324,163 @@
     "name": "Storage Double",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Storage%20Double.glb",
     "category": "Storage",
-    "w": 0.9652,
+    "w": 0.965,
     "d": 2.032,
-    "h": 2.3622,
+    "h": 2.362,
     "color": "#ffffff",
     "price": 12000,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "storage_half",
     "name": "Storage Half",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Storage%20Half.glb",
     "category": "Storage",
-    "w": 0.4826,
-    "d": 0.5842,
-    "h": 2.3622,
+    "w": 0.483,
+    "d": 0.584,
+    "h": 2.362,
     "color": "#ffffff",
     "price": 4000,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "storage_half_and_full_panels",
     "name": "Storage Half and Full Panels",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Storage%20Half%20and%20Full%20Panels.glb",
     "category": "Storage",
-    "w": 0.5588,
-    "d": 0.9652,
-    "h": 2.3622,
+    "w": 0.559,
+    "d": 0.965,
+    "h": 2.362,
     "color": "#ffffff",
     "price": 6000,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "door_full_panel",
     "name": "Door Full Panel",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Door%20Full%20Panel.glb",
     "category": "Doors",
-    "w": 0.9652,
-    "d": 0.0889,
-    "h": 2.3622,
+    "w": 0.965,
+    "d": 0.089,
+    "h": 2.362,
     "color": "#ffffff",
     "price": 2000,
     "paintable": true,
@@ -327,34 +505,52 @@
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Square.glb",
     "category": "Headers",
     "w": 1,
-    "d": 0.5001,
+    "d": 0.5,
     "h": 2,
     "color": "#ffffff",
     "price": 500,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "header_rectangle",
     "name": "Header Rectangle",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Rectangle.glb",
     "category": "Headers",
-    "w": 0.9601,
-    "d": 0.0889,
-    "h": 0.4801,
+    "w": 0.96,
+    "d": 0.089,
+    "h": 0.48,
     "color": "#ffffff",
     "price": 700,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "header_full_panel",
     "name": "Header Full Panel",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Full%20Panel.glb",
     "category": "Headers",
-    "w": 0.9652,
-    "d": 0.0889,
-    "h": 1.1811,
+    "w": 0.965,
+    "d": 0.089,
+    "h": 1.181,
     "color": "#ffffff",
     "price": 1000,
     "paintable": true,
@@ -362,7 +558,10 @@
       {
         "name": "socket_lamp",
         "behavior": "fixed",
-        "label": "Lamp"
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
       }
     ]
   },
@@ -371,9 +570,9 @@
     "name": "Header Half Panel",
     "file": "[SET URL]",
     "category": "Headers",
-    "w": 0.4826,
-    "d": 0.0889,
-    "h": 1.1811,
+    "w": 0.483,
+    "d": 0.089,
+    "h": 1.181,
     "color": "#ffffff",
     "price": 800,
     "paintable": true,
@@ -381,7 +580,10 @@
       {
         "name": "socket_lamp",
         "behavior": "fixed",
-        "label": "Lamp"
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
       }
     ]
   },
@@ -390,26 +592,92 @@
     "name": "Header Full Panels",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Half%20Panels.glb",
     "category": "Headers",
-    "w": 0.9652,
-    "d": 1.0668,
-    "h": 1.1811,
+    "w": 0.965,
+    "d": 1.067,
+    "h": 1.181,
     "color": "#ffffff",
     "price": 9000,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "header_half_panels",
     "name": "Header Half Panels",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Half%20Panels.glb",
     "category": "Headers",
-    "w": 0.5842,
-    "d": 0.4826,
-    "h": 1.1811,
+    "w": 0.584,
+    "d": 0.483,
+    "h": 1.181,
     "color": "#ffffff",
     "price": 7000,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "header_double_panels",
@@ -417,77 +685,195 @@
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Double%20Panels.glb",
     "category": "Headers",
     "w": 2.032,
-    "d": 0.9652,
-    "h": 1.1811,
+    "d": 0.965,
+    "h": 1.181,
     "color": "#ffffff",
     "price": 7000,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "header_half_panels_full",
     "name": "Header Half Panels and Full",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Half%20Panels%20and%20full.glb",
     "category": "Headers",
-    "w": 0.6096,
-    "d": 0.9652,
-    "h": 1.1811,
+    "w": 0.61,
+    "d": 0.965,
+    "h": 1.181,
     "color": "#ffffff",
     "price": 4000,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "console_module",
     "name": "Console Module",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Console%20Module.glb",
     "category": "Consoles",
-    "w": 0.9652,
-    "d": 1.2446,
-    "h": 2.3622,
+    "w": 0.965,
+    "d": 1.245,
+    "h": 2.362,
     "color": "#ffffff",
     "price": 2300,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "console_module_tv",
     "name": "Console Module TV",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Console%20Module%20TV.glb",
     "category": "Consoles",
-    "w": 0.9652,
-    "d": 1.2446,
-    "h": 2.3622,
+    "w": 0.965,
+    "d": 1.245,
+    "h": 2.362,
     "color": "#ffffff",
     "price": 2300,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "multimedia_tv",
     "name": "Multimedia TV",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Multimedia%20TV.glb",
     "category": "Multimedia",
-    "w": 0.9652,
-    "d": 0.0889,
-    "h": 2.3622,
+    "w": 0.965,
+    "d": 0.089,
+    "h": 2.362,
     "color": "#ffffff",
     "price": 2200,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "multimedia_tv_shelf",
     "name": "Multimedia TV Shelf",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Multimedia%20TV%20Shelf.glb",
     "category": "Multimedia",
-    "w": 0.9652,
-    "d": 0.0889,
-    "h": 2.3622,
+    "w": 0.965,
+    "d": 0.089,
+    "h": 2.362,
     "color": "#ffffff",
     "price": 2400,
     "paintable": true,
-    "sockets": []
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ]
   },
   {
     "id": "woodline_archway",
