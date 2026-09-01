@@ -428,7 +428,7 @@ function renderModels() {
               <button class="btn-icon" style="font-size:11px;padding:1px 5px;" onclick="moveCat('${cat}',-1)" title="Move up">↑</button>
               <button class="btn-icon" style="font-size:11px;padding:1px 5px;" onclick="moveCat('${cat}',1)" title="Move down">↓</button>
             </div>
-            ${items.map(model => `
+            ${grouped[cat].map(model => `
               <div id="model-item-${model.id}" class="model-item ${model.included?'included':''}"
                 draggable="true"
                 ondragstart="onDragStart(event,'${model.id}','models')"
