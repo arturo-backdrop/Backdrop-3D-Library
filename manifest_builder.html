@@ -965,9 +965,10 @@ function importManifestFile(merge=false) {
       }
 
       if (!merge) {
-        // Replace — clear current models, accessories and presets
+        // Replace — clear current models and presets, but keep accessories for ID stability
+        const prevAccs = m.accessories || [];
         m.models      = [];
-        m.accessories = [];
+        m.accessories = [...prevAccs]; // keep so IDs are reused when file URLs match
         m.presets     = [];
       }
 
