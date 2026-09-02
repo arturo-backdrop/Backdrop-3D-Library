@@ -266,6 +266,19 @@
     "sockets": []
   },
   {
+    "id": "counter_connector",
+    "name": "Counter Connector",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Counter%20Connector.glb",
+    "category": "Counters",
+    "w": 0.2413,
+    "d": 0.0889,
+    "h": 0.9652,
+    "color": "#ffffff",
+    "price": 500,
+    "paintable": true,
+    "sockets": []
+  },
+  {
     "id": "storage_full_panels",
     "name": "Storage Full Panels",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Storage%20Full%20Panels.glb",
