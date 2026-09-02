@@ -1,0 +1,159 @@
+{
+  "version": 2,
+  "name": "The Astra Flex",
+  "savedAt": "2026-09-02T18:28:50.108Z",
+  "manifestUrl": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/manifest.json",
+  "unit": "ft",
+  "floorW": 3.048,
+  "floorD": 3.048,
+  "floorColor": "#878787",
+  "floorPlan": null,
+  "items": [
+    {
+      "uid": "storage_full_panels_1788373188118_ue1d",
+      "kind": "model",
+      "x": -0.9533403908446373,
+      "z": -0.9720130871898958,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "storage_full_panels",
+      "catalogId": "storage_full_panels",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "shelves_small_center_1788373247157_9dyt",
+      "kind": "model",
+      "x": -1.4617606078776735,
+      "z": 0.9661179097878079,
+      "rotY": -4.71238898038469,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "groupIds": [],
+      "pivotX": -1.4617606078776735,
+      "pivotZ": 0.9661179097878079,
+      "toggleStates": {
+        "toggle_feet_center.011": false,
+        "toggle_feet_edge.009": true
+      },
+      "modelId": "shelves_small_center",
+      "catalogId": "shelves_small_center",
+      "socketStates": {}
+    },
+    {
+      "uid": "shelves_small_center_1788373257541_arr1",
+      "kind": "model",
+      "x": -1.461760607877674,
+      "z": -0.0021385845698667083,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "groupIds": [],
+      "pivotX": -1.4617606078776735,
+      "pivotZ": 0.9668246212444949,
+      "toggleStates": {
+        "toggle_feet_center.011": false,
+        "toggle_feet_edge.009": true
+      },
+      "modelId": "shelves_small_center",
+      "catalogId": "shelves_small_center",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      }
+    },
+    {
+      "uid": "header_square_1788373311305_own0",
+      "kind": "model",
+      "x": -1.4555898694016665,
+      "z": 0.9264625248511955,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "header_square",
+      "catalogId": "header_square",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "full_panel_1788373375069_iu9t",
+      "kind": "model",
+      "x": 0.05243478644049726,
+      "z": -1.4339965330637408,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      },
+      "toggleStates": {}
+    },
+    {
+      "uid": "console_module_tv_1788373399131_qsi0",
+      "kind": "model",
+      "x": 1.0184884176057696,
+      "z": -1.4329613856274763,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "console_module_tv",
+      "catalogId": "console_module_tv",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "header_square_1788373453799_ptfg",
+      "kind": "model",
+      "x": 0.9788951862567932,
+      "z": -1.431897815368873,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "header_square",
+      "catalogId": "header_square",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "header_full_panels_1788373687580_01xy",
+      "kind": "model",
+      "x": -0.9546189718177178,
+      "z": -0.9744646268967676,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "header_full_panels",
+      "catalogId": "header_full_panels",
+      "socketStates": {},
+      "toggleStates": {}
+    }
+  ],
+  "walls": [],
+  "cameras": [],
+  "catalogColors": {},
+  "wallConfig": {
+    "height": 2.4,
+    "glassRatio": 0,
+    "thickness": 0.1,
+    "color": "#cccccc"
+  }
+}

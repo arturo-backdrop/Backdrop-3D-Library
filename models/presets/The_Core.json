@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "name": "The Onyx",
-  "savedAt": "2026-09-02T18:16:37.065Z",
+  "name": "The Core",
+  "savedAt": "2026-09-02T18:19:23.079Z",
   "manifestUrl": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/manifest.json",
   "unit": "ft",
   "floorW": 3.048,
@@ -10,11 +10,11 @@
   "floorPlan": null,
   "items": [
     {
-      "uid": "storage_full_panels_1788372451370_bsit",
+      "uid": "storage_full_panels_1788373058661_v7iu",
       "kind": "model",
-      "x": -0.9649842890171726,
-      "z": -1.0221580789015312,
-      "rotY": 7.853981633974483,
+      "x": -0.9696718123336661,
+      "z": -1.0218637018681993,
+      "rotY": 1.5707963267948966,
       "color": "#ffffff",
       "yOffset": 0,
       "parentUid": null,
@@ -22,12 +22,6 @@
       "modelId": "storage_full_panels",
       "catalogId": "storage_full_panels",
       "socketStates": {
-        "socket_shelf": {
-          "on": true,
-          "count": 1,
-          "spacing": 0.3,
-          "baseHeight": 0.08534400000000002
-        },
         "socket_lamp_0": {
           "on": false
         },
@@ -38,17 +32,17 @@
       "toggleStates": {}
     },
     {
-      "uid": "full_panel_1788372472975_gi9j",
+      "uid": "full_panel_1788373087267_gkpl",
       "kind": "model",
-      "x": 0.04505191202691183,
-      "z": -1.4830568904324584,
+      "x": 0.042921152754607506,
+      "z": -1.4860033652672997,
       "rotY": 0,
       "color": "#ffffff",
       "yOffset": 0,
       "parentUid": null,
       "localOffset": null,
-      "pivotX": 0.04505191202691183,
-      "pivotZ": -1.4830568904324584,
+      "pivotX": 0.042921152754607506,
+      "pivotZ": -1.4860033652672997,
       "toggleStates": {
         "toggle_feet_center.002": false,
         "toggle_feet_edge.002": true
@@ -63,15 +57,15 @@
       }
     },
     {
-      "uid": "full_panel_1788372504613_click",
+      "uid": "full_panel_1788373098405_click",
       "kind": "model",
-      "x": 1.0140151178412737,
-      "z": -1.4830568904324584,
+      "x": 1.011884358568969,
+      "z": -1.4860033652672997,
       "rotY": 0,
       "color": "#ffffff",
       "groupIds": [],
-      "pivotX": 0.04505191202691183,
-      "pivotZ": -1.4830568904324584,
+      "pivotX": 0.042921152754607506,
+      "pivotZ": -1.4860033652672997,
       "toggleStates": {
         "toggle_feet_center.002": false,
         "toggle_feet_edge.002": true
@@ -79,29 +73,23 @@
       "modelId": "full_panel",
       "catalogId": "full_panel",
       "socketStates": {
-        "socket_shelf": {
-          "on": true,
-          "count": 3,
-          "spacing": 0.381,
-          "baseHeight": -0.249936
-        },
         "socket_lamp": {
           "on": true
         }
       }
     },
     {
-      "uid": "counter_small_1788372842818_riqk",
+      "uid": "counter_medium_1788373141610_gf8q",
       "kind": "model",
-      "x": 0.7866686107615604,
-      "z": 0.9544085527815915,
+      "x": 0.7534203726405679,
+      "z": 0.8007896857710142,
       "rotY": 3.141592653589793,
       "color": "#ffffff",
       "yOffset": 0,
       "parentUid": null,
       "localOffset": null,
-      "modelId": "counter_small",
-      "catalogId": "counter_small",
+      "modelId": "counter_medium",
+      "catalogId": "counter_medium",
       "socketStates": {},
       "toggleStates": {}
     }

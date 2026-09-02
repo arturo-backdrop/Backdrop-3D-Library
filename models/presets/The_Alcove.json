@@ -1,8 +1,8 @@
 {
   "version": 2,
   "name": "The Alcove",
-  "savedAt": "2026-08-20T18:31:51.720Z",
-  "manifestUrl": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/dev/models/manifest.json",
+  "savedAt": "2026-09-02T21:32:12.500Z",
+  "manifestUrl": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/manifest.json",
   "unit": "ft",
   "floorW": 6.096,
   "floorD": 3.048,
@@ -10,159 +10,164 @@
   "floorPlan": null,
   "items": [
     {
-      "uid": "closet_38_glb_1786472000398_mrmq",
+      "uid": "full_panel_1788384453701_ppzk",
       "kind": "model",
-      "x": 2.5355479143751687,
-      "z": -1.445538364747464,
+      "x": -2.4462495352482874,
+      "z": -1.4157541151700386,
       "rotY": 0,
       "color": "#ffffff",
-      "sockets": {},
       "yOffset": 0,
       "parentUid": null,
       "localOffset": null,
-      "modelId": "closet_38_glb",
+      "pivotX": -2.4462495352482874,
+      "pivotZ": -1.4157541151700386,
+      "toggleStates": {
+        "toggle_feet_center.002": false,
+        "toggle_feet_edge.002": true
+      },
       "groupIds": [],
-      "catalogId": "closet_38_glb"
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {}
     },
     {
-      "uid": "38_custom_printed_wall_panel_glb_1786472024907_f769",
+      "uid": "full_panel_1788384458416_click",
       "kind": "model",
-      "x": -2.306135192908209,
-      "z": -1.4442302253979395,
+      "x": -1.4772863294339258,
+      "z": -1.4157541151700386,
       "rotY": 0,
       "color": "#ffffff",
-      "sockets": {
-        "socket_lamp.002": false
+      "groupIds": [],
+      "pivotX": -2.4462495352482874,
+      "pivotZ": -1.4157541151700386,
+      "toggleStates": {
+        "toggle_feet_center.002": false,
+        "toggle_feet_edge.002": true
       },
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {}
+    },
+    {
+      "uid": "full_panel_1788384459369_click",
+      "kind": "model",
+      "x": -0.5083231236195642,
+      "z": -1.4157541151700386,
+      "rotY": 0,
+      "color": "#ffffff",
+      "groupIds": [],
+      "pivotX": -2.4462495352482874,
+      "pivotZ": -1.4157541151700386,
+      "toggleStates": {
+        "toggle_feet_center.002": false,
+        "toggle_feet_edge.002": true
+      },
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {}
+    },
+    {
+      "uid": "full_panel_1788384461075_click",
+      "kind": "model",
+      "x": 1.429603288009159,
+      "z": -1.4157541151700386,
+      "rotY": 0,
+      "color": "#ffffff",
+      "groupIds": [],
+      "pivotX": -2.4462495352482874,
+      "pivotZ": -1.4157541151700386,
+      "toggleStates": {
+        "toggle_feet_center.002": false,
+        "toggle_feet_edge.002": true
+      },
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {
+        "socket_shelf": {
+          "on": true,
+          "count": 3,
+          "spacing": 0.50292,
+          "baseHeight": -0.310896
+        }
+      }
+    },
+    {
+      "uid": "storage_full_panels_1788384570996_xqfw",
+      "kind": "model",
+      "x": 2.398989567592136,
+      "z": -0.9066906328854927,
+      "rotY": 0,
+      "color": "#ffffff",
       "yOffset": 0,
       "parentUid": null,
       "localOffset": null,
-      "groupIds": [
-        "line_1786472027626"
-      ],
-      "pivotX": -2.306135192908209,
-      "pivotZ": -1.4442302253979395,
-      "modelId": "38_custom_printed_wall_panel_glb",
-      "catalogId": "38_custom_printed_wall_panel_glb"
+      "modelId": "storage_full_panels",
+      "catalogId": "storage_full_panels",
+      "socketStates": {},
+      "toggleStates": {}
     },
     {
-      "uid": "38_custom_printed_wall_panel_glb_1786472027626_click",
+      "uid": "shelves_left_1788384593562_8c5g",
       "kind": "model",
-      "x": -1.3371719870938472,
-      "z": -1.4442302253979395,
+      "x": 0.46088693483113463,
+      "z": -1.4157541151700386,
       "rotY": 0,
       "color": "#ffffff",
-      "sockets": {
-        "socket_lamp.002": false
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_feet_center.010": false,
+        "toggle_feet_edge.008": true
       },
-      "groupIds": [
-        "line_1786472027626"
-      ],
-      "pivotX": -2.306135192908209,
-      "pivotZ": -1.4442302253979395,
-      "modelId": "38_custom_printed_wall_panel_glb",
-      "catalogId": "38_custom_printed_wall_panel_glb"
+      "modelId": "shelves_left",
+      "catalogId": "shelves_left",
+      "socketStates": {}
     },
     {
-      "uid": "38_custom_printed_wall_panel_glb_1786472028702_click",
+      "uid": "woodline_archway_1788384620056_85b8",
       "kind": "model",
-      "x": -0.36820878127948553,
-      "z": -1.4442302253979395,
-      "rotY": 0,
-      "color": "#ffffff",
-      "sockets": {
-        "socket_lamp.002": false
-      },
-      "groupIds": [
-        "line_1786472027626"
-      ],
-      "pivotX": -2.306135192908209,
-      "pivotZ": -1.4442302253979395,
-      "modelId": "38_custom_printed_wall_panel_glb",
-      "catalogId": "38_custom_printed_wall_panel_glb"
-    },
-    {
-      "uid": "38_custom_printed_wall_panel_glb_1786472047809_click",
-      "kind": "model",
-      "x": 0.600754424534876,
-      "z": -1.4442302253979393,
-      "rotY": 0,
-      "color": "#ffffff",
-      "sockets": {
-        "socket_lamp.002": false
-      },
-      "groupIds": [
-        "line_1786472027626"
-      ],
-      "pivotX": -2.306135192908209,
-      "pivotZ": -1.4442302253979395,
-      "modelId": "38_custom_printed_wall_panel_glb",
-      "catalogId": "38_custom_printed_wall_panel_glb"
-    },
-    {
-      "uid": "38_custom_printed_wall_panel_glb_1786472050504_click",
-      "kind": "model",
-      "x": 1.5697176303492375,
-      "z": -1.4442302253979393,
-      "rotY": 0,
-      "color": "#ffffff",
-      "sockets": {
-        "socket_lamp.002": false
-      },
-      "groupIds": [
-        "line_1786472027626"
-      ],
-      "pivotX": -2.306135192908209,
-      "pivotZ": -1.4442302253979395,
-      "modelId": "38_custom_printed_wall_panel_glb",
-      "catalogId": "38_custom_printed_wall_panel_glb"
-    },
-    {
-      "uid": "woodline_archway_glb_1786472069555_yzdg",
-      "kind": "model",
-      "x": 2.068981969849216,
-      "z": -0.942880433403594,
+      "x": 1.936960944964878,
+      "z": -0.9066655458493003,
       "rotY": 4.71238898038469,
-      "color": "#cccccc",
-      "sockets": {},
+      "color": "#ffffff",
       "yOffset": 0,
       "parentUid": null,
       "localOffset": null,
-      "modelId": "woodline_archway_glb",
-      "groupIds": [],
-      "catalogId": "woodline_archway_glb"
+      "modelId": "woodline_archway",
+      "catalogId": "woodline_archway",
+      "socketStates": {},
+      "toggleStates": {}
     },
     {
-      "uid": "standard_19_glb_1786472114099_a16b",
+      "uid": "counter_small_1788384668900_4e7q",
       "kind": "model",
-      "x": -2.7666292674521378,
-      "z": -1.1754391752013595,
+      "x": -1.7529765430147928,
+      "z": 0.9040480724805233,
+      "rotY": 3.141592653589793,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "counter_small",
+      "catalogId": "counter_small",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "quarter_panel_1788384700715_vk80",
+      "kind": "model",
+      "x": -2.9308271612382013,
+      "z": -1.272632014202538,
       "rotY": 1.5707963267948966,
       "color": "#ffffff",
-      "sockets": {
-        "socket_lamp.003": false
-      },
       "yOffset": 0,
       "parentUid": null,
       "localOffset": null,
-      "modelId": "standard_19_glb",
-      "groupIds": [],
-      "catalogId": "standard_19_glb"
-    },
-    {
-      "uid": "counter_small_glb_1786472166193_rx49",
-      "kind": "model",
-      "x": -0.943888187299349,
-      "z": 0.8186752511424756,
-      "rotY": 0,
-      "color": "#ffffff",
-      "sockets": {},
-      "yOffset": 0,
-      "parentUid": null,
-      "localOffset": null,
-      "modelId": "counter_small_glb",
-      "groupIds": [],
-      "catalogId": "counter_small_glb"
+      "modelId": "quarter_panel",
+      "catalogId": "quarter_panel",
+      "socketStates": {},
+      "toggleStates": {}
     }
   ],
   "walls": [],

@@ -1,147 +1,129 @@
 {
   "version": 2,
   "name": "The Nook",
-  "savedAt": "2026-08-20T18:32:31.287Z",
-  "manifestUrl": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/dev/models/manifest.json",
+  "savedAt": "2026-09-02T18:56:52.786Z",
+  "manifestUrl": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/manifest.json",
   "unit": "ft",
   "floorW": 3.048,
   "floorD": 3.048,
-  "floorColor": "#ffffff",
+  "floorColor": "#878787",
   "floorPlan": null,
   "items": [
     {
-      "uid": "closet_38_glb_1786471603455_6jhb",
+      "uid": "storage_full_panels_1788373918518_87ch",
       "kind": "model",
-      "x": -1.45714952062471,
-      "z": -0.8919583584901536,
-      "rotY": -4.71238898038469,
+      "x": -0.9786719934295566,
+      "z": -0.9984024167895454,
+      "rotY": 1.5707963267948966,
       "color": "#ffffff",
-      "sockets": {},
       "yOffset": 0,
       "parentUid": null,
       "localOffset": null,
-      "pivotX": -0.37142106367054395,
-      "pivotZ": -0.6396932458464661,
-      "groupIds": [
-        "group_1786471928325",
-        "group_1786475831639"
-      ],
-      "modelId": "closet_38_glb",
-      "catalogId": "closet_38_glb"
+      "modelId": "storage_full_panels",
+      "socketStates": {},
+      "toggleStates": {},
+      "groupIds": [],
+      "catalogId": "storage_full_panels"
     },
     {
-      "uid": "38_custom_printed_wall_panel_glb_1786471622507_c0zc",
+      "uid": "shelves_small_center_1788373967069_9q9m",
       "kind": "model",
-      "x": -1.4566201700812271,
-      "z": 0.07388558340497542,
-      "rotY": -4.71238898038469,
+      "x": -1.4900768300707614,
+      "z": -0.04930617976675489,
+      "rotY": 7.853981633974483,
       "color": "#ffffff",
-      "sockets": {
-        "socket_shelf.001": {
-          "enabled": true,
-          "count": 1,
-          "spacing": 0.3,
-          "baseHeight": 0.3
-        },
-        "socket_lamp.002": true
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_feet_center.011": false,
+        "toggle_feet_edge.009": true
       },
-      "yOffset": 0,
-      "parentUid": null,
-      "localOffset": null,
-      "pivotX": -0.37142106367054395,
-      "pivotZ": -0.6396932458464661,
-      "groupIds": [
-        "group_1786471928325",
-        "group_1786475831639"
-      ],
-      "modelId": "38_custom_printed_wall_panel_glb",
-      "catalogId": "38_custom_printed_wall_panel_glb"
-    },
-    {
-      "uid": "standard_38_half_height_glb_1786471650072_pqt1",
-      "kind": "model",
-      "x": -1.4572645793098526,
-      "z": 1.040192366146357,
-      "rotY": -4.71238898038469,
-      "color": "#ffffff",
-      "sockets": {},
-      "yOffset": 0,
-      "parentUid": null,
-      "localOffset": null,
-      "pivotX": -0.37142106367054395,
-      "pivotZ": -0.6396932458464661,
-      "groupIds": [
-        "group_1786471928325",
-        "group_1786475831639"
-      ],
-      "modelId": "standard_38_half_height_glb",
-      "catalogId": "standard_38_half_height_glb"
-    },
-    {
-      "uid": "38_custom_printed_wall_panel_glb_1786471661979_nyvr",
-      "kind": "model",
-      "x": 0.061687968838390006,
-      "z": -1.353778794236474,
-      "rotY": -6.2831853071795845,
-      "color": "#ffffff",
-      "sockets": {
-        "socket_lamp.002": true
-      },
-      "yOffset": 0,
-      "parentUid": null,
-      "localOffset": null,
-      "pivotX": -0.37142106367054395,
-      "pivotZ": -0.6396932458464661,
-      "groupIds": [
-        "group_1786471928325",
-        "group_1786475831639"
-      ],
-      "modelId": "38_custom_printed_wall_panel_glb",
-      "catalogId": "38_custom_printed_wall_panel_glb"
-    },
-    {
-      "uid": "38_custom_printed_wall_panel_glb_1786471689737_click",
-      "kind": "model",
-      "x": 1.030651174652753,
-      "z": -1.3537787942364754,
-      "rotY": -6.2831853071795845,
-      "color": "#ffffff",
-      "sockets": {
-        "socket_lamp.002": false,
-        "socket_shelf.001": {
-          "enabled": true,
-          "count": 1,
-          "spacing": 0.3,
-          "baseHeight": 0.3
+      "modelId": "shelves_small_center",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
         }
       },
-      "groupIds": [
-        "group_1786471928325",
-        "group_1786475831639"
-      ],
-      "pivotX": -0.37142106367054395,
-      "pivotZ": -0.6396932458464661,
-      "modelId": "38_custom_printed_wall_panel_glb",
-      "catalogId": "38_custom_printed_wall_panel_glb"
+      "groupIds": [],
+      "catalogId": "shelves_small_center"
     },
     {
-      "uid": "woodline_archway_glb_1786471778039_hnxf",
+      "uid": "full_panel_half_height_1788373987954_z88o",
       "kind": "model",
-      "x": 1.0501687445013856,
-      "z": -1.3527214776670247,
-      "rotY": -1.1102230246251565e-16,
+      "x": -1.4916293192835155,
+      "z": 0.9244036042886676,
+      "rotY": 1.5707963267948966,
       "color": "#ffffff",
-      "sockets": {},
       "yOffset": 0,
       "parentUid": null,
       "localOffset": null,
-      "modelId": "woodline_archway_glb",
-      "groupIds": [
-        "group_1786475831639"
-      ],
-      "pivotX": -0.37142106367054395,
-      "pivotZ": -0.6396932458464661,
-      "catalogId": "woodline_archway_glb"
+      "toggleStates": {
+        "toggle_feet_center.012": false,
+        "toggle_feet_edge.010": true
+      },
+      "modelId": "full_panel_half_height",
+      "socketStates": {},
+      "groupIds": [],
+      "catalogId": "full_panel_half_height"
+    },
+    {
+      "uid": "shelves_small_center_1788374012214_rrrm",
+      "kind": "model",
+      "x": 0.991173025526144,
+      "z": -1.4665173805172342,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_feet_center.011": false,
+        "toggle_feet_edge.009": true
+      },
+      "modelId": "shelves_small_center",
+      "socketStates": {},
+      "groupIds": [],
+      "catalogId": "shelves_small_center"
+    },
+    {
+      "uid": "full_panel_1788374015902_p4p1",
+      "kind": "model",
+      "x": 0.009807870764104776,
+      "z": -1.4665173805172342,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_feet_center.002": false,
+        "toggle_feet_edge.002": true
+      },
+      "modelId": "full_panel",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      },
+      "groupIds": [],
+      "catalogId": "full_panel"
+    },
+    {
+      "uid": "woodline_archway_1788374389820_heew",
+      "kind": "model",
+      "x": 0.991173025526144,
+      "z": -1.4665173805172342,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "woodline_archway",
+      "socketStates": {},
+      "toggleStates": {},
+      "groupIds": [],
+      "catalogId": "woodline_archway"
     }
   ],
   "walls": [],
