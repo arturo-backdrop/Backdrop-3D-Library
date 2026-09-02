@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "The Alcove",
-  "savedAt": "2026-09-02T21:32:12.500Z",
+  "savedAt": "2026-09-02T22:35:56.722Z",
   "manifestUrl": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/manifest.json",
   "unit": "ft",
   "floorW": 6.096,
@@ -27,26 +27,12 @@
       },
       "groupIds": [],
       "modelId": "full_panel",
-      "catalogId": "full_panel",
-      "socketStates": {}
-    },
-    {
-      "uid": "full_panel_1788384458416_click",
-      "kind": "model",
-      "x": -1.4772863294339258,
-      "z": -1.4157541151700386,
-      "rotY": 0,
-      "color": "#ffffff",
-      "groupIds": [],
-      "pivotX": -2.4462495352482874,
-      "pivotZ": -1.4157541151700386,
-      "toggleStates": {
-        "toggle_feet_center.002": false,
-        "toggle_feet_edge.002": true
+      "socketStates": {
+        "socket_lamp": {
+          "on": false
+        }
       },
-      "modelId": "full_panel",
-      "catalogId": "full_panel",
-      "socketStates": {}
+      "catalogId": "full_panel"
     },
     {
       "uid": "full_panel_1788384459369_click",
@@ -63,8 +49,8 @@
         "toggle_feet_edge.002": true
       },
       "modelId": "full_panel",
-      "catalogId": "full_panel",
-      "socketStates": {}
+      "socketStates": {},
+      "catalogId": "full_panel"
     },
     {
       "uid": "full_panel_1788384461075_click",
@@ -81,7 +67,6 @@
         "toggle_feet_edge.002": true
       },
       "modelId": "full_panel",
-      "catalogId": "full_panel",
       "socketStates": {
         "socket_shelf": {
           "on": true,
@@ -89,7 +74,8 @@
           "spacing": 0.50292,
           "baseHeight": -0.310896
         }
-      }
+      },
+      "catalogId": "full_panel"
     },
     {
       "uid": "storage_full_panels_1788384570996_xqfw",
@@ -102,9 +88,10 @@
       "parentUid": null,
       "localOffset": null,
       "modelId": "storage_full_panels",
-      "catalogId": "storage_full_panels",
       "socketStates": {},
-      "toggleStates": {}
+      "toggleStates": {},
+      "groupIds": [],
+      "catalogId": "storage_full_panels"
     },
     {
       "uid": "shelves_left_1788384593562_8c5g",
@@ -121,8 +108,9 @@
         "toggle_feet_edge.008": true
       },
       "modelId": "shelves_left",
-      "catalogId": "shelves_left",
-      "socketStates": {}
+      "socketStates": {},
+      "groupIds": [],
+      "catalogId": "shelves_left"
     },
     {
       "uid": "woodline_archway_1788384620056_85b8",
@@ -135,24 +123,26 @@
       "parentUid": null,
       "localOffset": null,
       "modelId": "woodline_archway",
-      "catalogId": "woodline_archway",
       "socketStates": {},
-      "toggleStates": {}
+      "toggleStates": {},
+      "groupIds": [],
+      "catalogId": "woodline_archway"
     },
     {
       "uid": "counter_small_1788384668900_4e7q",
       "kind": "model",
-      "x": -1.7529765430147928,
-      "z": 0.9040480724805233,
+      "x": -0.8442245271898907,
+      "z": 0.894146958119495,
       "rotY": 3.141592653589793,
       "color": "#ffffff",
       "yOffset": 0,
       "parentUid": null,
       "localOffset": null,
       "modelId": "counter_small",
-      "catalogId": "counter_small",
       "socketStates": {},
-      "toggleStates": {}
+      "toggleStates": {},
+      "groupIds": [],
+      "catalogId": "counter_small"
     },
     {
       "uid": "quarter_panel_1788384700715_vk80",
@@ -165,9 +155,42 @@
       "parentUid": null,
       "localOffset": null,
       "modelId": "quarter_panel",
-      "catalogId": "quarter_panel",
       "socketStates": {},
-      "toggleStates": {}
+      "toggleStates": {},
+      "groupIds": [],
+      "catalogId": "quarter_panel"
+    },
+    {
+      "uid": "header_rectangle_1788388353742_ztna",
+      "kind": "model",
+      "x": -1.477533182070263,
+      "z": -1.4157541151700386,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "header_rectangle",
+      "socketStates": {},
+      "toggleStates": {},
+      "groupIds": [],
+      "catalogId": "header_rectangle"
+    },
+    {
+      "uid": "multimedia_tv_1788388384814_mbuw",
+      "kind": "model",
+      "x": -1.477533182070263,
+      "z": -1.4157541151700386,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "multimedia_tv",
+      "socketStates": {},
+      "toggleStates": {},
+      "groupIds": [],
+      "catalogId": "multimedia_tv"
     }
   ],
   "walls": [],
