@@ -1,5 +1,153 @@
 [
   {
+    "id": "backdrop_broadcast",
+    "name": "Broadcast",
+    "category": "QuickZip",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/backdrops/Quickzip/Broadcast.glb",
+    "w": 3,
+    "d": 0.2,
+    "h": 2.4,
+    "color": "#3a6ea5",
+    "paintable": true,
+    "sockets": []
+  },
+  {
+    "id": "backdrop_showtime",
+    "name": "Showtime",
+    "category": "QuickZip",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/backdrops/Quickzip/Showtime.glb",
+    "w": 3,
+    "d": 0.2,
+    "h": 2.4,
+    "color": "#3a6ea5",
+    "paintable": true,
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Lamp.glb"
+      }
+    ]
+  },
+  {
+    "id": "backdrop_8ftStraight",
+    "name": "8ft QZ Straight",
+    "category": "QuickZip",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/backdrops/Quickzip/8ftStraight.glb",
+    "w": 0.6,
+    "d": 0.3,
+    "h": 0.05,
+    "color": "#d8c9a3",
+    "paintable": true,
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Lamp.glb"
+      }
+    ]
+  },
+  {
+    "id": "backdrop_seg_3ft",
+    "name": "SEG 3ft",
+    "category": "SEG Lightbox",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/backdrops/SEG/seg_3ft.glb",
+    "w": 0.9,
+    "d": 0.2,
+    "h": 2.4,
+    "color": "#d17b2a",
+    "paintable": true,
+    "sockets": [
+      {
+        "name": "socket_shelf",
+        "accessoryFile": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Shelf.glb"
+      }
+    ]
+  },
+  {
+    "id": "prop_shelf",
+    "name": "Shelf",
+    "category": "Props",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Shelf.glb",
+    "w": 0.6,
+    "d": 0.3,
+    "h": 0.05,
+    "color": "#d8c9a3",
+    "paintable": false,
+    "sockets": []
+  },
+  {
+    "id": "prop_lamp",
+    "name": "Lamp",
+    "category": "Props",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Lamp.glb",
+    "w": 0.1,
+    "d": 0.1,
+    "h": 0.3,
+    "color": "#ffffff",
+    "paintable": false,
+    "sockets": []
+  },
+  {
+    "id": "prop_door",
+    "name": "Door",
+    "category": "Props",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Door.glb",
+    "w": 0.9,
+    "d": 0.1,
+    "h": 2.1,
+    "color": "#d8c9a3",
+    "paintable": false,
+    "sockets": []
+  },
+  {
+    "id": "prop_chair",
+    "name": "Chair",
+    "category": "Props",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Chair.glb",
+    "w": 0.9,
+    "d": 0.1,
+    "h": 2.1,
+    "color": "#d8c9a3",
+    "paintable": false,
+    "sockets": []
+  },
+  {
+    "id": "prop_table",
+    "name": "Table",
+    "category": "Props",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Table.glb",
+    "w": 0.9,
+    "d": 0.1,
+    "h": 2.1,
+    "color": "#d8c9a3",
+    "paintable": false,
+    "sockets": []
+  },
+  {
+    "id": "prop_qz_showcase_books",
+    "name": "Showcase Books",
+    "category": "Props",
+    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/QZ_Showcase_Books.glb",
+    "w": 0.9,
+    "d": 0.1,
+    "h": 2.1,
+    "color": "#d8c9a3",
+    "paintable": false,
+    "sockets": []
+  },
+  {
+    "id": "prop_plant",
+    "name": "Plant",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/props/prop_Plant.glb",
+    "category": "Props",
+    "w": 0.6,
+    "d": 0.6,
+    "h": 1.6,
+    "color": "#cccccc",
+    "price": null,
+    "paintable": false,
+    "sockets": []
+  },
+  {
     "id": "full_panel",
     "name": "Full Panel",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Full%20Panel.glb",
@@ -270,11 +418,11 @@
     "name": "Counter Connector",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Counter%20Connector.glb",
     "category": "Counters",
-    "w": 0.2413,
-    "d": 0.0889,
-    "h": 0.9652,
+    "w": 1,
+    "d": 0.5001,
+    "h": 2,
     "color": "#ffffff",
-    "price": 500,
+    "price": 250,
     "paintable": true,
     "sockets": []
   },
@@ -926,141 +1074,5 @@
     "price": 2000,
     "paintable": false,
     "sockets": []
-  },
-  {
-    "id": "prop_chair",
-    "name": "Chair",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/props/prop_Chair.glb",
-    "category": "Props",
-    "w": 0.9997,
-    "d": 0.4999,
-    "h": 1.9995,
-    "color": "#cccccc",
-    "price": null,
-    "paintable": false,
-    "sockets": []
-  },
-  {
-    "id": "prop_table",
-    "name": "Table",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/props/prop_Table.glb",
-    "category": "Props",
-    "w": 0.9997,
-    "d": 0.4999,
-    "h": 1.9995,
-    "color": "#cccccc",
-    "price": null,
-    "paintable": false,
-    "sockets": []
-  },
-  {
-    "id": "prop_plant",
-    "name": "Plant",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/props/prop_Plant.glb",
-    "category": "Props",
-    "w": 0.6,
-    "d": 0.6,
-    "h": 1.6,
-    "color": "#cccccc",
-    "price": null,
-    "paintable": false,
-    "sockets": []
-  },
-  {
-    "id": "preset_the_astra",
-    "name": "The Astra",
-    "description": "",
-    "sizes": [
-      "10x10 ft"
-    ],
-    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Astra_Thumnail.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Astra.json",
-    "type": "preset"
-  },
-  {
-    "id": "preset_the_alcove",
-    "name": "The Alcove",
-    "description": "",
-    "sizes": [
-      "20x10 ft"
-    ],
-    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheAlcove_Thumbnail.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Alcove.json",
-    "type": "preset"
-  },
-  {
-    "id": "preset_the_astra_flex",
-    "name": "The Astra Flex",
-    "description": "",
-    "sizes": [
-      "10x10 ft"
-    ],
-    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/AstraFlex_Thumbnail.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Astra_Flex.json",
-    "type": "preset"
-  },
-  {
-    "id": "preset_the_core",
-    "name": "The Core",
-    "description": "",
-    "sizes": [
-      "10x10 ft"
-    ],
-    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Core_Thumbnail.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Core.json",
-    "type": "preset"
-  },
-  {
-    "id": "preset_the_nook",
-    "name": "The Nook",
-    "description": "",
-    "sizes": [
-      "10x10 ft"
-    ],
-    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheNook_Thumbnail.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Nook.json",
-    "type": "preset"
-  },
-  {
-    "id": "preset_the_phoenix",
-    "name": "The Phoenix",
-    "description": "",
-    "sizes": [
-      "20x10 ft"
-    ],
-    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Phoenix_Thumbnail.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Phoenix.json",
-    "type": "preset"
-  },
-  {
-    "id": "preset_the_onyx",
-    "name": "The Onyx",
-    "description": "",
-    "sizes": [
-      "10x10 ft"
-    ],
-    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheOnyx_Thumbnail.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Onyx.json",
-    "type": "preset"
-  },
-  {
-    "id": "preset_the_vortex",
-    "name": "The Vortex",
-    "description": "",
-    "sizes": [
-      "30x30 ft"
-    ],
-    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheVortex_Thumbnail.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Vortex.json",
-    "type": "preset"
-  },
-  {
-    "id": "preset_the_sphinx",
-    "name": "The Sphinx",
-    "description": "",
-    "sizes": [],
-    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Sphinx_Thumbnails.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Sphinx.json",
-    "type": "preset"
   }
 ]
