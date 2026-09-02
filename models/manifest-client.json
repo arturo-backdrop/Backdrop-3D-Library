@@ -967,6 +967,17 @@
     "sockets": []
   },
   {
+    "id": "preset_the_astra",
+    "name": "The Astra",
+    "description": "",
+    "sizes": [
+      "10x10 ft"
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Astra_Thumnail.png",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Astra.json",
+    "type": "preset"
+  },
+  {
     "id": "preset_the_alcove",
     "name": "The Alcove",
     "description": "",
@@ -975,6 +986,28 @@
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheAlcove_Thumbnail.png",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Alcove.json",
+    "type": "preset"
+  },
+  {
+    "id": "preset_the_astra_flex",
+    "name": "The Astra Flex",
+    "description": "",
+    "sizes": [
+      "10x10 ft"
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/AstraFlex_Thumbnail.png",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Astra_Flex.json",
+    "type": "preset"
+  },
+  {
+    "id": "preset_the_core",
+    "name": "The Core",
+    "description": "",
+    "sizes": [
+      "10x10 ft"
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Core_Thumbnail.png",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Core.json",
     "type": "preset"
   },
   {
@@ -989,6 +1022,17 @@
     "type": "preset"
   },
   {
+    "id": "preset_the_phoenix",
+    "name": "The Phoenix",
+    "description": "",
+    "sizes": [
+      "20x10 ft"
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Phoenix_Thumbnail.png",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Phoenix.json",
+    "type": "preset"
+  },
+  {
     "id": "preset_the_onyx",
     "name": "The Onyx",
     "description": "",
@@ -997,6 +1041,26 @@
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheOnyx_Thumbnail.png",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Onyx.json",
+    "type": "preset"
+  },
+  {
+    "id": "preset_the_vortex",
+    "name": "The Vortex",
+    "description": "",
+    "sizes": [
+      "30x30 ft"
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheVortex_Thumbnail.png",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Vortex.json",
+    "type": "preset"
+  },
+  {
+    "id": "preset_the_sphinx",
+    "name": "The Sphinx",
+    "description": "",
+    "sizes": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Sphinx_Thumbnails.png",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Sphinx.json",
     "type": "preset"
   }
 ]
