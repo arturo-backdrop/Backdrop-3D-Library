@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "The Vortex",
-  "savedAt": "2026-09-02T21:55:33.352Z",
+  "savedAt": "2026-09-02T23:39:41.378Z",
   "manifestUrl": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/manifest.json",
   "unit": "ft",
   "floorW": 9.144,
@@ -29,8 +29,8 @@
         "group_1788385536496"
       ],
       "modelId": "full_panel",
-      "catalogId": "full_panel",
-      "socketStates": {}
+      "socketStates": {},
+      "catalogId": "full_panel"
     },
     {
       "uid": "door_full_panel_1788385318080_mhfy",
@@ -48,9 +48,9 @@
         "group_1788385536496"
       ],
       "modelId": "door_full_panel",
-      "catalogId": "door_full_panel",
       "socketStates": {},
-      "toggleStates": {}
+      "toggleStates": {},
+      "catalogId": "door_full_panel"
     },
     {
       "uid": "header_full_panel_1788385349064_rwjq",
@@ -68,13 +68,13 @@
         "group_1788385536496"
       ],
       "modelId": "header_full_panel",
-      "catalogId": "header_full_panel",
       "socketStates": {
         "socket_lamp": {
           "on": true
         }
       },
-      "toggleStates": {}
+      "toggleStates": {},
+      "catalogId": "header_full_panel"
     },
     {
       "uid": "header_full_panel_1788385354488_m2qi",
@@ -92,13 +92,13 @@
         "group_1788385536496"
       ],
       "modelId": "header_full_panel",
-      "catalogId": "header_full_panel",
       "socketStates": {
         "socket_lamp": {
           "on": true
         }
       },
-      "toggleStates": {}
+      "toggleStates": {},
+      "catalogId": "header_full_panel"
     },
     {
       "uid": "console_module_1788385480358_yxw2",
@@ -119,12 +119,12 @@
         "toggle_back_panel.014": true
       },
       "modelId": "console_module",
-      "catalogId": "console_module",
       "socketStates": {
         "socket_lamp": {
           "on": true
         }
-      }
+      },
+      "catalogId": "console_module"
     },
     {
       "uid": "full_panel_1788385542270_dup0_oxy",
@@ -144,8 +144,8 @@
       },
       "groupIds": [],
       "modelId": "full_panel",
-      "catalogId": "full_panel",
-      "socketStates": {}
+      "socketStates": {},
+      "catalogId": "full_panel"
     },
     {
       "uid": "door_full_panel_1788385542270_dup1_bzv",
@@ -161,9 +161,9 @@
       "pivotZ": 0.5246997892379188,
       "groupIds": [],
       "modelId": "door_full_panel",
-      "catalogId": "door_full_panel",
       "socketStates": {},
-      "toggleStates": {}
+      "toggleStates": {},
+      "catalogId": "door_full_panel"
     },
     {
       "uid": "header_full_panel_1788385542270_dup2_ocx",
@@ -179,13 +179,13 @@
       "pivotZ": 2.457477866616591,
       "groupIds": [],
       "modelId": "header_full_panel",
-      "catalogId": "header_full_panel",
       "socketStates": {
         "socket_lamp": {
           "on": true
         }
       },
-      "toggleStates": {}
+      "toggleStates": {},
+      "catalogId": "header_full_panel"
     },
     {
       "uid": "header_full_panel_1788385542270_dup3_hev",
@@ -201,13 +201,13 @@
       "pivotZ": 2.45747786661659,
       "groupIds": [],
       "modelId": "header_full_panel",
-      "catalogId": "header_full_panel",
       "socketStates": {
         "socket_lamp": {
           "on": true
         }
       },
-      "toggleStates": {}
+      "toggleStates": {},
+      "catalogId": "header_full_panel"
     },
     {
       "uid": "console_module_1788385542270_dup4_fpf",
@@ -226,12 +226,12 @@
         "toggle_back_panel.014": true
       },
       "modelId": "console_module",
-      "catalogId": "console_module",
       "socketStates": {
         "socket_lamp": {
           "on": true
         }
-      }
+      },
+      "catalogId": "console_module"
     },
     {
       "uid": "full_panel_1788385596696_dup0_2it",
@@ -251,8 +251,8 @@
       },
       "groupIds": [],
       "modelId": "full_panel",
-      "catalogId": "full_panel",
-      "socketStates": {}
+      "socketStates": {},
+      "catalogId": "full_panel"
     },
     {
       "uid": "door_full_panel_1788385596696_dup1_tm9",
@@ -268,9 +268,9 @@
       "pivotZ": -0.8752512777097177,
       "groupIds": [],
       "modelId": "door_full_panel",
-      "catalogId": "door_full_panel",
       "socketStates": {},
-      "toggleStates": {}
+      "toggleStates": {},
+      "catalogId": "door_full_panel"
     },
     {
       "uid": "header_full_panel_1788385596696_dup2_1ck",
@@ -286,13 +286,13 @@
       "pivotZ": -0.872621720915504,
       "groupIds": [],
       "modelId": "header_full_panel",
-      "catalogId": "header_full_panel",
       "socketStates": {
         "socket_lamp": {
           "on": true
         }
       },
-      "toggleStates": {}
+      "toggleStates": {},
+      "catalogId": "header_full_panel"
     },
     {
       "uid": "header_full_panel_1788385596696_dup3_rp5",
@@ -308,13 +308,13 @@
       "pivotZ": -0.8726217209155036,
       "groupIds": [],
       "modelId": "header_full_panel",
-      "catalogId": "header_full_panel",
       "socketStates": {
         "socket_lamp": {
           "on": true
         }
       },
-      "toggleStates": {}
+      "toggleStates": {},
+      "catalogId": "header_full_panel"
     },
     {
       "uid": "console_module_1788385596696_dup4_tw7",
@@ -333,12 +333,12 @@
         "toggle_back_panel.014": true
       },
       "modelId": "console_module",
-      "catalogId": "console_module",
       "socketStates": {
         "socket_lamp": {
           "on": true
         }
-      }
+      },
+      "catalogId": "console_module"
     },
     {
       "uid": "full_panel_1788385626725_dup0_9jy",
@@ -358,8 +358,8 @@
       },
       "groupIds": [],
       "modelId": "full_panel",
-      "catalogId": "full_panel",
-      "socketStates": {}
+      "socketStates": {},
+      "catalogId": "full_panel"
     },
     {
       "uid": "door_full_panel_1788385626725_dup1_5h3",
@@ -375,9 +375,9 @@
       "pivotZ": -0.39912285044059614,
       "groupIds": [],
       "modelId": "door_full_panel",
-      "catalogId": "door_full_panel",
       "socketStates": {},
-      "toggleStates": {}
+      "toggleStates": {},
+      "catalogId": "door_full_panel"
     },
     {
       "uid": "header_full_panel_1788385626725_dup2_uye",
@@ -393,13 +393,13 @@
       "pivotZ": -2.3378945742288026,
       "groupIds": [],
       "modelId": "header_full_panel",
-      "catalogId": "header_full_panel",
       "socketStates": {
         "socket_lamp": {
           "on": true
         }
       },
-      "toggleStates": {}
+      "toggleStates": {},
+      "catalogId": "header_full_panel"
     },
     {
       "uid": "header_full_panel_1788385626725_dup3_w82",
@@ -415,13 +415,13 @@
       "pivotZ": -2.3373857701917826,
       "groupIds": [],
       "modelId": "header_full_panel",
-      "catalogId": "header_full_panel",
       "socketStates": {
         "socket_lamp": {
           "on": true
         }
       },
-      "toggleStates": {}
+      "toggleStates": {},
+      "catalogId": "header_full_panel"
     },
     {
       "uid": "console_module_1788385626725_dup4_uaj",
@@ -437,13 +437,15 @@
       "pivotZ": -2.333275174983867,
       "groupIds": [],
       "modelId": "console_module",
-      "catalogId": "console_module",
       "socketStates": {
         "socket_lamp": {
           "on": true
         }
       },
-      "toggleStates": {}
+      "toggleStates": {
+        "toggle_back_panel.014": true
+      },
+      "catalogId": "console_module"
     },
     {
       "uid": "full_panel_half_height_1788385870091_v24q",
@@ -459,8 +461,9 @@
         "toggle_back_panel.003": true
       },
       "modelId": "full_panel_half_height",
-      "catalogId": "full_panel_half_height",
-      "socketStates": {}
+      "socketStates": {},
+      "groupIds": [],
+      "catalogId": "full_panel_half_height"
     },
     {
       "uid": "full_panel_half_height_1788385879848_s8dp",
@@ -476,8 +479,9 @@
         "toggle_back_panel.003": true
       },
       "modelId": "full_panel_half_height",
-      "catalogId": "full_panel_half_height",
-      "socketStates": {}
+      "socketStates": {},
+      "groupIds": [],
+      "catalogId": "full_panel_half_height"
     },
     {
       "uid": "full_panel_half_height_1788385927641_yreg",
@@ -493,8 +497,9 @@
         "toggle_back_panel.003": true
       },
       "modelId": "full_panel_half_height",
-      "catalogId": "full_panel_half_height",
-      "socketStates": {}
+      "socketStates": {},
+      "groupIds": [],
+      "catalogId": "full_panel_half_height"
     },
     {
       "uid": "full_panel_half_height_1788385941824_60ne",
@@ -510,8 +515,9 @@
         "toggle_back_panel.003": true
       },
       "modelId": "full_panel_half_height",
-      "catalogId": "full_panel_half_height",
-      "socketStates": {}
+      "socketStates": {},
+      "groupIds": [],
+      "catalogId": "full_panel_half_height"
     }
   ],
   "walls": [],
