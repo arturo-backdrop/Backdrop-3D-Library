@@ -1058,7 +1058,7 @@
     "id": "preset_the_sphinx",
     "name": "The Sphinx",
     "description": "",
-    "sizes": [],
+    "sizes": [20x10 ft],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Sphinx_Thumbnails.png",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Sphinx.json",
     "type": "preset"
