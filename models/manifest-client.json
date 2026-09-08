@@ -1002,6 +1002,34 @@
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Props/Plant.png"
   },
   {
+    "id": "prop_high_chair",
+    "name": "High Chair",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/props/prop_High_Chair.glb",
+    "category": "Props",
+    "w": 0.5334,
+    "d": 0.508,
+    "h": 0.9144,
+    "color": "#cccccc",
+    "price": null,
+    "paintable": false,
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Props/High%20Chair.png"
+  },
+  {
+    "id": "prop_high_table",
+    "name": "High Table",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/props/prop_High_Table.glb",
+    "category": "Props",
+    "w": 0.762,
+    "d": 0.762,
+    "h": 1.0668,
+    "color": "#cccccc",
+    "price": null,
+    "paintable": false,
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Props/High%20Table.png"
+  },
+  {
     "id": "preset_the_astra",
     "name": "The Astra",
     "description": "",
