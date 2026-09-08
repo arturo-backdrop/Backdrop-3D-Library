@@ -50,7 +50,8 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Standard%2019.png"
   },
   {
     "id": "quarter_panel",
@@ -72,7 +73,8 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Standard%209.5.png"
   },
   {
     "id": "full_panel_half_height",
@@ -99,7 +101,8 @@
     "color": "#ffffff",
     "price": 1000,
     "paintable": true,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Half%20Panel%20Half%20Height.png"
   },
   {
     "id": "quarter_panel_half_height",
@@ -112,7 +115,8 @@
     "color": "#ffffff",
     "price": 1000,
     "paintable": true,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Quarter%20Panel%20Half%20Height.png"
   },
   {
     "id": "shelves_module_m",
@@ -134,7 +138,8 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Shelves%20Module%20M.png"
   },
   {
     "id": "shelves_module_m2",
@@ -156,7 +161,8 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Shelves%20Module%20M2.png"
   },
   {
     "id": "shelves_small_center",
@@ -178,7 +184,8 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Shelves%20Small%20Center.png"
   },
   {
     "id": "shelves_left",
@@ -200,7 +207,8 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Shelves%20Left.png"
   },
   {
     "id": "shelves_right",
@@ -222,7 +230,8 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Shelves%20Right.png"
   },
   {
     "id": "counter_small",
@@ -263,7 +272,8 @@
     "color": "#ffffff",
     "price": 900,
     "paintable": true,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Corner%20Counter%20Connector.png"
   },
   {
     "id": "counter_connector",
@@ -276,7 +286,8 @@
     "color": "#ffffff",
     "price": 500,
     "paintable": true,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Counter%20Connector.png"
   },
   {
     "id": "storage_full_panels",
@@ -330,16 +341,17 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Closet%2038.png"
   },
   {
     "id": "storage_double",
     "name": "Storage Double",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Storage%20Double.glb",
     "category": "Storage",
-    "w": 0.965,
+    "w": 0.9649,
     "d": 2.032,
-    "h": 2.362,
+    "h": 2.3619,
     "color": "#ffffff",
     "price": 12000,
     "paintable": true,
@@ -392,16 +404,17 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Storage%20Double%20Panels.png"
   },
   {
     "id": "storage_half",
     "name": "Storage Half",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Storage%20Half.glb",
     "category": "Storage",
-    "w": 0.483,
-    "d": 0.584,
-    "h": 2.362,
+    "w": 0.4831,
+    "d": 0.5839,
+    "h": 2.3619,
     "color": "#ffffff",
     "price": 4000,
     "paintable": true,
@@ -438,16 +451,17 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Storage%20Half.png"
   },
   {
     "id": "storage_half_and_full_panels",
     "name": "Storage Half and Full Panels",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Storage%20Half%20and%20Full%20Panels.glb",
     "category": "Storage",
-    "w": 0.559,
-    "d": 0.965,
-    "h": 2.362,
+    "w": 0.5591,
+    "d": 0.9649,
+    "h": 2.3619,
     "color": "#ffffff",
     "price": 6000,
     "paintable": true,
@@ -484,20 +498,22 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Storage%20Half%20and%20Full%20Panels.png"
   },
   {
     "id": "door_full_panel",
     "name": "Door Full Panel",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Door%20Full%20Panel.glb",
     "category": "Doors",
-    "w": 0.965,
-    "d": 0.089,
-    "h": 2.362,
+    "w": 0.9649,
+    "d": 0.0889,
+    "h": 2.3619,
     "color": "#ffffff",
     "price": 2000,
     "paintable": true,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Door%20Full%20Panel.png"
   },
   {
     "id": "door_half_panel",
@@ -510,7 +526,8 @@
     "color": "#ffffff",
     "price": 2000,
     "paintable": true,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Door%20Half%20Panel.png"
   },
   {
     "id": "header_square",
@@ -518,7 +535,7 @@
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Square.glb",
     "category": "Headers",
     "w": 1,
-    "d": 0.5,
+    "d": 0.5001,
     "h": 2,
     "color": "#ffffff",
     "price": 500,
@@ -532,16 +549,17 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Header%20Square.png"
   },
   {
     "id": "header_rectangle",
     "name": "Header Rectangle",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Rectangle.glb",
     "category": "Headers",
-    "w": 0.96,
-    "d": 0.089,
-    "h": 0.48,
+    "w": 0.9601,
+    "d": 0.0889,
+    "h": 0.4801,
     "color": "#ffffff",
     "price": 700,
     "paintable": true,
@@ -554,16 +572,17 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Header%20Rectangle.png"
   },
   {
     "id": "header_full_panel",
     "name": "Header Full Panel",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Full%20Panel.glb",
     "category": "Headers",
-    "w": 0.965,
-    "d": 0.089,
-    "h": 1.181,
+    "w": 0.9649,
+    "d": 0.0889,
+    "h": 1.1811,
     "color": "#ffffff",
     "price": 1000,
     "paintable": true,
@@ -576,16 +595,17 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Header%20Full%20Panel.png"
   },
   {
     "id": "header_half_panel",
     "name": "Header Half Panel",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Half%20Panel.glb",
     "category": "Headers",
-    "w": 0.483,
-    "d": 0.089,
-    "h": 1.181,
+    "w": 0.4831,
+    "d": 0.0889,
+    "h": 1.1811,
     "color": "#ffffff",
     "price": 800,
     "paintable": true,
@@ -598,16 +618,17 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Header%20%20Half%20%20Panel.png"
   },
   {
     "id": "header_full_panels",
     "name": "Header Full Panels",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Full%20Panels.glb",
     "category": "Headers",
-    "w": 0.965,
-    "d": 1.067,
-    "h": 1.181,
+    "w": 0.9649,
+    "d": 1.0671,
+    "h": 1.1811,
     "color": "#ffffff",
     "price": 9000,
     "paintable": true,
@@ -644,16 +665,17 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Header%20Full%20Panels.png"
   },
   {
     "id": "header_half_panels",
     "name": "Header Half Panels",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Half%20Panels.glb",
     "category": "Headers",
-    "w": 0.584,
-    "d": 0.483,
-    "h": 1.181,
+    "w": 0.5839,
+    "d": 0.4831,
+    "h": 1.1811,
     "color": "#ffffff",
     "price": 7000,
     "paintable": true,
@@ -690,7 +712,8 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Header%20Half%20Panels.png"
   },
   {
     "id": "header_double_panels",
@@ -698,8 +721,8 @@
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Double%20Panels.glb",
     "category": "Headers",
     "w": 2.032,
-    "d": 0.965,
-    "h": 1.181,
+    "d": 0.9649,
+    "h": 1.1811,
     "color": "#ffffff",
     "price": 7000,
     "paintable": true,
@@ -752,16 +775,17 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Header%20Double%20Panels.png"
   },
   {
     "id": "header_half_panels_full",
     "name": "Header Half Panels and Full",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Half%20Panels%20and%20full.glb",
     "category": "Headers",
-    "w": 0.61,
-    "d": 0.965,
-    "h": 1.181,
+    "w": 0.6101,
+    "d": 0.9649,
+    "h": 1.1811,
     "color": "#ffffff",
     "price": 4000,
     "paintable": true,
@@ -798,16 +822,17 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Header%20%20Half%20%20Panels%20and%20Full.png"
   },
   {
     "id": "console_module",
     "name": "Console Module",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Console%20Module.glb",
     "category": "Consoles",
-    "w": 0.965,
-    "d": 1.245,
-    "h": 2.362,
+    "w": 0.9649,
+    "d": 1.2451,
+    "h": 2.3619,
     "color": "#ffffff",
     "price": 2300,
     "paintable": true,
@@ -820,16 +845,17 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Console%20Module.png"
   },
   {
     "id": "console_module_tv",
     "name": "Console Module TV",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Console%20Module%20TV.glb",
     "category": "Consoles",
-    "w": 0.965,
-    "d": 1.245,
-    "h": 2.362,
+    "w": 0.9649,
+    "d": 1.2451,
+    "h": 2.3619,
     "color": "#ffffff",
     "price": 2300,
     "paintable": true,
@@ -842,16 +868,17 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Console%20Module%20TV.png"
   },
   {
     "id": "multimedia_tv",
     "name": "Multimedia TV",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Multimedia%20TV.glb",
     "category": "Multimedia",
-    "w": 0.965,
-    "d": 0.089,
-    "h": 2.362,
+    "w": 0.9649,
+    "d": 0.0889,
+    "h": 2.3619,
     "color": "#ffffff",
     "price": 2200,
     "paintable": true,
@@ -864,16 +891,17 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Multimedia%20TV.png"
   },
   {
     "id": "multimedia_tv_shelf",
     "name": "Multimedia TV Shelf",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Multimedia%20TV%20Shelf.glb",
     "category": "Multimedia",
-    "w": 0.965,
-    "d": 0.089,
-    "h": 2.362,
+    "w": 0.9649,
+    "d": 0.0889,
+    "h": 2.3619,
     "color": "#ffffff",
     "price": 2400,
     "paintable": true,
@@ -886,7 +914,8 @@
         "max": 4,
         "price": 100
       }
-    ]
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Multimedia%20TV%20Shelf.png"
   },
   {
     "id": "woodline_archway",
@@ -899,7 +928,8 @@
     "color": "#ffffff",
     "price": 2300,
     "paintable": false,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Woodline%20Archway.png"
   },
   {
     "id": "woodline_panel",
@@ -912,7 +942,8 @@
     "color": "#ffffff",
     "price": 2000,
     "paintable": false,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Woodline%20Panel.png"
   },
   {
     "id": "woodline_top",
@@ -925,7 +956,8 @@
     "color": "#cccccc",
     "price": 2000,
     "paintable": false,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Woodline%20Top.png"
   },
   {
     "id": "prop_chair",
@@ -938,7 +970,8 @@
     "color": "#cccccc",
     "price": null,
     "paintable": false,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Props/Chair.png"
   },
   {
     "id": "prop_table",
@@ -951,20 +984,22 @@
     "color": "#cccccc",
     "price": null,
     "paintable": false,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Props/Table.png"
   },
   {
     "id": "prop_plant",
     "name": "Plant",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/props/prop_Plant.glb",
     "category": "Props",
-    "w": 0.6,
-    "d": 0.6,
-    "h": 1.6,
+    "w": 0.5999,
+    "d": 0.5999,
+    "h": 1.5999,
     "color": "#cccccc",
     "price": null,
     "paintable": false,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Props/Plant.png"
   },
   {
     "id": "preset_the_astra",
@@ -974,7 +1009,7 @@
       "10x10 ft"
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Astra_Thumnail.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Astra.json?v=2",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Astra.json",
     "type": "preset"
   },
   {
@@ -985,7 +1020,7 @@
       "20x10 ft"
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheAlcove_Thumbnail.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Alcove.json?v=2",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Alcove.json",
     "type": "preset"
   },
   {
@@ -996,7 +1031,7 @@
       "10x10 ft"
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/AstraFlex_Thumbnail.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Astra_Flex.json?v=2",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Astra_Flex.json",
     "type": "preset"
   },
   {
@@ -1007,7 +1042,7 @@
       "10x10 ft"
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Core_Thumbnail.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Core.json?v=2",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Core.json",
     "type": "preset"
   },
   {
@@ -1018,7 +1053,7 @@
       "10x10 ft"
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheNook_Thumbnail.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Nook.json?v=2",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Nook.json",
     "type": "preset"
   },
   {
@@ -1029,7 +1064,7 @@
       "20x10 ft"
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Phoenix_Thumbnail.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Phoenix.json?v=2",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Phoenix.json",
     "type": "preset"
   },
   {
@@ -1040,7 +1075,7 @@
       "10x10 ft"
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheOnyx_Thumbnail.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Onyx.json?v=2",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Onyx.json",
     "type": "preset"
   },
   {
@@ -1051,18 +1086,16 @@
       "30x30 ft"
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheVortex_Thumbnail.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Vortex.json?v=2",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Vortex.json",
     "type": "preset"
   },
   {
     "id": "preset_the_sphinx",
     "name": "The Sphinx",
     "description": "",
-    "sizes": [
-      "20x10 ft"
-    ],
+    "sizes": [],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Sphinx_Thumbnails.png",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Sphinx.json?v=2",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Sphinx.json",
     "type": "preset"
   }
 ]
