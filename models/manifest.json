@@ -50,7 +50,7 @@
     "name": "SEG 3ft",
     "category": "SEG Lightbox",
     "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/backdrops/SEG/seg_3ft.glb",
-    "w": 0.9,
+    "w": 1.0,
     "d": 0.2,
     "h": 2.4,
     "color": "#d17b2a",
