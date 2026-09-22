@@ -965,12 +965,13 @@
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/FireFlies/3.5ft%20Lightbox.glb",
     "category": "Lightbox",
     "w": 1.0668,
-    "d": 0.0889,
-    "h": 2.3876,
+    "d": 0.0884,
+    "h": 2.3866,
     "color": "#cccccc",
     "price": 2000,
     "paintable": true,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/3.5ft%20Lightbox.png"
   },
   {
     "id": "6_5ft__lightbox",
@@ -978,12 +979,13 @@
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/FireFlies/6.5ft%20%20Lightbox.glb",
     "category": "Lightbox",
     "w": 1.8288,
-    "d": 0.0889,
-    "h": 2.3876,
+    "d": 0.0884,
+    "h": 2.3866,
     "color": "#cccccc",
     "price": 1700,
     "paintable": true,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/6.5ft%20%20Lightbox.png"
   },
   {
     "id": "10ft_lightbox",
@@ -996,7 +998,8 @@
     "color": "#cccccc",
     "price": 3000,
     "paintable": true,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/10ft%20Lightbox.png"
   },
   {
     "id": "5ft_angled_lightbox",
@@ -1004,12 +1007,13 @@
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/FireFlies/5ft%20Angled%20Lightbox.glb",
     "category": "Lightbox",
     "w": 1.524,
-    "d": 0.0889,
-    "h": 2.3876,
+    "d": 0.0884,
+    "h": 2.3866,
     "color": "#cccccc",
     "price": 1500,
     "paintable": true,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/5ft%20Angled%20Lightbox.png"
   },
   {
     "id": "8ft_angled_lightbox",
@@ -1017,12 +1021,13 @@
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/FireFlies/8ft%20Angled%20Lightbox.glb",
     "category": "Lightbox",
     "w": 2.4384,
-    "d": 0.0889,
-    "h": 2.3876,
+    "d": 0.0884,
+    "h": 2.3866,
     "color": "#cccccc",
     "price": 2000,
     "paintable": true,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/8ft%20Angled%20Lightbox.png"
   },
   {
     "id": "3_5ft_arch_lightbox",
@@ -1035,7 +1040,8 @@
     "color": "#cccccc",
     "price": 4000,
     "paintable": true,
-    "sockets": []
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/3.5ft%20Arch%20Lightbox.png"
   },
   {
     "id": "prop_chair",
