@@ -1030,6 +1030,19 @@
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Props/High%20Table.png"
   },
   {
+    "id": "firefly_full_panel",
+    "name": "Lightbox Full Panel",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/FireFlies/FireFly%20Full%20Panel.glb",
+    "category": "Lightbox",
+    "w": 1,
+    "d": 0.089,
+    "h": 2.337,
+    "color": "#cccccc",
+    "price": 3000,
+    "paintable": true,
+    "sockets": []
+  },
+  {
     "id": "preset_the_astra",
     "name": "The Astra",
     "description": "",
