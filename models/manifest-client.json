@@ -960,32 +960,6 @@
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Woodline%20Top.png"
   },
   {
-    "id": "10ft_lightbox",
-    "name": "10ft Lightbox",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/FireFlies/10ft%20Lightbox.glb",
-    "category": "Lightbox",
-    "w": 3.048,
-    "d": 0.0884,
-    "h": 2.3866,
-    "color": "#cccccc",
-    "price": 3000,
-    "paintable": true,
-    "sockets": []
-  },
-  {
-    "id": "3_5ft_arch_lightbox",
-    "name": "3.5ft Arch Lightbox",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/FireFlies/3.5ft%20Arch%20Lightbox.glb",
-    "category": "Lightbox",
-    "w": 1.0668,
-    "d": 2.7432,
-    "h": 2.3866,
-    "color": "#cccccc",
-    "price": 4000,
-    "paintable": true,
-    "sockets": []
-  },
-  {
     "id": "3_5ft_lightbox",
     "name": "3.5ft Lightbox",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/FireFlies/3.5ft%20Lightbox.glb",
@@ -995,6 +969,32 @@
     "h": 2.3876,
     "color": "#cccccc",
     "price": 2000,
+    "paintable": true,
+    "sockets": []
+  },
+  {
+    "id": "6_5ft__lightbox",
+    "name": "6.5ft  Lightbox",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/FireFlies/6.5ft%20%20Lightbox.glb",
+    "category": "Lightbox",
+    "w": 1.8288,
+    "d": 0.0889,
+    "h": 2.3876,
+    "color": "#cccccc",
+    "price": 1700,
+    "paintable": true,
+    "sockets": []
+  },
+  {
+    "id": "10ft_lightbox",
+    "name": "10ft Lightbox",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/FireFlies/10ft%20Lightbox.glb",
+    "category": "Lightbox",
+    "w": 3.048,
+    "d": 0.0884,
+    "h": 2.3866,
+    "color": "#cccccc",
+    "price": 3000,
     "paintable": true,
     "sockets": []
   },
@@ -1025,15 +1025,15 @@
     "sockets": []
   },
   {
-    "id": "6_5ft__lightbox",
-    "name": "6.5ft  Lightbox",
-    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/FireFlies/6.5ft%20%20Lightbox.glb",
+    "id": "3_5ft_arch_lightbox",
+    "name": "3.5ft Arch Lightbox",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/FireFlies/3.5ft%20Arch%20Lightbox.glb",
     "category": "Lightbox",
-    "w": 1.8288,
-    "d": 0.0889,
-    "h": 2.3876,
+    "w": 1.0668,
+    "d": 2.7432,
+    "h": 2.3866,
     "color": "#cccccc",
-    "price": 1700,
+    "price": 4000,
     "paintable": true,
     "sockets": []
   },
@@ -1106,32 +1106,6 @@
     "paintable": false,
     "sockets": [],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Props/High%20Table.png"
-  },
-  {
-    "id": "3_5ft_lightbox",
-    "name": "3.5ft Lightbox",
-    "file": "[SET URL]",
-    "category": "root",
-    "w": 1,
-    "d": 0.5,
-    "h": 2,
-    "color": "#cccccc",
-    "price": null,
-    "paintable": true,
-    "sockets": []
-  },
-  {
-    "id": "firefly_full_panel",
-    "name": "FireFly Full Panel",
-    "file": "[SET URL]",
-    "category": "root",
-    "w": 1,
-    "d": 0.5,
-    "h": 2,
-    "color": "#cccccc",
-    "price": null,
-    "paintable": true,
-    "sockets": []
   },
   {
     "id": "preset_the_astra",
