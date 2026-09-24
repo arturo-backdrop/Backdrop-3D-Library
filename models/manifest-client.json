@@ -1129,7 +1129,7 @@
     "name": "The Alcove",
     "description": "",
     "sizes": [
-      "20x10 ft"
+      "10x20 ft"
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheAlcove_Thumbnail.png",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Alcove.json",
@@ -1173,7 +1173,7 @@
     "name": "The Phoenix",
     "description": "",
     "sizes": [
-      "20x10 ft"
+      "10x20 ft"
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Phoenix_Thumbnail.png",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Phoenix.json",
@@ -1195,7 +1195,7 @@
     "name": "The Vortex",
     "description": "",
     "sizes": [
-      "30x30 ft"
+      "20x20 ft"
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheVortex_Thumbnail.png",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Vortex.json",
@@ -1206,7 +1206,7 @@
     "name": "The Sphinx",
     "description": "",
     "sizes": [
-      "20x10 ft"
+      "10x20 ft"
     ],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Sphinx_Thumbnails.png",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Sphinx.json",
