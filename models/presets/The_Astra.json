@@ -71,9 +71,6 @@
       "localOffset": null,
       "modelId": "storage_full_panels",
       "socketStates": {
-        "socket_lamp": {
-          "on": true
-        },
         "socket_lamp_0": {
           "on": false
         },
@@ -103,9 +100,6 @@
       "localOffset": null,
       "modelId": "header_full_panels",
       "socketStates": {
-        "socket_lamp": {
-          "on": true
-        },
         "socket_lamp_0": {
           "on": false
         },
