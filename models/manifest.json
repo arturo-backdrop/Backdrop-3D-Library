@@ -40,17 +40,30 @@
     "paintable": true,
     "sockets": [
       {
+        "name": "socket_lamp.001",
+        "accessoryFile": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Lamp.glb",
+        "label": "",
+        "behavior": "fixed"
+      },
+      {
         "name": "socket_lamp",
-        "accessoryFile": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Lamp.glb"
+        "behavior": "fixed",
+        "label": "Lamp"
+      },
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp"
       }
-    ]
+    ],
+    "price": null
   },
   {
     "id": "backdrop_seg_3ft",
     "name": "SEG 3ft",
     "category": "SEG Lightbox",
     "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/backdrops/SEG/seg_3ft.glb",
-    "w": 1.0,
+    "w": 1,
     "d": 0.2,
     "h": 2.4,
     "color": "#d17b2a",
