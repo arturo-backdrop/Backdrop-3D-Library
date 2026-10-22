@@ -40,7 +40,7 @@
     "paintable": true,
     "sockets": [
       {
-        "name": "socket_lamp.001",
+        "name": "socket_lamp",
         "accessoryFile": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Lamp.glb",
         "label": "",
         "behavior": "fixed"
@@ -48,13 +48,13 @@
       {
         "name": "socket_lamp",
         "behavior": "fixed",
-        "label": "Lamp",
+        "label": "",
         "accessoryFile": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Lamp.glb"
       },
       {
         "name": "socket_lamp",
         "behavior": "fixed",
-        "label": "Lamp",
+        "label": "",
         "accessoryFile": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Lamp.glb"
       }
     ],
