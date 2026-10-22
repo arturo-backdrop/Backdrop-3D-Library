@@ -32,7 +32,7 @@
     "id": "backdrop_8ftStraight",
     "name": "8ft QZ Straight",
     "category": "QuickZip",
-    "file": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/backdrops/Quickzip/8ftStraight.glb",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Quickzip/8ftStraight.glb?v=2",
     "w": 0.6,
     "d": 0.3,
     "h": 0.05,
@@ -41,7 +41,7 @@
     "sockets": [
       {
         "name": "socket_lamp",
-        "accessoryFile": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Lamp.glb",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb?v=2",
         "label": "",
         "behavior": "fixed"
       },
@@ -49,13 +49,13 @@
         "name": "socket_lamp",
         "behavior": "fixed",
         "label": "",
-        "accessoryFile": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Lamp.glb"
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb?v=2"
       },
       {
         "name": "socket_lamp",
         "behavior": "fixed",
         "label": "",
-        "accessoryFile": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Lamp.glb"
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb?v=2"
       }
     ],
     "price": null
