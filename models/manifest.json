@@ -41,27 +41,21 @@
     "sockets": [
       {
         "name": "socket_lamp.001",
-        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "accessoryFile": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Lamp.glb",
         "label": "",
-        "behavior": "fixed",
-        "max": 4,
-        "price": 100
+        "behavior": "fixed"
       },
       {
         "name": "socket_lamp",
         "behavior": "fixed",
         "label": "Lamp",
-        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
-        "max": 4,
-        "price": 100
+        "accessoryFile": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Lamp.glb"
       },
       {
         "name": "socket_lamp",
         "behavior": "fixed",
         "label": "Lamp",
-        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
-        "max": 4,
-        "price": 100
+        "accessoryFile": "https://raw.githubusercontent.com/Abacus-Arturo/booth-planner-library/main/models/props/Lamp.glb"
       }
     ],
     "price": null
