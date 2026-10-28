@@ -80,7 +80,7 @@
     },
     {
       "id": "shelves_module_m",
-      "name": "Shelves Module M",
+      "name": "Staggered Shelves A",
       "category": "Shelving",
       "price": 1949.99,
       "color": "#ffffff",
@@ -93,7 +93,7 @@
     },
     {
       "id": "shelves_module_m2",
-      "name": "Shelves Module M2",
+      "name": "Staggered Shelves B",
       "category": "Shelving",
       "price": 1949.99,
       "color": "#ffffff",
@@ -106,7 +106,7 @@
     },
     {
       "id": "shelves_small_center",
-      "name": "Shelves Small Center",
+      "name": "Tablet Stand Shelf",
       "category": "Shelving",
       "price": 1699.99,
       "color": "#ffffff",
@@ -223,7 +223,7 @@
     },
     {
       "id": "storage_full_panels",
-      "name": "Storage Full Panels",
+      "name": "Closet Module",
       "category": "Storage",
       "price": 4499.99,
       "color": "#ffffff",
@@ -236,7 +236,7 @@
     },
     {
       "id": "storage_double",
-      "name": "Storage Double",
+      "name": "Double Closet Module",
       "category": "Storage",
       "price": 6499.99,
       "color": "#ffffff",
@@ -249,7 +249,7 @@
     },
     {
       "id": "storage_half",
-      "name": "Storage Half",
+      "name": "Quarter Storage Module",
       "category": "Storage",
       "price": 3669.99,
       "color": "#ffffff",
@@ -262,7 +262,7 @@
     },
     {
       "id": "storage_half_and_full_panels",
-      "name": "Storage Half and Full Panels",
+      "name": "Half Storage Module",
       "category": "Storage",
       "price": 3969.99,
       "color": "#ffffff",
@@ -353,7 +353,7 @@
     },
     {
       "id": "header_full_panels",
-      "name": "Header Full Panels",
+      "name": "Header Module",
       "category": "Headers",
       "price": 2389.99,
       "color": "#ffffff",
@@ -366,7 +366,7 @@
     },
     {
       "id": "header_half_panels",
-      "name": "Header Half Panels",
+      "name": "Quarter Header Module",
       "category": "Headers",
       "price": 1749.99,
       "color": "#ffffff",
@@ -379,7 +379,7 @@
     },
     {
       "id": "header_double_panels",
-      "name": "Header Double Panels",
+      "name": "Double Header Module",
       "category": "Headers",
       "price": 3549.99,
       "color": "#ffffff",
@@ -392,7 +392,7 @@
     },
     {
       "id": "header_half_panels_full",
-      "name": "Header Half Panels and Full",
+      "name": "Half Header Module",
       "category": "Headers",
       "price": 2049.99,
       "color": "#ffffff",
@@ -418,7 +418,7 @@
     },
     {
       "id": "console_module_tv",
-      "name": "Console Module TV",
+      "name": "Console Module + TV Mount",
       "category": "Consoles",
       "price": 2899.99,
       "color": "#ffffff",
@@ -431,7 +431,7 @@
     },
     {
       "id": "multimedia_tv",
-      "name": "Multimedia TV",
+      "name": "TV Mount Panel",
       "category": "Multimedia",
       "price": 1549.99,
       "color": "#ffffff",
@@ -444,7 +444,7 @@
     },
     {
       "id": "multimedia_tv_shelf",
-      "name": "Multimedia TV Shelf",
+      "name": "TV Mount Panel + Shelf",
       "category": "Multimedia",
       "price": 1770,
       "color": "#ffffff",
@@ -483,7 +483,7 @@
     },
     {
       "id": "woodline_top",
-      "name": "Woodline Top",
+      "name": "Woodline Canopy",
       "category": "Woodline",
       "price": 1329.99,
       "color": "",
