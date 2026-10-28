@@ -144,6 +144,32 @@
       "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Shelves%20Right.png"
     },
     {
+      "id": "full_panel_1_shelf",
+      "name": "Full Panel 1 Shelf",
+      "category": "Shelving",
+      "price": 2100,
+      "color": "#ffffff",
+      "accessories": "Lamp",
+      "width": 38.0,
+      "depth": 3.5,
+      "height": 93.0,
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/1%20Shelf.glb",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Full%20Panel%201%20shelf.png"
+    },
+    {
+      "id": "full_panel_3_shelves",
+      "name": "Full Panel 3 Shelves",
+      "category": "Shelving",
+      "price": 2300,
+      "color": "#ffffff",
+      "accessories": "Lamp",
+      "width": 38.0,
+      "depth": 3.5,
+      "height": 93.0,
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/3%20Shelves.glb",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Full%20Panel%203%20shelves.png"
+    },
+    {
       "id": "counter_small",
       "name": "Counter Small",
       "category": "Counters",
