@@ -703,7 +703,7 @@
       "name": "The Astra",
       "size": "10x10 ft",
       "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Astra.json",
-      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Astra_Thumnail.png"
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Astra_Thumbnail.png"
     },
     {
       "id": "preset_the_alcove",
@@ -759,7 +759,7 @@
       "name": "The Sphinx",
       "size": "10x20 ft",
       "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Sphinx.json",
-      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Sphinx_Thumbnails.png"
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Sphinx_Thumbnail.png"
     }
   ]
 }
