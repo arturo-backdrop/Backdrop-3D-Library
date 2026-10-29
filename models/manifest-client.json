@@ -352,6 +352,19 @@
       "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Header%20%20Half%20%20Panel.png"
     },
     {
+      "id": "header_quarter_panel",
+      "name": "Header Quarter Panel",
+      "category": "Headers",
+      "price": 349.99,
+      "color": "#ffffff",
+      "accessories": "Lamp",
+      "width": 9.5,
+      "depth": 3.5,
+      "height": 46.5,
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Quarter%20Panel.glb",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Header%20Quarter%20Panel.png"
+    },
+    {
       "id": "header_full_panels",
       "name": "Header Module",
       "category": "Headers",
