@@ -278,6 +278,20 @@
     "sockets": []
   },
   {
+    "id": "full_panel_canopy",
+    "name": "Full Panel Canopy",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Full%20Panel%20Canopy.glb",
+    "category": "Panels",
+    "w": 0.9652,
+    "d": 2.3622,
+    "h": 0.0889,
+    "color": "#ffffff",
+    "price": 999.99,
+    "paintable": true,
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Full%20Panel%20Canopy.png"
+  },
+  {
     "id": "shelves_module_m",
     "name": "Staggered Shelves A",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Shelves%20Module%20M.glb",
