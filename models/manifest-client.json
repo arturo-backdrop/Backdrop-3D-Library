@@ -79,6 +79,19 @@
       "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Quarter%20Panel%20Half%20Height.png"
     },
     {
+      "id": "full_panel_canopy",
+      "name": "Full Panel Canopy",
+      "category": "Panels",
+      "price": 999.99,
+      "color": "#ffffff",
+      "accessories": "",
+      "width": 38.0,
+      "depth": 93.0,
+      "height": 3.5,
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Full%20Panel%20Canopy.glb",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Full%20Panel%20Canopy.png"
+    },
+    {
       "id": "shelves_module_m",
       "name": "Staggered Shelves A",
       "category": "Shelving",
