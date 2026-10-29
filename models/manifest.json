@@ -283,13 +283,27 @@
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Full%20Panel%20Canopy.glb",
     "category": "Panels",
     "w": 0.9652,
-    "d": 2.3622,
+    "d": 2.1844,
     "h": 0.0889,
     "color": "#ffffff",
     "price": 999.99,
     "paintable": true,
     "sockets": [],
     "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Full%20Panel%20Canopy.png"
+  },
+  {
+    "id": "half_panel_canopy",
+    "name": "Half Panel Canopy",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Half%20Panel%20Canopy.glb",
+    "category": "Panels",
+    "w": 0.4826,
+    "d": 1.8542,
+    "h": 0.0889,
+    "color": "#ffffff",
+    "price": 749.99,
+    "paintable": true,
+    "sockets": [],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Half%20Panel%20Canopy.png"
   },
   {
     "id": "shelves_module_m",
@@ -410,7 +424,7 @@
     "d": 0.0889,
     "h": 2.3622,
     "color": "#ffffff",
-    "price": 2100,
+    "price": 1559.99,
     "paintable": true,
     "sockets": [
       {

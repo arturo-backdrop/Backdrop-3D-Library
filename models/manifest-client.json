@@ -86,10 +86,23 @@
       "color": "#ffffff",
       "accessories": "",
       "width": 38.0,
-      "depth": 93.0,
+      "depth": 86.0,
       "height": 3.5,
       "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Full%20Panel%20Canopy.glb",
       "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Full%20Panel%20Canopy.png"
+    },
+    {
+      "id": "half_panel_canopy",
+      "name": "Half Panel Canopy",
+      "category": "Panels",
+      "price": 749.99,
+      "color": "#ffffff",
+      "accessories": "",
+      "width": 19.0,
+      "depth": 73.0,
+      "height": 3.5,
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Half%20Panel%20Canopy.glb",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Half%20Panel%20Canopy.png"
     },
     {
       "id": "shelves_module_m",
@@ -160,7 +173,7 @@
       "id": "full_panel_1_shelf",
       "name": "Full Panel 1 Shelf",
       "category": "Shelving",
-      "price": 2100,
+      "price": 1559.99,
       "color": "#ffffff",
       "accessories": "Lamp",
       "width": 38.0,
