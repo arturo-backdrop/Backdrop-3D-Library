@@ -699,18 +699,18 @@
   ],
   "presets": [
     {
+      "id": "preset_the_apex",
+      "name": "The Apex",
+      "size": "10x10 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Apex.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Apex_Thumbnail.png"
+    },
+    {
       "id": "preset_the_astra",
       "name": "The Astra",
       "size": "10x10 ft",
       "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Astra.json",
       "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Astra_Thumbnail.png"
-    },
-    {
-      "id": "preset_the_alcove",
-      "name": "The Alcove",
-      "size": "10x20 ft",
-      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Alcove.json",
-      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheAlcove_Thumbnail.png"
     },
     {
       "id": "preset_the_astra_flex",
@@ -727,18 +727,18 @@
       "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Core_Thumbnail.png"
     },
     {
+      "id": "preset_essence",
+      "name": "Essence",
+      "size": "10x10 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/Essence.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/Essence_Thumbnail.png"
+    },
+    {
       "id": "preset_the_nook",
       "name": "The Nook",
       "size": "10x10 ft",
       "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Nook.json",
       "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheNook_Thumbnail.png"
-    },
-    {
-      "id": "preset_the_phoenix",
-      "name": "The Phoenix",
-      "size": "10x20 ft",
-      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Phoenix.json",
-      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Phoenix_Thumbnail.png"
     },
     {
       "id": "preset_the_onyx",
@@ -748,11 +748,81 @@
       "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheOnyx_Thumbnail.png"
     },
     {
-      "id": "preset_the_vortex",
-      "name": "The Vortex",
-      "size": "20x20 ft",
-      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Vortex.json",
-      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheVortex_Thumbnail.png"
+      "id": "preset_the_peak",
+      "name": "The Peak",
+      "size": "10x10 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Peak.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Peak_Thumbnail.png"
+    },
+    {
+      "id": "preset_the_spotlight",
+      "name": "The Spotlight",
+      "size": "10x10 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Spotlight.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Spotlight_Thumbnail.png"
+    },
+    {
+      "id": "preset_the_stack",
+      "name": "The Stack",
+      "size": "10x10 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Stack.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Stack_Thumbnail.png"
+    },
+    {
+      "id": "preset_the_terra",
+      "name": "The Terra",
+      "size": "10x10 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Terra.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Terra_Thumbnail.png"
+    },
+    {
+      "id": "preset_the_alcove",
+      "name": "The Alcove",
+      "size": "10x20 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Alcove.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheAlcove_Thumbnail.png"
+    },
+    {
+      "id": "preset_the_diamond",
+      "name": "The Diamond",
+      "size": "10x20 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Diamond.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Diamond_Thumbnail.png"
+    },
+    {
+      "id": "preset_the_phoenix",
+      "name": "The Phoenix",
+      "size": "10x20 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Phoenix.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Phoenix_Thumbnail.png"
+    },
+    {
+      "id": "preset_the_prestige",
+      "name": "The Prestige",
+      "size": "10x20 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Prestige.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Prestige_Thumbnail.png"
+    },
+    {
+      "id": "preset_the_prima",
+      "name": "The Prima",
+      "size": "10x20 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Prima.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Prima_Thumbnail.png"
+    },
+    {
+      "id": "preset_pulse",
+      "name": "Pulse",
+      "size": "10x20 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/Pulse.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/Pulse_Thumbnail.png"
+    },
+    {
+      "id": "preset_the_span",
+      "name": "The Span",
+      "size": "10x20 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Span.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Span_Thumbnail.png"
     },
     {
       "id": "preset_the_sphinx",
@@ -760,6 +830,55 @@
       "size": "10x20 ft",
       "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Sphinx.json",
       "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Sphinx_Thumbnail.png"
+    },
+    {
+      "id": "preset_the_supreme",
+      "name": "The Supreme",
+      "size": "10x20 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Supreme.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Supreme_Thumbnail.png"
+    },
+    {
+      "id": "preset_the_ultra",
+      "name": "The Ultra",
+      "size": "10x20 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Ultra.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Ultra_Thumbnail.png"
+    },
+    {
+      "id": "preset_the_bloom",
+      "name": "The Bloom",
+      "size": "20x20 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Bloom.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Bloom_Thumbnail.png"
+    },
+    {
+      "id": "preset_flow",
+      "name": "Flow",
+      "size": "20x20 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/Flow.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/Flow_Thumbnail.png"
+    },
+    {
+      "id": "preset_the_highlight",
+      "name": "The Highlight",
+      "size": "20x20 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Highlight.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Highlight_Thumbnail.png"
+    },
+    {
+      "id": "preset_the_vault",
+      "name": "The Vault",
+      "size": "20x20 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Vault.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/The%20Vault_Thumbnail.png"
+    },
+    {
+      "id": "preset_the_vortex",
+      "name": "The Vortex",
+      "size": "20x20 ft",
+      "model_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/presets/The_Vortex.json",
+      "image_url": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Presets/TheVortex_Thumbnail.png"
     }
   ]
 }
