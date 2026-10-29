@@ -388,6 +388,52 @@
     ]
   },
   {
+    "id": "full_panel_1_shelf",
+    "name": "Full Panel 1 Shelf",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/1%20Shelf.glb",
+    "category": "Shelving",
+    "w": 0.9652,
+    "d": 0.0889,
+    "h": 2.3622,
+    "color": "#ffffff",
+    "price": 2100,
+    "paintable": true,
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Full%20Panel%201%20shelf.png"
+  },
+  {
+    "id": "full_panel_3_shelves",
+    "name": "Full Panel 3 Shelves",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/3%20Shelves.glb",
+    "category": "Shelving",
+    "w": 0.9652,
+    "d": 0.0889,
+    "h": 2.3622,
+    "color": "#ffffff",
+    "price": 2300,
+    "paintable": true,
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Full%20Panel%203%20shelves.png"
+  },
+  {
     "id": "counter_small",
     "name": "Counter Small",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Counter%20Small.glb",
