@@ -810,6 +810,29 @@
     ]
   },
   {
+    "id": "header_quarter_panel",
+    "name": "Header Quarter Panel",
+    "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Quarter%20Panel.glb",
+    "category": "Headers",
+    "w": 0.2413,
+    "d": 0.0889,
+    "h": 1.1811,
+    "color": "#ffffff",
+    "price": 349.99,
+    "paintable": true,
+    "sockets": [
+      {
+        "name": "socket_lamp",
+        "behavior": "fixed",
+        "label": "Lamp",
+        "accessoryFile": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/accesories/acc_Lamp.glb",
+        "max": 4,
+        "price": 100
+      }
+    ],
+    "thumbnail": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/thumbnails/Moduluxe/Header%20Quarter%20Panel.png"
+  },
+  {
     "id": "header_full_panels",
     "name": "Header Module",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Full%20Panels.glb",
