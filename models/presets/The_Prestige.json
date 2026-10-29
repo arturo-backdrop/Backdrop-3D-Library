@@ -1,0 +1,389 @@
+{
+  "version": 2,
+  "name": "The Prestige",
+  "savedAt": "2026-10-29T22:02:03.159Z",
+  "manifestUrl": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/manifest.json",
+  "unit": "ft",
+  "floorW": 6.096,
+  "floorD": 3.048,
+  "floorColor": "#878787",
+  "floorPlan": null,
+  "items": [
+    {
+      "uid": "full_panel_1793310461247_xrgh",
+      "kind": "model",
+      "x": -2.9516122202381365,
+      "z": 0.9753209030280485,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": -2.9516122202381365,
+      "pivotZ": 0.9753209030280485,
+      "groupIds": [
+        "line_1793310491848"
+      ],
+      "toggleStates": {
+        "toggle_back_panel": true,
+        "toggle_feet_center.002": false,
+        "toggle_feet_edge.002": true
+      },
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {}
+    },
+    {
+      "uid": "full_panel_1793310491848_click",
+      "kind": "model",
+      "x": -2.9516122202381365,
+      "z": 0.0063576972136869525,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "groupIds": [
+        "line_1793310491848"
+      ],
+      "pivotX": -2.9516122202381365,
+      "pivotZ": 0.9753209030280485,
+      "toggleStates": {
+        "toggle_back_panel": true,
+        "toggle_feet_center.002": false,
+        "toggle_feet_edge.002": true
+      },
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {}
+    },
+    {
+      "uid": "full_panel_1793310492340_click",
+      "kind": "model",
+      "x": -2.9516122202381365,
+      "z": -0.9626055086006746,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "groupIds": [
+        "line_1793310491848"
+      ],
+      "pivotX": -2.9516122202381365,
+      "pivotZ": 0.9753209030280485,
+      "toggleStates": {
+        "toggle_back_panel": true,
+        "toggle_feet_center.002": false,
+        "toggle_feet_edge.002": true
+      },
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {}
+    },
+    {
+      "uid": "half_panel_1793310508731_woe9",
+      "kind": "model",
+      "x": -2.7249611516958567,
+      "z": -1.462433897460957,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_back_panel.001": true,
+        "toggle_feet_center.013": false,
+        "toggle_feet_edge.011": true
+      },
+      "modelId": "half_panel",
+      "catalogId": "half_panel",
+      "socketStates": {}
+    },
+    {
+      "uid": "full_panel_1793310539132_dup1_2zq",
+      "kind": "model",
+      "x": -1.9981255241846587,
+      "z": -1.462433897460957,
+      "rotY": 6.283185307179586,
+      "color": "#ffffff",
+      "groupIds": [
+        "line_1793310491848_copy_1793310539132"
+      ],
+      "pivotX": -2.9670887299990203,
+      "pivotZ": -1.462433897460957,
+      "toggleStates": {
+        "toggle_back_panel": true,
+        "toggle_feet_center.002": false,
+        "toggle_feet_edge.002": true
+      },
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      }
+    },
+    {
+      "uid": "full_panel_1793310539132_dup2_2j0",
+      "kind": "model",
+      "x": -1.0291623183702976,
+      "z": -1.4624338974609574,
+      "rotY": 6.283185307179586,
+      "color": "#ffffff",
+      "groupIds": [
+        "line_1793310491848_copy_1793310539132"
+      ],
+      "pivotX": -2.9670887299990203,
+      "pivotZ": -1.462433897460957,
+      "toggleStates": {
+        "toggle_back_panel": true,
+        "toggle_feet_center.002": false,
+        "toggle_feet_edge.002": true
+      },
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      }
+    },
+    {
+      "uid": "quarter_panel_1793310587616_f5c7",
+      "kind": "model",
+      "x": -0.42432669377239085,
+      "z": -1.4624338974609574,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_back_panel.002": true
+      },
+      "modelId": "quarter_panel",
+      "catalogId": "quarter_panel",
+      "socketStates": {}
+    },
+    {
+      "uid": "full_panel_1793310626490_lfwx",
+      "kind": "model",
+      "x": 0.18068526113121175,
+      "z": -1.4624338974609574,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_feet_center.002": false,
+        "toggle_feet_edge.002": true,
+        "toggle_back_panel": true
+      },
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {}
+    },
+    {
+      "uid": "multimedia_tv_shelf_1793310636995_2rud",
+      "kind": "model",
+      "x": 1.1498953195819106,
+      "z": -1.4624338974609574,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_feet_center.008": false,
+        "toggle_feet_edge.006": true,
+        "toggle_back_panel.010": true
+      },
+      "modelId": "multimedia_tv_shelf",
+      "catalogId": "multimedia_tv_shelf",
+      "socketStates": {}
+    },
+    {
+      "uid": "storage_full_panels_1793310724565_meok",
+      "kind": "model",
+      "x": 2.3604296761163917,
+      "z": -0.9533704151764115,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "storage_full_panels",
+      "catalogId": "storage_full_panels",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "quarter_panel_1793310743091_irow",
+      "kind": "model",
+      "x": 1.7552415000805106,
+      "z": -1.4624338974609574,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_back_panel.002": true
+      },
+      "modelId": "quarter_panel",
+      "catalogId": "quarter_panel",
+      "socketStates": {}
+    },
+    {
+      "uid": "header_full_panels_1793310757813_0uin",
+      "kind": "model",
+      "x": 2.360429676116392,
+      "z": -0.9546000059127415,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "header_full_panels",
+      "catalogId": "header_full_panels",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "full_panel_1793310770998_r175",
+      "kind": "model",
+      "x": 1.8670208489606364,
+      "z": -1.0232404107532944,
+      "rotY": 4.71238898038469,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "full_panel_1793310785592_dup0_s9l",
+      "kind": "model",
+      "x": -0.3660678931411634,
+      "z": -0.9611484644703653,
+      "rotY": 7.853981633974483,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "groupIds": [],
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "full_panel_canopy_1793310795591_k6fu",
+      "kind": "model",
+      "x": 1.8569748847066323,
+      "z": -0.9547245141967822,
+      "rotY": 4.71238898038469,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "full_panel_canopy",
+      "catalogId": "full_panel_canopy",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "full_panel_canopy_1793310833141_8fke",
+      "kind": "model",
+      "x": -2.9516122202381365,
+      "z": 0.9753209030280485,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "full_panel_canopy",
+      "catalogId": "full_panel_canopy",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "full_panel_1793310853852_dup0_11c",
+      "kind": "model",
+      "x": -0.7273557191408497,
+      "z": 0.9753209030280485,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": -0.7273557191408497,
+      "pivotZ": 0.9753209030280485,
+      "groupIds": [
+        "line_1793310491848_copy_1793310853852"
+      ],
+      "toggleStates": {
+        "toggle_back_panel": true,
+        "toggle_feet_center.002": false,
+        "toggle_feet_edge.002": true
+      },
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {}
+    },
+    {
+      "uid": "full_panel_half_height_1793310910965_4jgj",
+      "kind": "model",
+      "x": 2.8245356398233623,
+      "z": 0.05269739364229098,
+      "rotY": 4.71238898038469,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "groupIds": [
+        "line_1793310914032"
+      ],
+      "pivotX": 2.8245356398233623,
+      "pivotZ": 0.05269739364229098,
+      "toggleStates": {
+        "toggle_back_panel.003": true,
+        "toggle_feet_center.012": false,
+        "toggle_feet_edge.010": true
+      },
+      "modelId": "full_panel_half_height",
+      "catalogId": "full_panel_half_height",
+      "socketStates": {}
+    },
+    {
+      "uid": "full_panel_half_height_1793310914032_click",
+      "kind": "model",
+      "x": 2.824535639823362,
+      "z": 1.0216606030340916,
+      "rotY": 4.71238898038469,
+      "color": "#ffffff",
+      "groupIds": [
+        "line_1793310914032"
+      ],
+      "pivotX": 2.8245356398233623,
+      "pivotZ": 0.05269739364229098,
+      "toggleStates": {
+        "toggle_back_panel.003": true,
+        "toggle_feet_center.012": false,
+        "toggle_feet_edge.010": true
+      },
+      "modelId": "full_panel_half_height",
+      "catalogId": "full_panel_half_height",
+      "socketStates": {}
+    }
+  ],
+  "walls": [],
+  "cameras": [],
+  "catalogColors": {},
+  "wallConfig": {
+    "height": 2.4,
+    "glassRatio": 0,
+    "thickness": 0.1,
+    "color": "#cccccc"
+  }
+}

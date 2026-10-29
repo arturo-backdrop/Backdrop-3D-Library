@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "The Astra",
-  "savedAt": "2026-09-02T18:05:48.369Z",
+  "savedAt": "2026-10-29T20:14:46.374Z",
   "manifestUrl": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/manifest.json",
   "unit": "ft",
   "floorW": 3.048,
@@ -9,34 +9,6 @@
   "floorColor": "#878787",
   "floorPlan": null,
   "items": [
-    {
-      "uid": "full_panel_1788310067788_e38m",
-      "kind": "model",
-      "x": -1.0340256530213863,
-      "z": -1.4907073733286198,
-      "rotY": 0,
-      "color": "#ffffff",
-      "yOffset": 0,
-      "parentUid": null,
-      "localOffset": null,
-      "pivotX": -1.0340256530213863,
-      "pivotZ": -1.4907073733286198,
-      "toggleStates": {
-        "toggle_feet_center.002": false,
-        "toggle_feet_edge.002": true
-      },
-      "groupIds": [],
-      "modelId": "full_panel",
-      "socketStates": {
-        "socket_shelf": {
-          "on": true,
-          "count": 3,
-          "spacing": 0.47244,
-          "baseHeight": -0.188976
-        }
-      },
-      "catalogId": "full_panel"
-    },
     {
       "uid": "full_panel_1788310084560_click",
       "kind": "model",
@@ -132,6 +104,21 @@
       "toggleStates": {},
       "groupIds": [],
       "catalogId": "counter_small"
+    },
+    {
+      "uid": "full_panel_3_shelves_1793304881643_dyev",
+      "kind": "model",
+      "x": -1.0342725056577236,
+      "z": -1.4907073733286198,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "full_panel_3_shelves",
+      "catalogId": "full_panel_3_shelves",
+      "socketStates": {},
+      "toggleStates": {}
     }
   ],
   "walls": [],

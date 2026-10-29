@@ -1,0 +1,162 @@
+{
+  "version": 2,
+  "name": "The Stack",
+  "savedAt": "2026-10-29T22:17:43.802Z",
+  "manifestUrl": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/manifest.json",
+  "unit": "ft",
+  "floorW": 3.048,
+  "floorD": 3.048,
+  "floorColor": "#878787",
+  "floorPlan": null,
+  "items": [
+    {
+      "uid": "full_panel_1793312040144_wiei",
+      "kind": "model",
+      "x": -0.63030087298992,
+      "z": -1.1945210371440922,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_back_panel": true
+      },
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      }
+    },
+    {
+      "uid": "quarter_panel_1793312050813_8qt6",
+      "kind": "model",
+      "x": -0.024954692491319985,
+      "z": -1.1945210371440922,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_back_panel.002": true
+      },
+      "modelId": "quarter_panel",
+      "catalogId": "quarter_panel",
+      "socketStates": {}
+    },
+    {
+      "uid": "woodline_panel_1793312056503_i2jw",
+      "kind": "model",
+      "x": 0.5654341270839898,
+      "z": -1.1945210371440922,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "woodline_panel",
+      "catalogId": "woodline_panel",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "full_panel_1793312076546_j8r2",
+      "kind": "model",
+      "x": -1.114878498979834,
+      "z": -0.728762581607403,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_back_panel": true
+      },
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {}
+    },
+    {
+      "uid": "console_module_1793312103717_9xaq",
+      "kind": "model",
+      "x": -1.114878498979834,
+      "z": 0.23268746678631558,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_back_panel.014": true
+      },
+      "modelId": "console_module",
+      "catalogId": "console_module",
+      "socketStates": {}
+    },
+    {
+      "uid": "woodline_top_1793312128213_5zu0",
+      "kind": "model",
+      "x": -0.024954692491319985,
+      "z": 0.23560959922856473,
+      "rotY": 1.5707963267948966,
+      "color": "#cccccc",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "woodline_top",
+      "catalogId": "woodline_top",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "shelves_small_center_1793312153022_opsy",
+      "kind": "model",
+      "x": 1.0546861259701048,
+      "z": -0.732276431600849,
+      "rotY": 7.853981633974483,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_back_panel.013": true
+      },
+      "modelId": "shelves_small_center",
+      "catalogId": "shelves_small_center",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      }
+    },
+    {
+      "uid": "full_panel_3_shelves_1793312164889_5mq5",
+      "kind": "model",
+      "x": 1.0557684530477494,
+      "z": 0.21929769793737452,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_back_panel.015": true
+      },
+      "modelId": "full_panel_3_shelves",
+      "catalogId": "full_panel_3_shelves",
+      "socketStates": {}
+    }
+  ],
+  "walls": [],
+  "cameras": [],
+  "catalogColors": {},
+  "wallConfig": {
+    "height": 2.4,
+    "glassRatio": 0,
+    "thickness": 0.1,
+    "color": "#cccccc"
+  }
+}

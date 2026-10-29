@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "The Onyx",
-  "savedAt": "2026-09-02T18:16:37.065Z",
+  "savedAt": "2026-10-29T20:14:17.526Z",
   "manifestUrl": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/manifest.json",
   "unit": "ft",
   "floorW": 3.048,
@@ -9,34 +9,6 @@
   "floorColor": "#878787",
   "floorPlan": null,
   "items": [
-    {
-      "uid": "storage_full_panels_1788372451370_bsit",
-      "kind": "model",
-      "x": -0.9649842890171726,
-      "z": -1.0221580789015312,
-      "rotY": 7.853981633974483,
-      "color": "#ffffff",
-      "yOffset": 0,
-      "parentUid": null,
-      "localOffset": null,
-      "modelId": "storage_full_panels",
-      "catalogId": "storage_full_panels",
-      "socketStates": {
-        "socket_shelf": {
-          "on": true,
-          "count": 1,
-          "spacing": 0.3,
-          "baseHeight": 0.08534400000000002
-        },
-        "socket_lamp_0": {
-          "on": false
-        },
-        "socket_lamp_1": {
-          "on": true
-        }
-      },
-      "toggleStates": {}
-    },
     {
       "uid": "full_panel_1788372472975_gi9j",
       "kind": "model",
@@ -51,44 +23,17 @@
       "pivotZ": -1.4830568904324584,
       "toggleStates": {
         "toggle_feet_center.002": false,
-        "toggle_feet_edge.002": true
+        "toggle_feet_edge.002": true,
+        "toggle_back_panel": true
       },
       "groupIds": [],
       "modelId": "full_panel",
-      "catalogId": "full_panel",
       "socketStates": {
         "socket_lamp": {
           "on": true
         }
-      }
-    },
-    {
-      "uid": "full_panel_1788372504613_click",
-      "kind": "model",
-      "x": 1.0140151178412737,
-      "z": -1.4830568904324584,
-      "rotY": 0,
-      "color": "#ffffff",
-      "groupIds": [],
-      "pivotX": 0.04505191202691183,
-      "pivotZ": -1.4830568904324584,
-      "toggleStates": {
-        "toggle_feet_center.002": false,
-        "toggle_feet_edge.002": true
       },
-      "modelId": "full_panel",
-      "catalogId": "full_panel",
-      "socketStates": {
-        "socket_shelf": {
-          "on": true,
-          "count": 3,
-          "spacing": 0.381,
-          "baseHeight": -0.249936
-        },
-        "socket_lamp": {
-          "on": true
-        }
-      }
+      "catalogId": "full_panel"
     },
     {
       "uid": "counter_small_1788372842818_riqk",
@@ -101,9 +46,113 @@
       "parentUid": null,
       "localOffset": null,
       "modelId": "counter_small",
-      "catalogId": "counter_small",
       "socketStates": {},
-      "toggleStates": {}
+      "toggleStates": {},
+      "groupIds": [],
+      "catalogId": "counter_small"
+    },
+    {
+      "uid": "full_panel_3_shelves_1793304506725_rn5h",
+      "kind": "model",
+      "x": 1.0142619704776106,
+      "z": -1.4830568904324584,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_feet_center.019": false,
+        "toggle_feet_edge.016": true,
+        "toggle_back_panel.015": true
+      },
+      "modelId": "full_panel_3_shelves",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      },
+      "groupIds": [],
+      "catalogId": "full_panel_3_shelves"
+    },
+    {
+      "uid": "door_full_panel_1793304531126_65eo",
+      "kind": "model",
+      "x": -0.45672162787674064,
+      "z": -1.0134888882999835,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "door_full_panel",
+      "socketStates": {},
+      "toggleStates": {},
+      "groupIds": [],
+      "catalogId": "door_full_panel"
+    },
+    {
+      "uid": "full_panel_1_shelf_1793304552375_lajt",
+      "kind": "model",
+      "x": -0.9411996772425768,
+      "z": -0.5530210217942131,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_feet_center.026": false,
+        "toggle_feet_edge.023": true
+      },
+      "modelId": "full_panel_1_shelf",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      },
+      "groupIds": [],
+      "catalogId": "full_panel_1_shelf"
+    },
+    {
+      "uid": "full_panel_1793304575801_flh3",
+      "kind": "model",
+      "x": -1.442255814665022,
+      "z": -1.0174714301627596,
+      "rotY": 7.853981633974483,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_back_panel": true,
+        "toggle_feet_center.002": false,
+        "toggle_feet_edge.002": true
+      },
+      "modelId": "full_panel",
+      "socketStates": {},
+      "groupIds": [],
+      "catalogId": "full_panel"
+    },
+    {
+      "uid": "full_panel_1793304586113_dup0_mt5",
+      "kind": "model",
+      "x": -0.959686007841742,
+      "z": -1.479896175987891,
+      "rotY": 12.566370614359172,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "groupIds": [],
+      "toggleStates": {
+        "toggle_back_panel": true,
+        "toggle_feet_center.002": false,
+        "toggle_feet_edge.002": true
+      },
+      "modelId": "full_panel",
+      "socketStates": {},
+      "catalogId": "full_panel"
     }
   ],
   "walls": [],

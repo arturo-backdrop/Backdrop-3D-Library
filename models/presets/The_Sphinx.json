@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "The Sphinx",
-  "savedAt": "2026-09-02T21:39:13.149Z",
+  "savedAt": "2026-10-29T22:08:26.745Z",
   "manifestUrl": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/manifest.json",
   "unit": "ft",
   "floorW": 6.096,
@@ -55,31 +55,6 @@
       "catalogId": "full_panel"
     },
     {
-      "uid": "full_panel_1788384880498_click",
-      "kind": "model",
-      "x": -0.3830007461421836,
-      "z": -1.4458213843226542,
-      "rotY": 0,
-      "color": "#ffffff",
-      "groupIds": [],
-      "pivotX": -1.3519639519565452,
-      "pivotZ": -1.4458213843226542,
-      "toggleStates": {
-        "toggle_feet_center.002": false,
-        "toggle_feet_edge.002": true
-      },
-      "modelId": "full_panel",
-      "socketStates": {
-        "socket_shelf": {
-          "on": true,
-          "count": 3,
-          "spacing": 0.45720000000000005,
-          "baseHeight": -0.29565600000000003
-        }
-      },
-      "catalogId": "full_panel"
-    },
-    {
       "uid": "full_panel_1788384886265_click",
       "kind": "model",
       "x": 2.5238888713009016,
@@ -102,31 +77,6 @@
       "catalogId": "full_panel"
     },
     {
-      "uid": "full_panel_1788384989786_dup0_gnl",
-      "kind": "model",
-      "x": 1.5551725181228768,
-      "z": -1.4458213843226542,
-      "rotY": 0,
-      "color": "#ffffff",
-      "groupIds": [],
-      "pivotX": 0.5862093123085153,
-      "pivotZ": -1.4458213843226542,
-      "toggleStates": {
-        "toggle_feet_center.002": false,
-        "toggle_feet_edge.002": true
-      },
-      "modelId": "full_panel",
-      "socketStates": {
-        "socket_shelf": {
-          "on": true,
-          "count": 3,
-          "spacing": 0.45720000000000005,
-          "baseHeight": -0.29565600000000003
-        }
-      },
-      "catalogId": "full_panel"
-    },
-    {
       "uid": "counter_medium_1788385043434_5xfl",
       "kind": "model",
       "x": 1.7621125369479493,
@@ -137,9 +87,10 @@
       "parentUid": null,
       "localOffset": null,
       "modelId": "counter_medium",
-      "catalogId": "counter_medium",
       "socketStates": {},
-      "toggleStates": {}
+      "toggleStates": {},
+      "groupIds": [],
+      "catalogId": "counter_medium"
     },
     {
       "uid": "counter_medium_1788385050362_dup0_usi",
@@ -153,9 +104,9 @@
       "localOffset": null,
       "groupIds": [],
       "modelId": "counter_medium",
-      "catalogId": "counter_medium",
       "socketStates": {},
-      "toggleStates": {}
+      "toggleStates": {},
+      "catalogId": "counter_medium"
     },
     {
       "uid": "multimedia_tv_1788385088025_foze",
@@ -168,7 +119,38 @@
       "parentUid": null,
       "localOffset": null,
       "modelId": "multimedia_tv",
-      "catalogId": "multimedia_tv",
+      "socketStates": {},
+      "toggleStates": {},
+      "groupIds": [],
+      "catalogId": "multimedia_tv"
+    },
+    {
+      "uid": "full_panel_3_shelves_1793311697264_b91n",
+      "kind": "model",
+      "x": -0.3827538935058463,
+      "z": -1.4458213843226542,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "full_panel_3_shelves",
+      "catalogId": "full_panel_3_shelves",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "full_panel_3_shelves_1793311700235_vhs5",
+      "kind": "model",
+      "x": 1.5567402664831618,
+      "z": -1.4429063564615223,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "full_panel_3_shelves",
+      "catalogId": "full_panel_3_shelves",
       "socketStates": {},
       "toggleStates": {}
     }

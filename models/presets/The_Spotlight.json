@@ -1,0 +1,164 @@
+{
+  "version": 2,
+  "name": "The Spotlight",
+  "savedAt": "2026-10-29T23:04:54.621Z",
+  "manifestUrl": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/manifest.json",
+  "unit": "ft",
+  "floorW": 3.048,
+  "floorD": 3.048,
+  "floorColor": "#878787",
+  "floorPlan": null,
+  "items": [
+    {
+      "uid": "full_panel_1793314795059_tezn",
+      "kind": "model",
+      "x": 0.3635010141234803,
+      "z": -0.5242016032673369,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_back_panel": true
+      },
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      }
+    },
+    {
+      "uid": "header_half_panels_full_1793314857488_hsni",
+      "kind": "model",
+      "x": -0.6045711256235531,
+      "z": -0.7943060030627553,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "header_half_panels_full",
+      "catalogId": "header_half_panels_full",
+      "socketStates": {
+        "socket_lamp_0": {
+          "on": true
+        }
+      },
+      "toggleStates": {}
+    },
+    {
+      "uid": "quarter_panel_1793314871459_15g2",
+      "kind": "model",
+      "x": 0.9688471946220802,
+      "z": -0.5242016032673369,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_back_panel.002": true
+      },
+      "modelId": "quarter_panel",
+      "catalogId": "quarter_panel",
+      "socketStates": {}
+    },
+    {
+      "uid": "full_panel_3_shelves_1793314878082_d0su",
+      "kind": "model",
+      "x": 1.089281523535769,
+      "z": -0.06380925763943496,
+      "rotY": 4.71238898038469,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_back_panel.015": true
+      },
+      "modelId": "full_panel_3_shelves",
+      "catalogId": "full_panel_3_shelves",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      }
+    },
+    {
+      "uid": "console_module_1793314906855_tne6",
+      "kind": "model",
+      "x": -0.6057090443272186,
+      "z": -0.5242016032673369,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "console_module",
+      "catalogId": "console_module",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "half_panel_1793314915263_uytp",
+      "kind": "model",
+      "x": -1.0654989139435052,
+      "z": -0.7933162912467526,
+      "rotY": 4.71238898038469,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "half_panel",
+      "catalogId": "half_panel",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "full_panel_1793314947161_166n",
+      "kind": "model",
+      "x": -0.6026733130183359,
+      "z": -1.0580586448498062,
+      "rotY": 6.283185307179586,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "toggleStates": {
+        "toggle_feet_center.002": false,
+        "toggle_feet_edge.002": true,
+        "toggle_back_panel": true
+      },
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {}
+    },
+    {
+      "uid": "door_half_panel_1793314978203_b0w7",
+      "kind": "model",
+      "x": -0.13847901003776536,
+      "z": -0.7950951274224372,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "door_half_panel",
+      "catalogId": "door_half_panel",
+      "socketStates": {},
+      "toggleStates": {}
+    }
+  ],
+  "walls": [],
+  "cameras": [],
+  "catalogColors": {},
+  "wallConfig": {
+    "height": 2.4,
+    "glassRatio": 0,
+    "thickness": 0.1,
+    "color": "#cccccc"
+  }
+}

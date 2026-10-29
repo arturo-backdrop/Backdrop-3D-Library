@@ -1,0 +1,401 @@
+{
+  "version": 2,
+  "name": "The Vault",
+  "savedAt": "2026-10-29T21:06:29.014Z",
+  "manifestUrl": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/manifest.json",
+  "unit": "ft",
+  "floorW": 6.096,
+  "floorD": 6.096,
+  "floorColor": "#878787",
+  "floorPlan": null,
+  "items": [
+    {
+      "uid": "full_panel_1793307553615_5y6f",
+      "kind": "model",
+      "x": -2.8306690330565516,
+      "z": 2.555199224861446,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": -2.8306690330565516,
+      "pivotZ": 0.6238719214055415,
+      "groupIds": [
+        "line_1793307560244",
+        "group_1793307691579"
+      ],
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      },
+      "toggleStates": {}
+    },
+    {
+      "uid": "full_panel_1793307560244_click",
+      "kind": "model",
+      "x": -2.8306690330565516,
+      "z": 1.5862360190470843,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "groupIds": [
+        "line_1793307560244",
+        "group_1793307691579"
+      ],
+      "pivotX": -2.8306690330565516,
+      "pivotZ": 0.6238719214055415,
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "shelves_module_m_1793307566107_ns2j",
+      "kind": "model",
+      "x": -2.8306690330565516,
+      "z": 0.6227802959867459,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": -2.8306690330565516,
+      "pivotZ": 0.6238719214055415,
+      "groupIds": [
+        "group_1793307691579"
+      ],
+      "modelId": "shelves_module_m",
+      "catalogId": "shelves_module_m",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      },
+      "toggleStates": {}
+    },
+    {
+      "uid": "shelves_module_m2_1793307584281_81ch",
+      "kind": "model",
+      "x": -2.8306690330565516,
+      "z": -0.3407721645735271,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": -2.8306690330565516,
+      "pivotZ": 0.6238719214055415,
+      "groupIds": [
+        "group_1793307691579"
+      ],
+      "modelId": "shelves_module_m2",
+      "catalogId": "shelves_module_m2",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      },
+      "toggleStates": {}
+    },
+    {
+      "uid": "full_panel_1793307603439_2fts",
+      "kind": "model",
+      "x": -2.8306690330565516,
+      "z": -1.3040837682940425,
+      "rotY": 1.5707963267948966,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": -2.8306690330565516,
+      "pivotZ": 0.6238719214055415,
+      "groupIds": [
+        "group_1793307691579"
+      ],
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      },
+      "toggleStates": {}
+    },
+    {
+      "uid": "storage_full_panels_1793307631480_rq7j",
+      "kind": "model",
+      "x": -2.3686404104292933,
+      "z": -2.314146357233565,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "storage_full_panels",
+      "catalogId": "storage_full_panels",
+      "socketStates": {
+        "socket_lamp_0": {
+          "on": false
+        },
+        "socket_lamp_1": {
+          "on": false
+        },
+        "socket_lamp_2": {
+          "on": true
+        },
+        "socket_lamp_3": {
+          "on": true
+        },
+        "socket_shelf": {
+          "on": false,
+          "count": 1,
+          "spacing": 0.3,
+          "baseHeight": 0.3
+        }
+      },
+      "toggleStates": {}
+    },
+    {
+      "uid": "full_panel_1793307694386_dup0_eyt",
+      "kind": "model",
+      "x": -1.405321705045854,
+      "z": -2.823209839518111,
+      "rotY": 12.566370614359172,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": 0.5260055984100509,
+      "pivotZ": -2.8232098395181113,
+      "groupIds": [],
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      },
+      "toggleStates": {}
+    },
+    {
+      "uid": "full_panel_1793307694386_dup1_frf",
+      "kind": "model",
+      "x": -0.43635849923149284,
+      "z": -2.8232098395181113,
+      "rotY": 12.566370614359172,
+      "color": "#ffffff",
+      "groupIds": [],
+      "pivotX": 0.5260055984100509,
+      "pivotZ": -2.8232098395181113,
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "shelves_module_m_1793307694386_dup2_41x",
+      "kind": "model",
+      "x": 0.5270972238288465,
+      "z": -2.8232098395181118,
+      "rotY": 12.566370614359172,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": 0.5260055984100509,
+      "pivotZ": -2.8232098395181113,
+      "groupIds": [],
+      "modelId": "shelves_module_m",
+      "catalogId": "shelves_module_m",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      },
+      "toggleStates": {}
+    },
+    {
+      "uid": "shelves_module_m2_1793307694386_dup3_pic",
+      "kind": "model",
+      "x": 1.490649684389119,
+      "z": -2.8232098395181118,
+      "rotY": 12.566370614359172,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": 0.5260055984100509,
+      "pivotZ": -2.8232098395181113,
+      "groupIds": [],
+      "modelId": "shelves_module_m2",
+      "catalogId": "shelves_module_m2",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      },
+      "toggleStates": {}
+    },
+    {
+      "uid": "full_panel_1793307694386_dup4_u3w",
+      "kind": "model",
+      "x": 2.4539612881096353,
+      "z": -2.823209839518112,
+      "rotY": 12.566370614359172,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": 0.5260055984100509,
+      "pivotZ": -2.8232098395181113,
+      "groupIds": [],
+      "modelId": "full_panel",
+      "catalogId": "full_panel",
+      "socketStates": {
+        "socket_lamp": {
+          "on": true
+        }
+      },
+      "toggleStates": {}
+    },
+    {
+      "uid": "console_module_1793307782854_gkpr",
+      "kind": "model",
+      "x": 1.3141644507026615,
+      "z": 1.5883148244987673,
+      "rotY": -0.7853981633974483,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": 1.4981615102697048,
+      "pivotZ": 1.4007156269378442,
+      "groupIds": [],
+      "toggleStates": {
+        "toggle_feet_center": false,
+        "toggle_feet_edge": true
+      },
+      "modelId": "console_module",
+      "catalogId": "console_module",
+      "socketStates": {}
+    },
+    {
+      "uid": "console_module_1793307791722_dup0_zxk",
+      "kind": "model",
+      "x": 1.6854274658491426,
+      "z": 1.2129690358519003,
+      "rotY": 2.356194490192345,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": 1.4981615102697048,
+      "pivotZ": 1.4007156269378442,
+      "groupIds": [],
+      "modelId": "console_module",
+      "catalogId": "console_module",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "half_panel_1793307807822_65d4",
+      "kind": "model",
+      "x": 1.825473761647538,
+      "z": 1.7282142910586262,
+      "rotY": 0.7853981633974485,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": 1.4981615102697048,
+      "pivotZ": 1.4007156269378442,
+      "groupIds": [],
+      "toggleStates": {
+        "toggle_feet_center.013": false,
+        "toggle_feet_edge.011": true
+      },
+      "modelId": "half_panel",
+      "catalogId": "half_panel",
+      "socketStates": {}
+    },
+    {
+      "uid": "half_panel_1793307845136_dup0_0px",
+      "kind": "model",
+      "x": 1.1690504572146176,
+      "z": 1.073186168612324,
+      "rotY": 3.9269908169872414,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": 1.4981615102697048,
+      "pivotZ": 1.4007156269378442,
+      "groupIds": [],
+      "modelId": "half_panel",
+      "catalogId": "half_panel",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "header_half_panels_full_1793307865209_u4k7",
+      "kind": "model",
+      "x": 1.4966914159345641,
+      "z": 1.400893814667603,
+      "rotY": 0.7853981633974483,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "pivotX": 1.4981615102697048,
+      "pivotZ": 1.4007156269378442,
+      "groupIds": [],
+      "modelId": "header_half_panels_full",
+      "catalogId": "header_half_panels_full",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "counter_medium_1793307907533_a14d",
+      "kind": "model",
+      "x": -1.2307591994441296,
+      "z": 2.5641391181614632,
+      "rotY": 3.141592653589793,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "counter_medium",
+      "catalogId": "counter_medium",
+      "socketStates": {},
+      "toggleStates": {}
+    },
+    {
+      "uid": "counter_medium_1793307911443_dup0_ph4",
+      "kind": "model",
+      "x": 2.660197262480279,
+      "z": -1.176249463299678,
+      "rotY": 10.995574287564276,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "groupIds": [],
+      "modelId": "counter_medium",
+      "catalogId": "counter_medium",
+      "socketStates": {},
+      "toggleStates": {}
+    }
+  ],
+  "walls": [],
+  "cameras": [],
+  "catalogColors": {},
+  "wallConfig": {
+    "height": 2.4,
+    "glassRatio": 0,
+    "thickness": 0.1,
+    "color": "#cccccc"
+  }
+}

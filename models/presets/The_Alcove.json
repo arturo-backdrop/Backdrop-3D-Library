@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "The Alcove",
-  "savedAt": "2026-09-02T22:35:56.722Z",
+  "savedAt": "2026-10-29T22:07:57.227Z",
   "manifestUrl": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/manifest.json",
   "unit": "ft",
   "floorW": 6.096,
@@ -50,31 +50,6 @@
       },
       "modelId": "full_panel",
       "socketStates": {},
-      "catalogId": "full_panel"
-    },
-    {
-      "uid": "full_panel_1788384461075_click",
-      "kind": "model",
-      "x": 1.429603288009159,
-      "z": -1.4157541151700386,
-      "rotY": 0,
-      "color": "#ffffff",
-      "groupIds": [],
-      "pivotX": -2.4462495352482874,
-      "pivotZ": -1.4157541151700386,
-      "toggleStates": {
-        "toggle_feet_center.002": false,
-        "toggle_feet_edge.002": true
-      },
-      "modelId": "full_panel",
-      "socketStates": {
-        "socket_shelf": {
-          "on": true,
-          "count": 3,
-          "spacing": 0.50292,
-          "baseHeight": -0.310896
-        }
-      },
       "catalogId": "full_panel"
     },
     {
@@ -191,6 +166,21 @@
       "toggleStates": {},
       "groupIds": [],
       "catalogId": "multimedia_tv"
+    },
+    {
+      "uid": "full_panel_3_shelves_1793311666008_6jst",
+      "kind": "model",
+      "x": 1.429603288009159,
+      "z": -1.4157541151700386,
+      "rotY": 0,
+      "color": "#ffffff",
+      "yOffset": 0,
+      "parentUid": null,
+      "localOffset": null,
+      "modelId": "full_panel_3_shelves",
+      "catalogId": "full_panel_3_shelves",
+      "socketStates": {},
+      "toggleStates": {}
     }
   ],
   "walls": [],
