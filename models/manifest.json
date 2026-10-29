@@ -279,7 +279,7 @@
   },
   {
     "id": "shelves_module_m",
-    "name": "Shelves Module M",
+    "name": "Staggered Shelves A",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Shelves%20Module%20M.glb",
     "category": "Shelving",
     "w": 0.9652,
@@ -301,7 +301,7 @@
   },
   {
     "id": "shelves_module_m2",
-    "name": "Shelves Module M2",
+    "name": "Staggered Shelves B",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Shelves%20Module%20M2.glb",
     "category": "Shelving",
     "w": 0.9652,
@@ -323,7 +323,7 @@
   },
   {
     "id": "shelves_small_center",
-    "name": "Shelves Small Center",
+    "name": "Tablet Stand Shelf",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Shelves%20Small%20Center.glb",
     "category": "Shelving",
     "w": 0.9652,
@@ -489,7 +489,7 @@
   },
   {
     "id": "storage_full_panels",
-    "name": "Storage Full Panels",
+    "name": "Closet Module",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Storage%20Full%20Panels.glb",
     "category": "Storage",
     "w": 0.9649,
@@ -543,7 +543,7 @@
   },
   {
     "id": "storage_double",
-    "name": "Storage Double",
+    "name": "Double Closet Module",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Storage%20Double.glb",
     "category": "Storage",
     "w": 0.965,
@@ -605,7 +605,7 @@
   },
   {
     "id": "storage_half",
-    "name": "Storage Half",
+    "name": "Quarter Storage Module",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Storage%20Half.glb",
     "category": "Storage",
     "w": 0.483,
@@ -651,7 +651,7 @@
   },
   {
     "id": "storage_half_and_full_panels",
-    "name": "Storage Half and Full Panels",
+    "name": "Half Storage Module",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Storage%20Half%20and%20Full%20Panels.glb",
     "category": "Storage",
     "w": 0.559,
@@ -811,7 +811,7 @@
   },
   {
     "id": "header_full_panels",
-    "name": "Header Full Panels",
+    "name": "Header Module",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Full%20Panels.glb",
     "category": "Headers",
     "w": 0.965,
@@ -857,7 +857,7 @@
   },
   {
     "id": "header_half_panels",
-    "name": "Header Half Panels",
+    "name": "Quarter Header Module",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Half%20Panels.glb",
     "category": "Headers",
     "w": 0.584,
@@ -903,7 +903,7 @@
   },
   {
     "id": "header_double_panels",
-    "name": "Header Double Panels",
+    "name": "Double Header Module",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Double%20Panels.glb",
     "category": "Headers",
     "w": 2.032,
@@ -965,7 +965,7 @@
   },
   {
     "id": "header_half_panels_full",
-    "name": "Header Half Panels and Full",
+    "name": "Half Header Module",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Header%20Half%20Panels%20and%20full.glb",
     "category": "Headers",
     "w": 0.61,
@@ -1033,7 +1033,7 @@
   },
   {
     "id": "console_module_tv",
-    "name": "Console Module TV",
+    "name": "Console Module + TV Mount",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Console%20Module%20TV.glb",
     "category": "Consoles",
     "w": 0.965,
@@ -1055,7 +1055,7 @@
   },
   {
     "id": "multimedia_tv",
-    "name": "Multimedia TV",
+    "name": "TV Mount Panel",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Multimedia%20TV.glb",
     "category": "Multimedia",
     "w": 0.965,
@@ -1077,7 +1077,7 @@
   },
   {
     "id": "multimedia_tv_shelf",
-    "name": "Multimedia TV Shelf",
+    "name": "TV Mount Panel + Shelf",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Multimedia%20TV%20Shelf.glb",
     "category": "Multimedia",
     "w": 0.965,
@@ -1125,7 +1125,7 @@
   },
   {
     "id": "woodline_top",
-    "name": "Woodline Top",
+    "name": "Woodline Canopy",
     "file": "https://raw.githubusercontent.com/arturo-backdrop/Backdrop-3D-Library/main/models/backdrops/Moduluxe/Woodline%20Top.glb",
     "category": "Woodline",
     "w": 0.9652,
